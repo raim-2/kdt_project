@@ -1,0 +1,85 @@
+/* 인사말 본문영역 */
+
+#content .contentArea {
+}
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.ceoSummary {
+  overflow: hidden;
+  padding: 0 60px 0;
+}
+
+.ceoSummary:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.ceoSummary img {
+  float: left;
+  margin-top: 30px;
+}
+
+.ceoSummary .rightText {
+  float: right;
+  padding-top: 180px;
+}
+
+.rightText p:first-of-type {
+  font-size: 40px;
+  font-weight: 600;
+  color: #1f415c;
+}
+
+.rightText p:last-of-type {
+  font-size: 20px;
+  padding: 25px 0 65px;
+}
+
+.rightText div {
+  position: relative;
+  padding-left: 10px;
+  margin-left: 245px;
+}
+
+.rightText div img {
+  position: absolute;
+  left: 170px;
+  bottom: -15px;
+  width: 120px;
+}
+
+.rightText div span {
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.greeting {
+  background: url(../images/content2/box.jpg) 0 -10px no-repeat;
+  padding: 130px 100px 160px;
+  margin-bottom: 80px;
+}
+
+.greeting p {
+  font-size: 18px;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-bottom: 40px;
+  word-break: keep-all;
+}
+
+.greeting p:first-child {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.greeting span {
+  color: #01abce;
+}

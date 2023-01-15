@@ -1,0 +1,40 @@
+{
+  "newProducts": [
+    {
+      "engName": "Suganon Tab",
+      "korName": "슈가논정",
+      "info": "1일 1회 1정 복용",
+      "effect": "#당뇨병 #인슐린분비촉진",
+      "img": "./images/product01.png",
+      "num": "01",
+      "address": "/concert/view.php?table=concert&num=8"
+    },
+    {
+      "engName": "Jublia Topical",
+      "korName": "주블리아 외용액",
+      "info": "1일 1회 사용",
+      "effect": "#피부질환 #진균증",
+      "img": "./images/product02.png",
+      "num": "02",
+      "address": "/concert/view.php?table=concert&num=14"
+    },
+    {
+      "engName": "Sugamet XR Tab.",
+      "korName": "슈가메트",
+      "info": "1일 1회 1정 복용",
+      "effect": "#당뇨병 #혈당조절",
+      "img": "./images/product03.png",
+      "num": "03",
+      "address": "/concert/view.php?table=concert&num=9"
+    },
+    {
+      "engName": "Edarbyclor Tab.",
+      "korName": "이달비클로정",
+      "info": "1일 1회 1정 복용",
+      "effect": "#고혈압 #혈압조절",
+      "img": "./images/product04.png",
+      "num": "04",
+      "address": "/concert/view.php?table=concert&num=12"
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* 공지사항- 일반게시판 */
+
+.contentArea>p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#content #col2 {
+    width: 1100px;
+    margin: 0 auto 120px;
+    position: relative;
+}
+
+#col2 form {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+button[type="submit"] {
+    cursor: pointer;
+}
+
+/* list css */
+
+
+#list_search {
+    height: 30px;
+    float: left;
+}
+
+#list_search #list_search1 {
+    float: left;
+    margin-top: 2px;
+    font-size: 1.1em;
+}
+
+#list_search #list_search1 span {
+    color: #01abce;
+}
+
+#list_search #list_search2 {
+    float: left;
+    margin-left: 300px;
+    margin-top: 4px;
+}
+
+#list_content {
+    padding-bottom: 100px;
+}
+
+#list_top_title {
+    /* height: 80px; */
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-top: solid 2px #aaaaaa;
+    background-color: #eeeeee;
+    margin-bottom: 3px;
+}
+
+#list_top_title ul {
+    overflow: hidden;
+}
+
+#list_top_title li,
+.list_item div {
+    float: left;
+    text-align: center;
+}
+
+#list_top_title #list_title1,
+#list_top_title #list_title5,
+.list_item .list_item1,
+.list_item .list_item5 {
+    width: 9%;
+}
+
+#list_top_title #list_title2,
+.list_item .list_item2 {
+    width: 50%;
+}
+
+#list_top_title #list_title3,
+#list_top_title #list_title4,
+.list_item .list_item3,
+.list_item .list_item4 {
+    width: 15%;
+}
+
+
+.list_item {
+    padding: 20px 0;
+    border-bottom: solid 1px #eeeeee;
+    overflow: hidden;
+}
+
+.list_item .list_item2 {
+    text-align: left;
+}
+
+#page_button {
+    clear: both;
+    margin-top: 60px;
+}
+
+#page_num {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#page_num a,
+#page_num span {
+    margin: 0 5px;
+    padding: 0 5px;
+    position: relative;
+}
+
+#page_num span:not(.arrow) {
+    color: #fff;
+}
+
+#page_num span:not(.arrow)::after {
+    content: '';
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #01abce;
+    position: absolute;
+    left: -5px;
+    top: -2px;
+    z-index: -1;
+}
+
+#page_num span.arrow {
+    color: #999
+}
+
+#button,
+#write_button {
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+}
+
+#button a,
+#write_button a,
+#write_button button,
+#view_button a {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.list_count {
+    float: right;
+}
+
+.list_count select#scale,
+.searchBox #list_search3 select,
+.searchBox #list_search4 input {
+    padding: 10px 35px 10px 10px;
+    outline: none;
+    font-size: 1em;
+    border-color: #ccc;
+    height: 43px;
+    box-sizing: border-box;
+}
+
+.searchBox {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -210px;
+}
+
+
+.searchBox #list_search3 {
+    float: left;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+
+.searchBox #list_search4 {
+    float: left;
+    margin-left: 3px;
+}
+
+.searchBox #list_search4 input {
+    border: 1px solid #ccc;
+    margin-top: 1px;
+}
+
+.searchBox #list_search5 {
+    float: left;
+}
+
+#list_search5 button {
+    margin-top: 1px;
+    text-align: center;
+    padding: 10px 20px;
+    height: 43px;
+    border: 1px solid #ccc;
+    border-left: none;
+    font-size: 1rem;
+}
+
+/* write_form css */
+
+#write_form {
+    border-top: 1px solid #666;
+}
+
+#write_form #write_row1,
+#write_form #write_row2,
+#write_form #write_row3 {
+    overflow: hidden;
+}
+
+#write_form .col1 {
+    float: left;
+    width: 10%;
+    padding: 20px 15px;
+    background-color: #eee;
+}
+
+#write_form #write_row3 .col1 {
+    height: 173px;
+    padding-top: 120px;
+}
+
+#write_form #write_row2 .col1 {
+    height: 34px;
+}
+
+#write_form .col2 {
+    float: left;
+    width: 80%;
+    padding: 20px 15px;
+}
+
+#write_form dl {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+#write_form #write_row1 .col2 {
+    float: left;
+}
+
+#write_row2 .col2 input {
+    width: 100%;
+    height: 30px;
+    border: solid 1px #cccccc;
+}
+
+#write_row3 .col2 textarea {
+    width: 100%;
+    margin-top: 1px;
+    border: solid 1px #cccccc;
+}
+
+
+#write_row3 .col2 .col3 {
+    margin-bottom: 10px;
+}
+
+#write_button button {
+    background: #fff;
+    display: block;
+    float: right;
+    width: auto;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* view.php css */
+
+#view_title {
+    height: 24px;
+    padding: 20px 15px;
+    border-top: solid 2px #aaaaaa;
+    background-color: #eeeeee;
+}
+
+#view_title1 {
+    float: left;
+    width: 60%;
+}
+
+#view_title2 {
+    float: left;
+    width: 38%;
+    text-align: right;
+}
+
+#view_title2 span {
+    margin: 0 10px;
+}
+
+#view_content {
+    min-height: 300px;
+    /* overflow: hidden; */
+    padding: 30px 15px;
+    line-height: 150%;
+    border-top: 1px solid #ccc;
+    border-bottom: solid 1px #ccc;
+}
+
+#view_button {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}

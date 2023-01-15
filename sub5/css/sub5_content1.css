@@ -1,0 +1,235 @@
+/* 인재상 본문영역 */
+#content .contentArea {
+}
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+ul.contentNav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+#content .contentArea p + ul li .current {
+  background: #01abce;
+  color: #fff;
+}
+
+#content .contentArea p + ul li a {
+  display: block;
+  padding: 15px 20px;
+  background: #f8f8f8;
+  border-radius: 30px;
+}
+
+#content .contentArea .topMain::after,
+.sec01 .dstyle::after,
+.sec02 .dtalent ul::after,
+.sec02 .dtalent ul li dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .topMain {
+  margin-left: -1000px;
+  box-sizing: border-box;
+  padding: 40px 345px;
+  width: 2000px;
+  position: relative;
+  left: 50%;
+  background: #f8f8f8;
+}
+
+.topMain .topMainInner {
+  width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.topMain h3 {
+  float: left;
+  width: 300px;
+  font-size: 1.875em;
+  line-height: 4;
+  color: #01abce;
+  position: relative;
+  text-align: center;
+}
+.topMain h3::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  background: #ccc;
+  position: absolute;
+  left: 315px;
+  top: 20px;
+}
+
+.topMain h3 + p {
+  float: right;
+  width: 700px;
+  text-align: left;
+  font-size: 1.25em;
+  line-height: 2em;
+  word-break: keep-all;
+}
+
+.topMain p span {
+  color: #01abce;
+}
+
+#content .contentArea section {
+  margin: 100px 0;
+  clear: both;
+}
+
+.sec01 > span {
+  margin: 70px 0 60px;
+  font-size: 1.5em;
+  font-weight: 500;
+  display: block;
+}
+
+.sec01 .dstyle {
+  margin-top: 30px;
+}
+
+.sec01 .dstyle ul {
+  width: 580px;
+  float: left;
+}
+
+.sec01 .dstyle ul p {
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 2em;
+  word-break: keep-all;
+  font-size: 1.125em;
+}
+
+.sec01 .dstyle ul p span {
+  color: #01abce;
+}
+
+.sec01 .dstyle img {
+  float: right;
+  width: 560px;
+}
+
+.sec02 .dtalent {
+  margin-bottom: 100px;
+}
+
+.sec02 .dtalent > p {
+  margin: 100px 0 70px 0;
+  font-size: 1.125em;
+  padding: 10px 0;
+  background: #01abce;
+  color: #fff;
+}
+
+.sec02 .dtalent > p span {
+  font-size: 1.375rem;
+  font-weight: 500;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.sec02 .dtalent > ul > li {
+  float: left;
+  width: 250px;
+  text-align: center;
+  margin: 0 25px;
+  position: relative;
+}
+
+.sec02 .dtalent > ul > li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  right: -25px;
+  top: 0;
+}
+
+.sec02 .dtalent > ul > li:last-of-type:after {
+  opacity: 0;
+}
+
+.sec02 .dtalent dl dt {
+  font-size: 1.25em;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: #1f415c;
+}
+
+.sec02 .dtalent li dl dt::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 85px;
+  top: 0;
+  width: 85px;
+  height: 77px;
+  margin-top: 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.sec02 .dtalent li:first-of-type dl dt::after {
+  background: url(../images/content1/conicon1.png);
+}
+
+.sec02 .dtalent li:nth-of-type(2) dl dt::after {
+  background: url(../images/content1/conicon2.png);
+}
+
+.sec02 .dtalent li:nth-of-type(3) dl dt::after {
+  background: url(../images/content1/conicon3.png);
+}
+
+.sec02 .dtalent li:last-of-type dt::after {
+  background: url(../images/content1/conicon4.png);
+}
+
+.sec02 .dtalent ul > li:hover dt::after {
+  background-position: right center;
+}
+
+.dtalent dd ul {
+  background: #01abce;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 15px;
+}
+
+.sec02 .dtalent dl dd ul > li {
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+.sec02 .dtalent dl dd ul > li::before {
+  content: "•";
+  position: absolute;
+  left: 40px;
+}
+
+.sec02 .dtalent dl dd::before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 1px;
+  background: #ccc;
+  position: relative;
+  left: 0;
+  top: -5px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}

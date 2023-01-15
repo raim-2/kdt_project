@@ -1,0 +1,257 @@
+/* 경영철학 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+#content .contentArea .topText {
+  line-height: 2em;
+  font-size: 22px;
+}
+
+#content .contentArea .sec01 .value > div::after,
+#content .contentArea .sec01 .part ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .topMain {
+  margin-top: 50px;
+}
+
+#content .contentArea .topMain img {
+  margin-left: -1000px;
+  position: relative;
+  left: 50%;
+  margin-bottom: 80px;
+}
+
+#content .contentArea .topMain img + p {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2em;
+  margin-bottom: 20px;
+}
+
+#content .contentArea .topMain p:last-child {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+#content .contentArea section {
+  margin: 100px 0;
+}
+
+#content .contentArea section p,
+#content .contentArea section .value {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+#content .contentArea .sec01 {
+  background: #f8f8f8;
+  padding: 90px 30px;
+}
+
+#content .contentArea .sec01 h3 + p {
+  font-size: 20px;
+  line-height: 2em;
+}
+
+#content .contentArea .sec01 h3 + p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  position: relative;
+  left: 0;
+  top: 50px;
+}
+
+#content .contentArea .sec01 .value img {
+  width: 110px;
+  margin: 0 50px;
+  float: left;
+}
+
+#content .contentArea section h4 {
+  margin: 100px 0 60px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#content .contentArea .sec01 .value {
+  margin-bottom: 70px;
+}
+
+#content .contentArea .sec01 .value .right {
+  width: 680px;
+  float: left;
+  margin-left: 50px;
+  box-sizing: border-box;
+}
+
+.sec01 .right > span {
+  font-size: 18px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+}
+
+#content .contentArea .sec01 .value .right p {
+  margin-top: 30px;
+  text-align: justify;
+  width: inherit;
+  line-height: 2em;
+}
+
+#content .contentArea .sec01 .part {
+  clear: both;
+}
+
+.sec01 .part ul::before {
+  content: "";
+  display: block;
+  width: 880px;
+  height: 1px;
+  position: relative;
+  left: 110px;
+  top: -44px;
+  background: #01abce;
+}
+
+#content .contentArea .sec01 .part > span {
+  color: #fff;
+  background: #01abce;
+  border-radius: 30px;
+  padding: 15px 30px;
+  display: block;
+  width: 180px;
+  margin: 0 auto 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+.sec01 .part > span::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #01abce;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 113px;
+  bottom: -5px;
+}
+
+#content .contentArea .sec01 .part ul {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#content .contentArea .sec01 .part li {
+  float: left;
+  text-align: center;
+  margin: 10px;
+  width: 200px;
+  height: 225px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40px 0;
+  position: relative;
+}
+
+.sec01 .part li::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 55px;
+  background: #01abce;
+  position: absolute;
+  left: 100px;
+  top: -55px;
+}
+
+.sec01 .part li:nth-of-type(3)::before {
+  height: 110px;
+  top: -110px;
+}
+
+#content .contentArea .sec01 .part i {
+  font-size: 45px;
+}
+
+#content .contentArea .sec01 .part dt {
+  font-size: 18px;
+  margin: 20px 0 10px;
+  color: #01abce;
+  font-weight: 500;
+}
+
+.sec02 h3 + span {
+  margin-left: 110px;
+  font-size: 20px;
+}
+
+.sec02 h3 + span span,
+.sec02 p span {
+  color: #01abce;
+}
+
+#content .contentArea .sec02 > p {
+  margin-top: 30px;
+  text-align: justify;
+  line-height: 2em;
+}
+
+#content .contentArea .sec02 .rule {
+  margin: 50px 0 130px;
+}
+
+.sec02 .rule img {
+  width: 805px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sec02 .rule span {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  width: 62px;
+  margin: 60px auto 20px;
+}
+
+#content .contentArea .sec02 .rule p {
+  text-align: center;
+  position: relative;
+  line-height: 1.8em;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  /* margin-bottom: 120px; */
+}
+
+.sec02 .rule p::after {
+  content: "";
+  display: block;
+  width: 600px;
+  height: 210px;
+  background: #f8f8f8;
+  position: absolute;
+  left: 190px;
+  top: -105px;
+  z-index: -1;
+}

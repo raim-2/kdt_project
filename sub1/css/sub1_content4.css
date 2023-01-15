@@ -1,0 +1,430 @@
+/* 오시는길 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.contentArea .section01 {
+  margin-bottom: 20px;
+}
+
+.contentArea .section02,
+.contentArea .section03 {
+  margin-bottom: 70px;
+}
+
+#content .contentArea .tab_menu {
+  /* overflow: hidden; */
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  width: 1200px;
+}
+
+#content .contentArea .tab_menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .tab_menu li {
+  float: left;
+  width: 400px;
+  text-align: center;
+  background: #f8f8f8;
+  box-sizing: border-box;
+}
+
+#content .contentArea .tab_menu li a {
+  padding: 20px;
+  display: block;
+  font-size: 1.1em;
+}
+
+.tab_menu li:nth-of-type(2) {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+#content .contentArea .map {
+  position: relative;
+}
+
+#content .contentArea #mapHead,
+#mapLab,
+#mapCheonan,
+#mapDalseong {
+  width: 1200px;
+  height: 635px;
+  background: #ccc;
+}
+
+#content .contentArea .map .summary {
+  text-align: justify;
+  width: 410px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  box-shadow: 5px 5px 11px 1px rgb(0 0 0 / 20%);
+  z-index: 50;
+}
+
+#content .contentArea .map .summary dl {
+  width: 310px;
+  margin: 0 auto;
+  padding: 50px 0 50px 30px;
+}
+
+#content .contentArea .map .summary dt {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#content .contentArea .map .summary dd:first-of-type {
+  font-size: 20px;
+  margin: 15px 0 45px;
+}
+
+#content .contentArea .map .summary a {
+  padding-left: 140px;
+  font-size: 22px;
+  position: relative;
+}
+
+#content .contentArea .map .summary span::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  position: absolute;
+  left: 42%;
+  top: 14px;
+}
+
+#content .contentArea .map .summary i {
+  padding-left: 5px;
+  font-size: 25px;
+  color: #01abce;
+}
+
+#content .contentArea .map .summary a:hover i {
+  animation: iconLeft 0.5s ease-in-out infinite;
+}
+
+@keyframes iconLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(5px);
+  }
+}
+
+#content .contentArea .location h3,
+.branch h3 {
+  font-size: 35px;
+  margin: 100px 0 10px;
+}
+
+#content .contentArea .location h3::before,
+.branch h3::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #01abce;
+}
+
+#content .contentArea .section01 .location ul:first-of-type {
+  width: 1200px;
+  height: 200px;
+  border-bottom: 1px solid #ccc;
+}
+
+#content .contentArea .location ul:last-child {
+  width: 1200px;
+}
+
+#content .contentArea .location dt,
+.branch dl dt {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f415c;
+}
+
+#content .contentArea .location ul {
+  overflow: hidden;
+}
+
+#content .contentArea .location ul li {
+  float: left;
+  padding: 70px 0;
+}
+
+#content .contentArea .location dl {
+  width: 600px;
+}
+
+#content .contentArea .location dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .location dt {
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+
+#content .contentArea .location dt i {
+  margin-right: 8px;
+}
+
+#content .contentArea .location dd {
+  margin-left: 200px;
+}
+
+#content .contentArea .location dd span {
+  margin-right: 20px;
+}
+
+#content .contentArea .location .subway {
+  position: relative;
+}
+
+#content .contentArea .location .subway span {
+  color: #fff;
+}
+
+.location .subway p:first-child span::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 28px;
+  background: #263c96;
+  position: absolute;
+  left: -6px;
+  top: -2px;
+  z-index: -1;
+}
+
+.location .subway p:last-child span::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 28px;
+  background: #3cb44a;
+  position: absolute;
+  left: -6px;
+  top: 35px;
+  z-index: -1;
+}
+
+#content .contentArea .location dd p:first-child {
+  margin-bottom: 13px;
+}
+
+#content .contentArea .location .bus p {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#content .contentArea .location .last dd > p:first-of-type {
+  margin-left: -5px;
+}
+
+.location .bus p span {
+  color: #fff;
+}
+
+.location .bus p:first-child span::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 28px;
+  background: #386de8;
+  position: absolute;
+  left: -6px;
+  top: -2px;
+  z-index: -1;
+}
+
+.location .bus p:nth-child(2) span::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 28px;
+  background: #3cc344;
+  position: absolute;
+  left: -6px;
+  top: -2px;
+  z-index: -1;
+}
+
+.location .bus p:last-child span::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 28px;
+  background: #fb5852;
+  position: absolute;
+  left: -6px;
+  top: -2px;
+  z-index: -1;
+}
+
+.section03 .branch ul {
+  margin: 70px 0 130px;
+}
+
+.section03 .branch ul li {
+  position: relative;
+}
+
+.section03 .branch ul li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  opacity: 0.5;
+}
+
+.section03 .branch dl {
+  overflow: hidden;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.section03 .branch dt,
+.section03 .branch dt + dd {
+  float: left;
+}
+
+.section03 .branch dd:last-child {
+  float: right;
+}
+
+.section03 .branch dt {
+  width: 250px;
+}
+
+.section03 .branch dt::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background: #ccc;
+  position: absolute;
+  left: 330px;
+  top: 0;
+  opacity: 0.5;
+}
+
+.section03 .branch dt + dd {
+  margin-left: 220px;
+}
+
+.section03 .branch dt + dd::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background: #ccc;
+  position: absolute;
+  right: 330px;
+  top: 0;
+  opacity: 0.5;
+}
+
+.section03 #branch .point {
+  font-size: 26px;
+  color: #01abce;
+}
+
+.section03 #branch i:hover {
+  animation: pointClink 1s ease-in-out infinite;
+}
+
+@keyframes pointClink {
+  0% {
+    color: #01abce;
+  }
+
+  50% {
+    color: #fff;
+  }
+
+  100% {
+    color: #01abce;
+  }
+}
+
+.section03 i:first-child {
+  position: absolute;
+  left: 44.22%;
+  top: 12%;
+}
+
+.section03 i:nth-child(2) {
+  position: absolute;
+  left: 42.95%;
+  top: 15.3%;
+}
+
+.section03 i:nth-child(3) {
+  position: absolute;
+  left: 43.3%;
+  top: 27.2%;
+}
+
+.section03 i:nth-child(4) {
+  position: absolute;
+  left: 58.9%;
+  top: 29.5%;
+}
+
+.section03 i:nth-child(5) {
+  position: absolute;
+  left: 45.04%;
+  top: 39%;
+}
+
+.section03 i:nth-child(6) {
+  position: absolute;
+  left: 57.65%;
+  top: 44.6%;
+}
+
+.section03 i:nth-child(7) {
+  position: absolute;
+  left: 62.38%;
+  top: 42.8%;
+}
+
+.section03 i:nth-child(8) {
+  position: absolute;
+  left: 61.73%;
+  top: 53.5%;
+}
+
+.section03 i:nth-child(9) {
+  position: absolute;
+  left: 57.6%;
+  top: 53.95%;
+}
+
+.section03 i:last-of-type {
+  position: absolute;
+  left: 37.7%;
+  top: 90.7%;
+}

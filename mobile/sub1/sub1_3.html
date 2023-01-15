@@ -1,0 +1,237 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>회사소개-오시는길</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub1common.css">
+  <link rel="stylesheet" href="./css/sub1_3.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a3bf414e8fb6a7c3bd14d0d1a5e67f5d"></script>
+  <script src="./js/kakao_map2.js"></script>
+
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+  <div class="main">
+    <h3>회사소개</h3>
+  </div>
+  <div class="subNav">
+    <ul>
+      <li><a href="./sub1_1.html">기업소개</a></li>
+      <li><a href="./sub1_2.html">인사말</a></li>
+      <li><a class="current" href="./sub1_3.html">오시는길</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>오시는길</h2>
+      <p>
+        글로벌 혁신 제약기업을 향해<br>
+        빠르게 도약하는 동아ST
+      </p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <div class="contentlist">
+      <div class="tabs">
+        <ul class="tab_menu">
+          <li>
+            <a class="tab tab1" href="#">
+              <span>본사</span>
+              <i class="fa-solid fa-building"></i>
+            </a>
+          </li>
+          <li>
+            <a class="tab tab2" href="#">
+              <span>연구소</span>
+              <i class="fa-solid fa-flask"></i>
+            </a>
+          </li>
+          <li>
+            <a class="tab tab3" href="#">
+              <span>공장</span>
+              <i class="fa-solid fa-industry"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="conlist1 conlist">
+          <div class="map" id="head">
+            <div id="mapHead"></div>
+          </div>
+
+          <div class="location">
+            <h3>본사 위치</h3>
+            <ul class="info">
+              <li>
+                <dl>
+                  <dt>주소</dt>
+                  <dd>서울특별시 동대문구 천호대로 64</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>전화</dt>
+                  <dd>02 - 920 - 8111</dd>
+                </dl>
+              </li>
+            </ul>
+            <ul class="wayToGo">
+              <li>
+                <dl>
+                  <dt>
+                    <i class="fa-solid fa-train-subway"></i>
+                    지하철
+                  </dt>
+                  <dd class="subway">
+                    <p>
+                      <span>1호선</span>
+                      신설동역 6번 출구 도보 10분
+                    </p>
+                    <p>
+                      <span>2호선</span>
+                      신설동역 9번 출구 도보 5분
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>
+                    <i class="fa-solid fa-bus-simple"></i>
+                    버스
+                  </dt>
+                  <dd>
+                    <p><em>용두동신동아아파트, 동아제약 앞</em></p>
+                    <div class="bus">
+                      <p><span>간선</span> 370, 721, 303, N32</p>
+                      <p><span>지선</span> 2112</p>
+                      <p><span>광역</span> 9403, 9301</p>
+                    </div>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="conlist2 conlist">
+          <div class="map" id="lab">
+            <div id="mapLab"></div>
+          </div>
+
+          <div class="location">
+            <h3>연구소 위치</h3>
+            <ul class="info">
+              <li>
+                <dl>
+                  <dt>주소</dt>
+                  <dd>용인시 기흥구 금화로 105번길 21</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>전화</dt>
+                  <dd>031 - 280 - 1400</dd>
+                </dl>
+              </li>
+            </ul>
+            <ul class="wayToGo">
+              <li>
+                <dl>
+                  <dt>
+                    <i class="fa-solid fa-train-subway"></i>
+                    지하철
+                  </dt>
+                  <dd class="subway">
+                    <p>
+                      <span>수인분당선</span>
+                      상갈역 3번 출구 도보 10분
+                    </p>
+                    <p>
+                      <span>수인분당선</span>
+                      상갈역 4번 출구 도보 12분
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>
+                    <i class="fa-solid fa-bus-simple"></i>
+                    버스
+                  </dt>
+                  <dd>
+                    <p>상갈역 앞</p>
+                    <div class="bus">
+                      <p><span>시내</span> 51, 30, 10-5</p>
+                      <p><span>광역</span> 1560</p>
+                    </div>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="conlist3 conlist">
+          <div class="map" id="factory">
+            <div id="mapCheonan"></div>
+            <div id="mapDalseong" class="map2"></div>
+          </div>
+
+          <div class="location">
+            <h3>천안공장 위치</h3>
+            <ul class="info">
+              <li>
+                <dl>
+                  <dt>주소</dt>
+                  <dd>천안시 서북구 백석공단1로 200-23</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>전화</dt>
+                  <dd>041-520-9756</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+  <script src="./js/tab.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>동아ST</title>
+
+  <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+  <link rel="apple-touch-startup-image" href="./startup.png">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="./js/prefixfree.min.js"></script>
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "./header.html" ?>
+  <!-- 비주얼영역 -->
+
+  <div class="main visual">
+    <div class="gallery">
+      <ul>
+        <li class="link1">
+          <img src="./images/visual01x2.png" alt="메인이미지1">
+          <div class="text">
+            <p>글로벌 혁신<br>제약기업 동아ST</p>
+            <p>
+              동아ST는 최적의 연구 인프라를 바탕으로<br>
+              글로벌 제약기업을 향해 도약합니다.
+            </p>
+          </div>
+        </li>
+        <li class="link2">
+          <img src="./images/visual02x2.png" alt="메인이미지2">
+          <div class="text">
+            <p>고객을 먼저<br>생각하는 동아ST</p>
+            <p>
+              동아ST는 고객 중심 경영을 바탕으로<br>
+              기업의 사회적 책임을 선도합니다.
+            </p>
+          </div>
+        </li>
+        <li class="link3">
+          <img src="./images/visual03x2.png" alt="메인이미지3">
+          <div class="text">
+            <p>건강과 행복을<br>만들어가는 동아ST</p>
+            <p>
+              동아ST는 의료 분야의 전문화를 통한<br>
+              국민 건강 향상을 위해 노력합니다.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="dock">
+      <span class="mbutton btn1"></span>
+      <span class="mbutton btn2"></span>
+      <span class="mbutton btn3"></span>
+    </div>
+  </div>
+
+  <!-- 본문영역 -->
+  <article id="content">
+    <h2 class="hidden">본문콘텐츠영역</h2>
+    <!-- 제품영역 -->
+    <section id="new">
+      <div class="newTop">
+        <h3>신제품</h3>
+        <p>이달의 제품을 소개합니다.</p>
+      </div>
+      <!-- <div class="num">0</div> -->
+      <ul class="tab_menu">
+        <li><a href="#" class="tab tab1">슈가논정</a></li>
+        <li><a href="#" class="tab tab2">주블리아</a></li>
+        <li><a href="#" class="tab tab3">슈가메트</a></li>
+        <li><a href="#" class="tab tab4">이달비클로</a></li>
+      </ul>
+
+      <ul class="contBox">
+        <li class="contlist">
+          <span>Suganon Tab</span>
+          <div>
+            <img src="./images/product01x2.png" alt="슈가논">
+          </div>
+          <p>#당뇨병 #인슐린분비촉진</p>
+        </li>
+        <li class="contlist">
+          <span>Jublia Topical</span>
+          <div>
+            <img src="./images/product02x2.png" alt="주블리아">
+          </div>
+          <p>#피부질환 #진균증</p>
+        </li>
+        <li class="contlist">
+          <span>Sugamet XR Tab</span>
+          <div>
+            <img src="./images/product04x2.png" alt="슈가메트">
+          </div>
+          <p>#당뇨병 #혈당조절</p>
+        </li>
+        <li class="contlist">
+          <span>Edarbyclor Tab</span>
+          <div>
+            <img src="./images/product03x2.png" alt="이달비클로정">
+          </div>
+          <p>#고혈압 #혈압조절</p>
+        </li>
+      </ul>
+
+
+      <!-- <div class="scrollbar">
+        <span></span>
+      </div> -->
+    </section>
+    <!-- 사업분야 -->
+    <section id="business">
+      <h3 class="hidden">사업분야</h3>
+      <div class="bizText">
+        <p>인류 건강을 위한, 동아ST의 사업분야</p>
+        <p>
+          Business<br>
+          for your health
+        </p>
+        <!-- <img src="./images/business01x2.png" alt="사업분야 이미지"> -->
+      </div>
+
+      <div class="bizBox swiper-container" style="padding-top: 20px">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="./sub2/sub2_1.html">
+              <dl>
+                <dt>01. 전문의약품</dt>
+                <dd>인류 건강 증진을 위한<br>혁신적 의약품 개발</dd>
+              </dl>
+              <span>
+                <img src="./images/bicon1x2.png" alt="" width="58" height="62">
+              </span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./sub2/sub2_2.html">
+              <dl>
+                <dt>02. 의료기기사업</dt>
+                <dd>최첨단 하이테크 공급<br>맞춤 의료기기 제작</dd>
+              </dl>
+              <span>
+                <img src="./images/bicon2x2.png" alt="" width="58" height="62">
+              </span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./sub2/sub2_3.html">
+              <dl>
+                <dt>03. 진단사업</dt>
+                <dd>정확한 조기진단으로<br>앞선 서비스 제공</dd>
+              </dl>
+              <span>
+                <img src="./images/bicon3x2.png" alt="" width="58" height="62">
+              </span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="./sub2/sub2_4.html">
+              <dl>
+                <dt>04. 해외사업</dt>
+                <dd>자체 파이프라인 기반<br>글로벌 시장 확보</dd>
+              </dl>
+              <span>
+                <img src="./images/bicon4x2.png" alt="" width="58" height="62">
+              </span>
+            </a>
+          </li>
+        </ul>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination" style="margin-top: 20px; bottom: 0"></div>
+      </div>
+    </section>
+    <!-- 정도경영 -->
+    <section id="management">
+      <h3>정도경영</h3>
+      <ul class="value">
+        <li>
+          <dl>
+            <dt>사회공헌 금액</dt>
+            <dd>+ <span class="count1"></span>억원</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>온실가스 사용량</dt>
+            <dd>- <span class="count2"></span>%</dd>
+          </dl>
+        </li>
+      </ul>
+      <div class="manageList">
+        <ul class="box1 social">
+          <li>
+            <span class="hidden">사회공헌 이미지</span>
+          </li>
+          <li class="text">
+            <a href="./sub3/sub3_1.html">
+              <h4><span>사회공헌</span></h4>
+              <p>사회정의 실천을 목표로 행복과 나눔의 가치를 실현합니다.</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="box2 environment">
+          <li class="text">
+            <a href="./sub3/sub3_2.html">
+              <h4><span>환경경영</span></h4>
+              <p>환경규범을 준수하고 환경보호를 위해 노력합니다.</p>
+            </a>
+          </li>
+          <li>
+            <span class="hidden">환경경영 이미지</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- FAQ 영역 -->
+    <section id="faq">
+      <div class="faqTop">
+        <h3>자주 묻는 질문</h3>
+        <a href="./sub4/sub4_1.html" class="more">더보기</a>
+      </div>
+      <ul class="faq">
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">고객센터 운영시간을 알려주세요.
+              <span></span>
+            </a>
+          </p>
+          <p class="a">
+            평일 오전 09:00 부터 17:00 까지입니다. (점심시간 12:00 - 13:00
+            제외, 주말 및 법정 공휴일 제외)
+          </p>
+        </li>
+
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">본사 위치를 알고 싶습니다.<span></span></a>
+          </p>
+          <p class="a">본사 위치는 서울시 동대문구 천호대로 64 입니다.</p>
+        </li>
+
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">제휴 제안을 하고 싶습니다.<span></span></a>
+          </p>
+          <p class="a">
+            제휴 제안을 원하시면, 동아ST 02-920-8114로 전화주시면 빠른 상담
+            도와드리겠습니다.
+          </p>
+        </li>
+      </ul>
+    </section>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "./footer.html" ?>
+
+  <!-- 위치 확인 -->
+  <!-- <div class="topText">0</div> -->
+
+  <script src="./js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

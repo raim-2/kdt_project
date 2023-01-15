@@ -1,0 +1,96 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>회사소개-인사말</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub1common.css">
+  <link rel="stylesheet" href="./css/sub1_2.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+  <div class="main">
+    <h3>회사소개</h3>
+  </div>
+  <div class="subNav">
+    <ul>
+      <li><a href="./sub1_1.html">기업소개</a></li>
+      <li><a class="current" href="./sub1_2.html">인사말</a></li>
+      <li><a href="./sub1_3.html">오시는길</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>인사말</h2>
+      <p>
+        글로벌 혁신 제약기업을 향해<br>
+        빠르게 도약하는 동아ST
+      </p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <div class="contentlist">
+      <div class="ceoBox">
+        <img src="./images/ceox2.png" alt="CEO 이미지" class="ceo">
+      </div>
+      <p>언제까지나, 함께, 건강하게</p>
+      <div class="ceoSign">
+        <span>대표이사 김민영</span>
+        <img src="./images/signx2.png" alt="CEO 서명" width="78" height="41">
+      </div>
+      <div class="ceoText">
+        <p>
+          여러분 안녕하십니까. 대표이사 김민영입니다. 동아ST는 동아제약의
+          지주회사 전환에 따라 출발한 전문의약품(ETC) 전문 기업입니다.
+          동아ST가 나아갈 방향과 핵심은 혁신적 신약개발을 통한 Global
+          Healthcare 기업으로 도약입니다.
+        </p>
+        <p>
+          우수한 신약의 지속적인 개발이 곧 인류의 건강과 행복을 위한 것이며,
+          사회적 책임을 다하는 것이라는 일념으로 세계적 수준의 연구소와 뛰어난
+          역량의 인재를 중심으로 한 최적의 연구 인프라를 운영하고 있습니다.
+        </p>
+        <p>
+          특히, 면역 항암제와 치매 치료제 등 인류의 생명연장과 완치 그리고
+          환자와 그 가족들의 고통을 덜어내기 위한 신약개발을 어려운 길이지만
+          사명감을 가지고 노력해 가고 있습니다. 이를 통해 적극적으로
+          해외시장을 개척하고 수출을 확대하여 세계적 제약기업으로서
+          발전하겠습니다.
+        </p>
+      </div>
+    </div>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+</body>
+
+</html>

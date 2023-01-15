@@ -1,0 +1,344 @@
+/*story css*/
+/* 와이드 pc 1280 이상 */
+/* content 영역 */
+
+
+section {
+    padding: 5rem 0;
+    /* background: rgba(0, 0, 0.8); */
+}
+
+#content .plot {
+    background: rgba(0, 0, 0, .9);
+    width: 90%;
+    margin: 0 5%;
+    padding: 3rem 0;
+}
+
+.plot>li {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+/* .plot .img {
+    width: 50%;
+} */
+
+.plot .img {
+    width: 40%;
+    margin: 2em 5% 0;
+}
+
+/* .plot2 .img {
+    margin-top: 100px;
+} */
+
+.plot .img img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    min-height: 400px;
+    transition: all ease-in-out;
+}
+
+.plot2 .img img {
+    object-position: 30%;
+}
+
+.plot3 .img img {
+    object-position: 80%;
+}
+
+.plot li:hover .img img {
+    filter: drop-shadow(2px 4px 6px) hue-rotate(172deg) saturate(0.5);
+}
+
+
+.plot .text {
+    width: 45%;
+    margin: 0 0 0 5%;
+    position: relative;
+}
+
+.plot .text ul {
+    display: flex;
+    margin-top: 30px;
+}
+
+.plot1 .text ul li {
+    perspective: 1000px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.plot1 .text ul li {
+    margin: 0 5%
+}
+
+.plot2 .text ul li {
+    perspective: 1000px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.plot2 .text ul li:nth-child(2) {
+    margin: 0 10px
+}
+
+.plot .text ul li:hover img {
+    transform: translateZ(50px);
+    border-radius: unset;
+}
+
+.plot .text ul img {
+    transition: all .3s ease-in-out;
+    width: 100%;
+    border-radius: 10% 45% 40% 13% / 39% 20% 20% 28%;
+}
+
+
+.plot .text span {
+    line-height: 1;
+    font-size: 2.2rem;
+    font-family: "Carter One", cursive;
+    width: 120px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: rgb(255 83 2);
+    border-radius: 10% 20%;
+    text-align: center;
+}
+
+.plot2 .text span {
+    left: 0;
+    right: -30px
+}
+
+.plot2 .text {
+    margin: 0 5% 0 0;
+}
+
+.plot .text p {
+    font-weight: 500;
+    line-height: 2em;
+    text-align: justify;
+    width: 90%;
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 12% 8% 55% 5% / 11% 20% 10% 29%;
+}
+
+.plot li:hover p {
+    animation: shake .3s linear alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0)
+    }
+
+    50% {
+        transform: rotateZ(3deg);
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
+
+.plot3 .img {
+    position: relative;
+}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #imgBG {
+        min-width: auto;
+        min-height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -100;
+    }
+
+    #content .mainstory p {
+        width: 70%;
+    }
+
+    .plot .img {
+        margin: 3em 5% 0;
+    }
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+    #content .mainstory p {
+        width: 80%;
+    }
+
+    .plot2 .text {
+        display: grid;
+    }
+
+    .plot2 .text ul {
+        margin-bottom: 30px;
+        grid-row: 2/3;
+    }
+
+    .plot .img {
+        width: 46%;
+        margin: 4em 2% 0;
+    }
+
+    .plot .text span {
+        margin: 0 auto 30px;
+        transform: rotate(351deg);
+    }
+
+    .plot2 .text span {
+        transform: rotate(5deg);
+    }
+
+    .plot .text,
+    .plot2 .text {
+        margin: 0 2.5%;
+    }
+
+    .plot1 .text ul li:first-child {
+        width: auto;
+    }
+
+    .plot1 .text ul li:last-child {
+        display: none;
+    }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content .mainstory p {
+        width: 90%;
+        font-size: 3vw;
+    }
+
+    .plot>li {
+        flex-direction: column;
+    }
+
+    .plot .text p {
+        width: auto;
+    }
+
+    .plot .text {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .plot .img {
+        width: 90%;
+        margin: 2em 5%;
+    }
+
+    .plot2 .img img {
+        display: none;
+    }
+
+    li.plot1,
+    li.plot3 {
+        margin-bottom: 0;
+    }
+
+    .plot .img img {
+        border-radius: 3% 6% 30% 30%;
+    }
+
+    .plot1 .text ul li {
+        width: 45%;
+        margin: 0 2.5%;
+    }
+
+    .plot1 .text ul li:first-child {
+        width: 45%;
+    }
+
+    .plot1 .text ul li:last-child {
+        display: block;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+    #content .mainstory p {
+        font-size: 1.1rem;
+        text-align: justify;
+        width: 95%;
+    }
+
+    #content .plot {
+        width: auto;
+        margin: 0;
+    }
+
+    .plot .plot1,
+    .plot .plot3 {
+        flex-direction: column-reverse;
+    }
+
+    .plot .img {
+        width: auto;
+        margin: 0;
+    }
+
+    .plot .text span {
+        transform: rotate(351deg) translateY(-30px);
+        font-size: 3rem;
+        width: 160px;
+    }
+
+    .plot2 .text ul,
+    .plot1 .text ul {
+        margin-top: 0;
+    }
+
+    .plot .text {
+        z-index: 20;
+    }
+
+    .plot2 .img img {
+        display: block;
+    }
+
+    .plot2 .text ul li:first-child {
+        display: none;
+    }
+
+    .plot2 .text ul li {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .plot .img img {
+        border-radius: 32% 32% 30% 30%;
+    }
+
+    .plot .plot1 {
+        margin-bottom: 70px;
+    }
+
+    .plot .plot1 .text {
+        display: grid
+    }
+
+    .plot .plot1 .text p {
+        grid-row: 3/4;
+        margin-top: 30px;
+    }
+
+
+}

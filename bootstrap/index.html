@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aēsop</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+  <link rel="apple-touch-startup-image" href="./startup.png">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/layout.css">
+
+  <script src="./js/prefixfree.min.js"></script>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+      // ]]>
+  </script>
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example" data-offset="50">
+  <div id="skipNav">
+    <a href="#content">Content Area</a>
+    <a href="#navbar">Global Navigation Area</a>
+  </div>
+
+  <div class="container-fluid">
+    <header id="headerArea">
+      <!-- <h1 class="logo">
+          <a href="./index.html">Aesop logo</a>
+        </h1> -->
+      <h1 class="hidden">Aēsop</h1>
+      <nav class="navbar navbar-default navbar-fixed-top" id="navbar-example">
+        <div class="navbar-header">
+          <!-- responsive nav & change hamburger -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo1.png" alt="Logo" width="80">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy navbar-ex1-collapse">
+          <h2 class="hidden">Global Navigation Area</h2>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#scorllspy1">
+                <h3>About</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#best">
+                <h3>Aēsop's best</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#skincare">
+                <h3>Skincare</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#store">
+                <h3>Store</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main_visual">
+      <div id="carousel-example-generic" class="carousel slide carousel-fade">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="item active" id="c1">
+            <img src="./images/main1.jpg" alt="First slide" class="c1">
+          </div>
+          <div class="item" id="c2">
+            <img src="./images/main2.jpg" alt="Second slide" class="c1">
+          </div>
+          <div class="item" id="c3">
+            <img src="./images/main4.jpg" alt="Third slide" class="c1">
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <!-- <span class="icon-prev"></span> -->
+          <img src="./images/chevron-left.svg" class="control control_left" alt="left">
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <!--  <span class="icon-next"></span> -->
+          <img src="./images/chevron-right.svg" class="control control_right" alt="right">
+        </a>
+      </div>
+    </div>
+
+    <article id="content" class="scrollcontent">
+      <h2 class="hidden">Contents Area</h2>
+      <section class="about" id="about">
+        <h3 class="text-center" id="scorllspy1">About</h3>
+        <p class="text-center summary">
+          Aēsop is an Australian luxury cosmetics brand
+        </p>
+        <ul class="list-unstyled clearfix">
+          <li class="col-lg-12 col-sm-6 col-xs-12">
+            <div class="row">
+              <div class="aboutImg col-lg-6 col-sm-12">
+                <img src="./images/about1.jpg" alt="about image1">
+              </div>
+              <div class="row col-lg-6 col-sm-12" id="value">
+                <h4>Value of Aēsop</h4>
+                <!-- <p class="text-left">
+                    We offer skin, hair and body care formulations created with
+                    meticulous attention to detail, and with efficacy and
+                    sensory pleasure in mind.
+                  </p> -->
+                <!-- <strong>
+                      Aesop was established in 1987. We are headquartered in
+                      Melbourne, and have offices and stores in many parts of the
+                      world.
+                    </strong> -->
+                <p>
+                  Aēsop was established in 1987. We are headquartered in
+                  Melbourne, and have offices and stores in many parts of the
+                  world. Our objective has always been to formulate skin, hair
+                  and body care products of the finest quality; we investigate
+                  widely to source plant-based and laboratory-made
+                  ingredients, and use only those with a proven record of
+                  safety and efficacy.
+                </p>
+                <!-- <p>In each of our unique stores, informed
+                    consultants are pleased to introduce the Aesop range and to
+                    guide your selections.</p> -->
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-12 col-sm-6 col-xs-12">
+            <div class="row">
+              <div class="aboutImg col-lg-6 col-lg-push-6 col-sm-12">
+                <img src="./images/about2.jpg" alt="about image2">
+              </div>
+              <div class="col-lg-6 col-lg-pull-6 col-sm-12" id="design">
+                <h4>Design of Aēsop</h4>
+                <!-- <strong>
+                    We believe well-considered design improves our lives.
+                  </strong> -->
+                <p>
+                  We believe well-considered design improves our lives. A
+                  sincere interest in intelligent and sustainable design
+                  extends to every aspect of Aēsop’s workings. Just as
+                  meticulous research is integral to the formulation of each
+                  product, our utilitarian containers are created with utmost
+                  care to ensure they function with ease and are pleasing to
+                  our eyes.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="aboutImg col-lg-6 col-sm-12">
+                <img src="./images/about4.jpg" alt="about image3">
+              </div>
+              <div class="row col-lg-6 col-sm-12" id="product">
+                <h4>Product of Aēsop</h4>
+                <p>
+                  Since Aēsop’s inception, we have maintained a fiercely independent approach to product research and
+                  development. Our team of skilled chemical scientists works out of our Head Office in a utilitarian,
+                  custom-built laboratory - conceptualising product ideas, researching blends, and creating prototypes.
+                  We source ingredients from the most reputable suppliers across the globe, then marry contemporary
+                  technology with long-established scientific practices.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="best clearfix" id="best">
+        <h3 class="text-center">Aēsop's best</h3>
+        <p class="text-center summary">
+          These are Aēsop's best of best products!
+        </p>
+        <!-- Swiper -->
+        <div class="bestSeller">
+          <div class="swiper-container text-center">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#myModal" data-toggle="modal">
+                  <img src="./images/best1_1.png" alt="parcely seed serum">
+                  <p>
+                    Parsley Seed Anti-Oxidant<br>
+                    Intense Serum
+                  </p>
+                  <strong>$119.00/60ml</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal1" data-toggle="modal">
+                  <img src="./images/best2_1.png" alt="teatree leaf facial exfoliant">
+                  <p>
+                    Tea Tree Leaf
+                    <br>
+                    Facial Exfoliant
+                  </p>
+                  <strong>$40.00/30g</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal2" data-toggle="modal">
+                  <img src="./images/best3_1.png" alt="moisture facial hydrosol">
+                  <p>
+                    Immediate Moisture<br>
+                    Facial Hydrosol
+                  </p>
+                  <strong>$31.00/50ml</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal3" data-toggle="modal">
+                  <img src="./images/best4_1.png" alt="parcely seed toner">
+                  <p>
+                    Parsley Seed Anti-Oxidant<br>
+                    Facial Toner
+                  </p>
+                  <strong>$53.00/100ml</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal4" data-toggle="modal">
+                  <img src="./images/best5_1.png" alt="rejuvenate intensive body-balm">
+                  <p>Rejuvenate Intensive<br>Body Balm</p>
+                  <strong>$45.00/100ml</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal5" data-toggle="modal">
+                  <img src="./images/best6_1.png" alt="rind concentrate body-balm">
+                  <p>Rind Concentrate<br>Body Balm</p>
+                  <strong>$45.00/100ml</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal6" data-toggle="modal">
+                  <img src="./images/best7_1.png" alt="geraninum leaf body-balm">
+                  <p>Geranium Leaf <br>Body Balm</p>
+                  <strong>$45.00/100ml</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal7" data-toggle="modal">
+                  <img src="./images/best8_1.png" alt="resolute hydrating body-balm">
+                  <p>Resolute Hydrating<br>Body Balm</p>
+                  <strong>$45.00/100ml</strong>
+                </a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+                <strong class="modal-title" id="myModalLabel">Parsley Seed Anti-Oxidant Intense Serum </strong>
+              </div>
+              <div class="modal-body clearfix">
+                <div class="modalImg col-lg-6 col-md-5">
+                  <img src="./images/best1_1.png" alt="product1">
+                </div>
+                <dl class="col-lg-6 col-md-7">
+                  <dt>Suited to</dt>
+                  <dd>Most skin types, including sensitive</dd>
+
+                  <dt>Skin feel</dt>
+                  <dd>Hydrated and smooth with a matte finish</dd>
+
+                  <dt>Key ingredients</dt>
+                  <dd>Parsley Seed, Tocopherol, Red Algae</dd>
+                </dl>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+            </div> <!-- 모달 콘텐츠 -->
+          </div> <!-- 모달 다이얼로그 -->
+        </div> <!-- 모달 전체 윈도우 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+                <strong class="modal-title" id="myModalLabel1">Tea Tree Leaf Facial Exfoliant</strong>
+              </div>
+              <div class="modal-body clearfix">
+                <div class="modalImg col-lg-6 col-md-5">
+                  <img src="./images/best2_1.png" alt="product1">
+                </div>
+                <dl class="col-lg-6 col-md-7">
+                  <dt>Suited to</dt>
+                  <dd>Normal, combination and oily skin</dd>
+
+                  <dt>Skin feel</dt>
+                  <dd>Polished, refreshed and thoroughly cleansed</dd>
+
+                  <dt>Key ingredients</dt>
+                  <dd>Aloe Vera, Walnut Shell, Tea Tree Leaf</dd>
+                </dl>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+            </div> <!-- 모달 콘텐츠 -->
+          </div> <!-- 모달 다이얼로그 -->
+        </div> <!-- 모달 전체 윈도우 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+                <strong class="modal-title" id="myModalLabel2">Immediate Moisture Facial Hydrosol</strong>
+              </div>
+              <div class="modal-body clearfix">
+                <div class="modalImg col-lg-6 col-md-5">
+                  <img src="./images/best3_1.png" alt="product1">
+                </div>
+                <dl class="col-lg-6 col-md-7">
+                  <dt>Suited to</dt>
+                  <dd>All skin types, frequent travellers and office workers</dd>
+
+                  <dt>Skin feel</dt>
+                  <dd>Refreshing mist format, imparting hydration with a light finish</dd>
+
+                  <dt>Key ingredients</dt>
+                  <dd>vRose Petal, Bergamot Peel, Chamomile Bud</dd>
+                </dl>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+            </div> <!-- 모달 콘텐츠 -->
+          </div> <!-- 모달 다이얼로그 -->
+        </div> <!-- 모달 전체 윈도우 -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+                <strong class="modal-title" id="myModalLabel3">Parsley Seed Anti-Oxidant Facial Toner</strong>
+              </div>
+              <div class="modal-body clearfix">
+                <div class="modalImg col-lg-6 col-md-5">
+                  <img src="./images/best4_1.png" alt="product1">
+                </div>
+                <dl class="col-lg-6 col-md-7">
+                  <dt>Suited to</dt>
+                  <dd>Most skin types, including dry and mildly sensitive</dd>
+
+                  <dt>Skin feel</dt>
+                  <dd>Calm, soft and hydrated with a light finish</dd>
+
+                  <dt>Key ingredients</dt>
+                  <dd>Parsley Seed, Lavender Stem, Blue Chamomile</dd>
+                </dl>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+            </div> <!-- 모달 콘텐츠 -->
+          </div> <!-- 모달 다이얼로그 -->
+        </div> <!-- 모달 전체 윈도우 -->
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+                <strong class="modal-title" id="myModalLabel4">Rejuvenate Intensive Body Balm</strong>
+              </div>
+              <div class="modal-body clearfix">
+                <div class="modalImg col-lg-6 col-md-5">
+                  <img src="./images/best5_1.png" alt="product1">
+                </div>
+                <dl class="col-lg-6 col-md-7">
+                  <dt>Skin feel</dt>
+                  <dd>Intensely hydrated, nourished</dd>
+
+                  <dt>Aroma</dt>
+                  <dd>Citrus, vanilla, woody</dd>
+
+                  <dt>Key ingredients</dt>
+                  <dd>Tangerine Rind, Vanille, Sandalwood</dd>
+                </dl>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+            </div> <!-- 모달 콘텐츠 -->
+          </div> <!-- 모달 다이얼로그 -->
+        </div> <!-- 모달 전체 윈도우 -->
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+                <strong class="modal-title" id="myModalLabel5">Rind Concentrate Body Balm</strong>
+              </div>
+              <div class="modal-body clearfix">
+                <div class="modalImg col-lg-6 col-md-5">
+                  <img src="./images/best6_1.png" alt="product1">
+                </div>
+                <dl class="col-lg-6 col-md-7">
+                  <dt>Skin feel</dt>
+                  <dd>Swiftly absorbed, lightly hydrated</dd>
+
+                  <dt>Aroma</dt>
+                  <dd>Citrus, fresh</dd>
+
+                  <dt>Key ingredients</dt>
+                  <dd>Pink Grapefruit, Orange Rind, Lemon Rind</dd>
+                </dl>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+            </div> <!-- 모달 콘텐츠 -->
+          </div> <!-- 모달 다이얼로그 -->
+        </div> <!-- 모달 전체 윈도우 -->
+        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+                <strong class="modal-title" id="myModalLabel6">Geranium Leaf Body Balm</strong>
+              </div>
+              <div class="modal-body clearfix">
+                <div class="modalImg col-lg-6 col-md-5">
+                  <img src="./images/best7_1.png" alt="product1">
+                </div>
+                <dl class="col-lg-6 col-md-7">
+                  <dt>Suited to</dt>
+                  <dd>Supple, soft, hydrated</dd>
+
+                  <dt>Skin feel</dt>
+                  <dd>Green, citrus, fresh</dd>
+
+                  <dt>Key ingredients</dt>
+                  <dd>Geranium Leaf, Mandarin Rind, Bergamot Rind</dd>
+                </dl>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+            </div> <!-- 모달 콘텐츠 -->
+          </div> <!-- 모달 다이얼로그 -->
+        </div> <!-- 모달 전체 윈도우 -->
+        <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                    class="sr-only">Close</span></button>
+                <strong class="modal-title" id="myModalLabel7">Resolute Hydrating Body Balm</strong>
+              </div>
+              <div class="modal-body clearfix">
+                <div class="modalImg col-lg-6 col-md-5">
+                  <img src="./images/best8_1.png" alt="product1">
+                </div>
+                <dl class="col-lg-6 col-md-7">
+                  <dt>Suited to</dt>
+                  <dd>Revived, smooth, supple</dd>
+
+                  <dt>Skin feel</dt>
+                  <dd>Spicy, woody, warm</dd>
+
+                  <dt>Key ingredients</dt>
+                  <dd>Black Pepper, Beta-Carotene, Patchouli</dd>
+                </dl>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+            </div> <!-- 모달 콘텐츠 -->
+          </div> <!-- 모달 다이얼로그 -->
+        </div> <!-- 모달 전체 윈도우 -->
+
+
+      </section>
+
+
+      <section class="skincare clearfix" id="skincare">
+        <h3 class="text-center">Skincare</h3>
+        <p class="summary text-center">How to curate a skin care regimen</p>
+        <div class="container col-lg-10 col-lg-offset-1">
+          <div class="row col-lg-6 col-md-12">
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <strong class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      #1 Cleanse: daily
+                    </a>
+                  </strong>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <p>
+                      Cleansing our skin both morning and night is an act that
+                      will help it to perform at its best. The value of
+                      selecting a facial cleanser suited to your skin type and
+                      environment cannot be overstated. While removing
+                      sunscreen, makeup, excess sebum and any deposits
+                      collected on the face during the day, cleansing achieves
+                      the additional task of leaving the skin prepared for
+                      toning, hydration and any supplementary treatments you
+                      may wish to use.
+                    </p>
+                    <span class="hidden-xs">How to cleanse</span>
+                    <p class="hidden-xs">
+                      Generously dispense and spread your chosen cleanser into
+                      open palms, taking a moment to enjoy its texture, colour
+                      and aroma. Bring your hands to your face, and take a
+                      slow, deep breath as you lather. Massage the cleanser
+                      over your cheeks, forehead, temples, nose, chin, neck
+                      and upper chest. Rinse thoroughly with warm water,
+                      avoiding the use of hot water which may lead to dryness
+                      or heightened skin sensitivity. How to cleanse the skin
+                      is a thorough and comprehensive guide that illuminates
+                      this process in further detail.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <strong class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      #2 Tone: daily
+                    </a>
+                  </strong>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Toning can be thought of as the bridge between cleansing
+                      and hydrating and an opportunity to impart an additional
+                      layer of hydration, or confer other skin-supportive
+                      benefits. Depending on the toner selected and mode of
+                      use, toning can help to complete the cleansing process.
+                      Toning can also balance and refresh the skin, even its
+                      appearance, and ready it for hydration to follow. Just
+                      as it is important to select the right cleanser for your
+                      skin type, so it is invaluable to choose the right
+                      toner.
+                    </p>
+                    <span class="hidden-xs">How to tone</span>
+                    <p class="hidden-xs">
+                      Using toner is a practise that takes but a moment. After
+                      cleansing, apply your toner to a cotton pad and swipe
+                      across your face, neck and upper chest. Alternatively,
+                      shake a small pool of it into clean hands and pat onto
+                      the skin. Revel in the refreshing sensation. Your skin
+                      is now perfectly primed for hydration.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <strong class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      #3 Hydrate: daily
+                    </a>
+                  </strong>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Applying a hydrator to your skin—twice every day—can
+                      help to maintain or boost its moisture. It is ideal to
+                      identify the right hydrator for your skin type, and
+                      reassess it regularly. This will reduce the impact of
+                      ever-changing environmental factors such as climate and
+                      air quality, and ensure your skin enjoys optimal
+                      hydration through each season. It is also important to
+                      take your own preferences for texture and skin-feel into
+                      account when selecting a hydrating product.
+                    </p>
+                    <span class="hidden-xs">How to hydrate</span>
+                    <p class="hidden-xs">
+                      Depending on the particular qualities of your chosen
+                      hydrator, the recommended method of application may
+                      vary. Follow the directions on the label to use the
+                      product to optimal effect, and revel in its texture and
+                      aroma.
+                    </p>
+                    <!-- <span>Sun care</span>
+                    <p>
+                      The daily application of a sunscreen is pivotal for
+                      protecting the skin from UVA and UVB rays, and
+                      sustaining healthy, supple skin. Aesop hydrating
+                      products containing UV filters have the double benefit
+                      of protecting the skin from the adverse effects of sun
+                      exposure while delivering hydration and skin-softening
+                      nourishment.
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row col-lg-6 col-md-12">
+            <div class="careImg">
+              <img src="./images/skin1.jpg" alt="skincare img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="store" id="store">
+        <h3 class="text-center">Store</h3>
+        <div class="container-fluid">
+          <ul class="nav nav-pills col-sm-12 col-xs-3">
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="#home" data-toggle="tab">HanNam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tab1" data-toggle="tab">Parnas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tab2" data-toggle="tab">Garosugil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tab3" data-toggle="tab">Seongsu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tab4" data-toggle="tab">Busan</a>
+            </li>
+          </ul>
+
+          <div class="tab-content clearfix col-sm-12 col-xs-9">
+            <div class="tab-pane fade in active" id="home">
+              <div class="row col-lg-7 col-sm-12">
+                <div class="storeImg">
+                  <img src="./images/store1.jpg" alt="Sounds HanNam store">
+                </div>
+              </div>
+              <div class="row col-lg-5 col-sm-12">
+                <div class="col-lg-12 col-md-6">
+                  <span>Sounds HanNam</span>
+                  <strong class="visible-lg visible-md visible-sm hidden-xs">Hewn from brick,<br>
+                    formally inspired by local tradition</strong>
+                </div>
+                <p class="col-lg-12 col-lg-offset-0 col-md-offset-6">
+                  Aēsop’s ninth Seoul signature store is located in cosmopolitan Hannam, an eclectic neighbourhood of
+                  hilly streets and narrow alleys. Designed in collaboration with Mlkk, the space is also home to the
+                  company’s first custom-built Facial Treatment room in Korea. Viewed from the street, Aēsop Hannam
+                  Sounds is redolent of a cloister; an inviting space that retains a sense of the mysterious, its
+                  windows offering a glimpse of the warmth inside.
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab1">
+              <div class="row col-lg-7 col-sm-12">
+                <div class="storeImg">
+                  <img src="./images/store3.jpg" alt="Parnas Mall store">
+                </div>
+              </div>
+              <div class="row col-lg-5 col-sm-12">
+                <div class="col-lg-12 col-md-6">
+                  <span>Parnas Mall</span>
+                  <strong class="visible-lg visible-md visible-sm hidden-xs">
+                    One wall is occupied by<br> an intriguing armoire
+                    <!-- which reveals an inner world of sights, -->
+                  </strong>
+                </div>
+                <p class="col-lg-12 col-lg-offset-0 col-md-offset-6">
+                  Our second incarnation in Seoul’s Parnas Mall recreates a quasi-domestic setting within the elegant
+                  shopping centre, transporting visitors into a serene environment. On the side of the main façade, the
+                  store is sheltered from the ambient bustle by a semi-opaque curtain and a vestibule where visitors can
+                  wash their hands and start to experience our distinctive aromas, preparing body and mind to transition
+                  into an altogether different atmosphere.
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab2">
+              <div class="row col-lg-7 col-sm-12">
+                <div class="storeImg">
+                  <img src="./images/store2.jpg" alt="Garosugil store">
+                </div>
+              </div>
+              <div class="row col-lg-5 col-sm-12">
+                <div class="col-lg-12 col-md-6">
+                  <span>Garosugil Mall</span>
+                  <strong class="visible-lg visible-md visible-sm hidden-xs">Five prominent, rectilinear apertures<br>
+                    with tinted glazing arrange themselves
+                    abstractly</strong>
+                </div>
+                <p class="col-lg-12 col-lg-offset-0 col-md-offset-6">
+                  Our second iteration in Garosu-gil is located at the heart of the effervescent Seoul neighbourhood.
+                  Designed with MLKK, the store draws on the area’s overlooked elements—sun, sky, ginkgo trees, and
+                  tranquillity—to provide an alternative perspective of the street across two floors and a roof garden.
+                  Blackened steel on the façade recalls the store’s first iteration down the road, while grey,
+                  lime-based render gives rich textural variation.
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab3">
+              <div class="row col-lg-7 col-sm-12">
+                <div class="storeImg">
+                  <img src="./images/store4.jpg" alt="Seongsu store">
+                </div>
+              </div>
+              <div class="row col-lg-5 col-sm-12">
+                <div class="col-lg-12 col-md-6">
+                  <span>Seongsu Mall</span>
+                  <strong class="visible-lg visible-md visible-sm hidden-xs">
+                    Breathing new life<br>
+                    into storied forms and salvaged materials
+                  </strong>
+                </div>
+                <p class="col-lg-12 col-lg-offset-0 col-md-offset-6">
+                  Our new store in Seoul’s vibrant district of Seongsu-dong takes inspiration from South Korea’s
+                  traditional vernacular, prioritising sustainable construction practices and forming a comfortable,
+                  pared-back environment. Aēsop Seongsu is rooted in history, inherited savoir-faire and time-honoured
+                  architectural systems.
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab4">
+              <div class="row col-lg-7 col-sm-12">
+                <div class="storeImg">
+                  <img src="./images/store5.jpg" alt="Busan Mall store">
+                </div>
+              </div>
+              <div class="row col-lg-5 col-sm-12">
+                <div class="col-lg-12 col-md-6">
+                  <span>Busan Mall</span>
+                  <strong class="visible-lg visible-md visible-sm hidden-xs">
+                    Inspired by reuse</strong>
+                </div>
+                <p class="col-lg-12 col-lg-offset-0 col-md-offset-6">
+                  Located in the Haeundae-gu district of South Korea’s ‘summer capital’, also known for its
+                  proliferation of art and design, Aēsop Busan pays tribute to elements of the urban landscape that
+                  often go unnoticed. Our in-house design team approached the space with temperance: independent joinery
+                  was installed while the raw interior shell was preserved. The store is neighbour to a book shop—this
+                  connection is honoured with a translucent resin partition that provides an ethereal dual vista and
+                  shared access.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="fixedImg">
+      </div> -->
+    </article>
+    <footer id="footerArea" class="text-center">
+      <div class="logo">
+        <img src="./images/logo2.png" alt="aesop logo">
+      </div>
+      <address>
+        <!-- CEO at Aesop: Michael O'Keeffe<br> -->
+        <!-- Head Office: 25 Smith St, Fitzroy VIC 3065, Australia.<br> -->
+        25 Smith St, Fitzroy VIC 3065, Australia.
+      </address>
+      <div class="copy">
+        <p>Copyright © Aēsop®. All Rights Reserved.</p>
+      </div>
+      <div class="top" style="display: block;">
+        <a href="#top">top</a>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/index.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    $(".carousel").carousel();
+    $('body').scrollspy({ target: '#navbar-example' })
+
+    //Initialize Swiper
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: "1",
+      // spaceBetween: 20,
+      // slidesPerGroup: 1,
+      grabCursor: true,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+
+          spaceBetween: 20,
+        },
+
+        1024: {
+          slidesPerView: 3,
+
+          spaceBetween: 40,
+        },
+
+        1200: {
+          slidesPerView: 4,
+
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+/* 연구성과 본문영역 */
+
+#content .contentArea>p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.contentArea .topMain {
+  margin: 0 auto;
+}
+
+.topMain>span {
+  display: block;
+  width: 180px;
+  padding: 5px 10px;
+  background: #1f415c;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+#content .contentArea .topText {
+  line-height: 1.8em;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 50px;
+}
+
+#content .contentArea section {
+  margin-bottom: 100px;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 70px 0 60px;
+  text-align: center;
+}
+
+#content .contentArea section h4 {
+  margin: 70px 0 60px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* #content .contentArea section h4 + span {
+  font-size: 20px;
+} */
+
+#content .contentArea .sec01 ul span {
+  font-size: 90px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #999;
+  opacity: 0.7;
+}
+
+#content .contentArea .sec01>ul li:hover span {
+  color: #01abce;
+}
+
+#content .contentArea .sec01 ul {
+  margin-bottom: 40px;
+}
+
+#content .contentArea .sec01 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .sec01 ul li {
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+
+#content .contentArea .sec01 span+ul {
+  margin-top: 15px;
+}
+
+#content .contentArea .sec01 span+ul>li {
+  line-height: 2em;
+}
+
+.contentArea .sec02 {
+  margin-bottom: 80px;
+}
+
+.contentArea .sec02 div {
+  overflow: hidden;
+}
+
+.contentArea .sec02 div img {
+  transition: all 0.5s ease;
+}
+
+.contentArea .sec02 div:hover img {
+  transform: scale(1.05);
+}
+
+.contentArea .sec02 table {
+  clear: both;
+  width: 1200px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-top: 2px solid #999;
+}
+
+.contentArea .sec02 table tr {
+  height: 80px;
+}
+
+.contentArea .sec02 table thead tr {
+  background: #f8f8f8;
+  font-size: 1.125em;
+}
+
+.contentArea .sec02 table th,
+.contentArea .sec02 table td {
+  width: 20%;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.contentArea .sec02 thead th[scope="col"],
+tbody th[scope="col"] {
+  background: #f8f8f8;
+}
+
+.contentArea .sec02 tbody th[scope="col"] {
+  text-align: left;
+  padding-left: 58px;
+  font-size: 1.125em;
+  color: #01abce;
+  font-weight: 500;
+}

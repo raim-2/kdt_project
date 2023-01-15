@@ -1,0 +1,205 @@
+/* 복리후생 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#content .contentArea p + ul li .current {
+  background: #01abce;
+  color: #fff;
+}
+
+#content .contentArea .sec01 ul::after,
+#content .contentArea .sec02 ul::after,
+#content .contentArea .topMain::after,
+.sec02 ul li dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea section {
+  margin: 100px 0;
+  clear: both;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.sec01 ul {
+  width: 1080px;
+  margin: 0 auto 180px;
+}
+
+.sec01 ul > li {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 10px;
+  color: #fff;
+  background: #1f415c;
+  float: left;
+  text-align: center;
+  padding: 70px 0;
+  box-sizing: border-box;
+}
+
+.sec01 ul > li:hover {
+  box-shadow: 0px 12px 17px 1px rgb(0 0 0 / 10%);
+}
+
+.sec01 ul > li::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 50px;
+  opacity: 0.5;
+  background: url(../images/content2/arrow.png) 0 -46px no-repeat;
+  position: relative;
+  left: 115px;
+  bottom: -75px;
+  transition: all 0.7s;
+}
+
+.sec01 ul:hover > li::after {
+  background: url(../images/content2/arrow.png) 0 0 no-repeat;
+}
+
+.sec01 ul > li:first-of-type {
+  background: #f8f8f8;
+  color: #333;
+}
+
+.sec01 ul > li:nth-of-type(2) {
+  background: #999999;
+}
+
+.sec01 ul > li:nth-of-type(3) {
+  background: #01abce;
+}
+
+.sec01 ul > li span {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  display: block;
+}
+
+.sec01 ul > li span + p {
+  line-height: 1.6em;
+  word-spacing: -2px;
+}
+
+.sec01 ul p:last-child {
+  position: relative;
+  left: 0;
+  top: 160px;
+  color: #333;
+}
+
+.sec01 ul > li:hover p:last-child {
+  color: #01abce;
+}
+
+.sec01 ul + p span,
+.sec02 > ul + p span {
+  color: #01abce;
+}
+
+.sec02 > ul > li {
+  float: left;
+  width: 250px;
+  text-align: center;
+  margin: 0 25px;
+  position: relative;
+}
+
+.sec02 > ul > li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  right: -25px;
+  top: 0;
+}
+
+.sec02 > ul > li:last-of-type:after {
+  opacity: 0;
+}
+
+.sec02 dl dt {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: #1f415c;
+}
+
+.sec02 li dl dt::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 85px;
+  top: 0;
+  width: 85px;
+  height: 77px;
+  margin-top: 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.sec02 li:first-of-type dl dt::after {
+  background: url(../images/content1/conicon1.png);
+}
+
+.sec02 li:nth-of-type(2) dl dt::after {
+  background: url(../images/content1/conicon2.png);
+}
+
+.sec02 li:nth-of-type(3) dl dt::after {
+  background: url(../images/content1/conicon3.png);
+}
+
+.sec02 li:last-of-type dt::after {
+  background: url(../images/content1/conicon4.png);
+}
+
+.sec02 > ul > li:hover dt::after {
+  background-position: right center;
+}
+
+.sec02 dl dd ul > li {
+  margin: 10px 0;
+  background: #f8f8f8;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.sec02 dl dd ul > li:hover {
+  background: #1f415c;
+  color: #fff;
+}
+
+.sec01 p {
+  clear: both;
+}
+
+.sec02 p,
+.sec01 ul + p {
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 2em;
+  word-break: keep-all;
+  font-size: 18px;
+  background: #f8f8f8;
+  padding: 50px 310px;
+  margin-top: 80px;
+}

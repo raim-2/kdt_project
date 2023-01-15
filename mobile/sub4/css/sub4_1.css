@@ -1,0 +1,143 @@
+/* faq css */
+
+#content .contentlist {
+  margin: 55px 0;
+}
+
+#faq .faqTop {
+  margin: 0 7%;
+  position: relative;
+}
+
+#faq .faqTop::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#faq h3 {
+  font-weight: 600;
+  float: left;
+  font-size: 1.714em;
+}
+
+a.all {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-align: center;
+  background: rgba(1, 171, 206, 0.8);
+  float: right;
+}
+
+.faq {
+  border-top: 2px solid #1f415c;
+  border-bottom: 1px solid #ccc;
+  margin: 30px 5% 0;
+  position: relative;
+}
+
+.faq .q {
+  border-top: 1px solid #ccc;
+  position: relative;
+}
+
+.faq li:first-child .q {
+  border: none;
+}
+
+.faq .q a.trigger {
+  display: block;
+  padding: 25px 0 25px 15%;
+  color: #333;
+  text-align: left;
+  text-decoration: none;
+}
+
+.faq .q a.trigger::before,
+.faq .a::before {
+  display: block;
+  position: absolute;
+  left: 5%;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.faq .q a.trigger::before {
+  content: "Q";
+  top: 23px;
+  color: #01abce;
+}
+
+.faq .a::before {
+  content: "A";
+  color: #1f415c;
+}
+
+.faq .q a.trigger:focus {
+  color: #01abce;
+}
+
+.faq .hide .q a.trigger {
+  font-weight: normal;
+  background: none;
+}
+
+.faq .q a.trigger span {
+  display: block;
+  position: absolute;
+  right: 6%;
+  top: 22px;
+  font-size: 1.125em;
+}
+
+.faq .a {
+  padding: 25px 5% 25px 15%;
+  background: #f8f8f8;
+  display: none;
+  word-break: keep-all;
+}
+
+.faq li:nth-of-type(2) .a {
+  line-height: 1.7em;
+}
+
+.faqBox {
+  background: #1f415c;
+  color: #fff;
+  width: 90%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 5% 55px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.faqBox div {
+  float: left;
+}
+
+.faqBox div span {
+  font-size: 1.429em;
+  font-weight: 500;
+}
+
+.faqBox > span a {
+  display: block;
+  padding: 12px 30px;
+}
+
+.faqBox div p {
+  margin-top: 10px;
+}
+
+.faqBox div + span {
+  display: block;
+  float: right;
+  margin-top: 30px;
+  border-radius: 20px;
+  background: #fff;
+}

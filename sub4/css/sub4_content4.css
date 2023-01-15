@@ -1,0 +1,265 @@
+/* 소비자중심 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+#content .contentArea .topText {
+  line-height: 2em;
+  font-size: 22px;
+}
+
+#content .contentArea .sec01 .value > div::after,
+#content .contentArea .sec01 .part ul::after,
+.sec01 .ccm::after,
+.sec01 .mark ul::after,
+.sec01 .mark ul li::after,
+.sec01 .process ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .topMain {
+  margin-top: 50px;
+}
+
+#content .contentArea .topMain img {
+  margin-left: -1000px;
+  position: relative;
+  left: 50%;
+  margin-bottom: 80px;
+}
+
+#content .contentArea .topMain img + p {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2em;
+  margin-bottom: 20px;
+}
+
+#content .contentArea .topMain p:last-child {
+  font-size: 18px;
+  line-height: 2em;
+  width: 650px;
+  text-align: left;
+  word-break: keep-all;
+}
+
+#content .contentArea section {
+  margin: 100px 0;
+}
+
+#content .contentArea section p,
+#content .contentArea section .value {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+#content .contentArea .sec01 {
+  background: #f8f8f8;
+  /* padding-top: 50px; */
+  padding: 90px 30px;
+}
+
+.sec01 .ccm,
+.sec01 .mark,
+.sec01 .process {
+  margin: 0 auto;
+  width: 980px;
+}
+
+#content .contentArea .sec01 .ccm::after {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  position: relative;
+  left: 0;
+  top: 45px;
+}
+
+#content .contentArea .sec01 .ccm p:first-child {
+  float: left;
+  width: 300px;
+  font-size: 22px;
+  line-height: 2em;
+}
+
+.sec01 .ccm p:first-child span {
+  color: #01abce;
+}
+
+#content .contentArea .sec01 .ccm p:last-child {
+  float: left;
+  width: 680px;
+  font-size: 18px;
+  line-height: 2em;
+  word-break: keep-all;
+}
+
+.sec01 .ccm p:last-child span {
+  display: block;
+  font-size: 16px;
+  line-height: 2.6;
+  color: #666;
+}
+
+.sec01 .mark > span {
+  display: block;
+}
+
+#content .contentArea section h4,
+.sec01 .mark > span {
+  margin: 120px 0 80px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sec01 .process ul li ul::after,
+.four::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #01abce;
+  position: absolute;
+  border-radius: 50%;
+  left: 91px;
+  top: 110px;
+}
+
+/*  */
+
+.sec01 .mark ul li {
+  float: left;
+  width: 470px;
+  margin-left: 20px;
+}
+
+.sec01 .mark ul li img {
+  float: left;
+  width: 160px;
+}
+
+.sec01 .mark ul li .right {
+  float: left;
+  width: 230px;
+  margin: 90px 0 0 40px;
+}
+
+#content .contentArea .sec01 .mark .right p:first-child {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.sec01 .process {
+  clear: both;
+  margin-bottom: 150px;
+}
+
+.sec01 .process h4 + ul {
+  position: relative;
+}
+
+.sec01 .process h4 + ul::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: #01abce;
+  position: relative;
+  top: 80px;
+}
+
+.sec01 .process h4 + ul > li {
+  float: left;
+  width: 190px;
+  text-align: center;
+  word-spacing: -2px;
+  line-height: 1.8em;
+  position: relative;
+}
+
+#content .contentArea .sec01 .process h4 + ul .four {
+  width: 190px;
+}
+
+.sec01 .process h4 + ul > li span {
+  margin-top: 30px;
+  width: 190px;
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  color: #01abce;
+  position: absolute;
+  top: 140px;
+}
+
+.sec01 .process h4 + ul > li span::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: #01abce;
+  position: relative;
+  top: -50px;
+  left: 95px;
+}
+
+#content .contentArea .sec02 {
+}
+
+/* #content .contentArea .sec02 h4 {
+  text-align: center;
+  margin: 70px 0 60px 0;
+} */
+
+#content .contentArea .sec02 div {
+  margin-top: 60px;
+}
+
+div .sec02 dl {
+  clear: both;
+  margin: 20px 0 50px;
+  overflow: hidden;
+}
+
+div .sec02 dl::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin-bottom: 50px;
+}
+
+.sec02 dt {
+  float: left;
+  width: 400px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 50px;
+}
+
+.sec02 dt span {
+  color: #01abce;
+  margin-right: 30px;
+}
+
+.sec02 dd {
+  font-size: 18px;
+  float: left;
+  width: 700px;
+  line-height: 2em;
+  text-align: justify;
+  word-break: keep-all;
+}

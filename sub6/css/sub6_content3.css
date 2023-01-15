@@ -1,0 +1,278 @@
+/* 문의하기 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#content .contentArea section {
+  margin-bottom: 100px;
+}
+
+#content .contentArea section h3 {
+  font-size: 1.875em;
+  font-weight: 600;
+  margin-bottom: 70px;
+  /* text-align: center; */
+}
+
+#content .contentArea .sec01 h3 {
+  margin-bottom: 80px;
+}
+
+.contentArea .summary > p {
+  width: 2000px;
+  left: 50%;
+  font-size: 1.5em;
+  margin-left: -1000px;
+  background: #1f415c;
+  color: #fff;
+  padding: 60px 450px 160px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.contentArea .summary > p::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 400px;
+  top: 70px;
+}
+
+.summary ul {
+  position: relative;
+  left: 0;
+  top: -100px;
+}
+
+.contentArea .summary ul::after,
+.contentArea .summary ul li::after,
+.sec01 .process::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.summary ul li > span {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #1f415c;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 25px 25px;
+  margin: 25px 50px 0 0;
+}
+
+.summary ul li > span i {
+  font-size: 50px;
+}
+
+.summary ul li div {
+  float: left;
+}
+
+.contentArea .summary ul li {
+  float: left;
+  width: 580px;
+  border: 1px solid #ccc;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.contentArea .summary ul li:first-child {
+  margin-right: 40px;
+}
+
+.summary ul li div > span {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.summary ul li div span + p {
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+  color: #1f415c;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.summary ul li div span + p > span {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: initial;
+  margin-right: 10px;
+}
+
+.summary ul li div p {
+  text-align: justify;
+  line-height: 1.7em;
+}
+
+.sec01 .process {
+  margin: 30px 0 70px;
+}
+
+.sec01 .process li {
+  float: left;
+  text-align: center;
+  width: 230px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 60px 0;
+  position: relative;
+  margin-right: 12px;
+}
+
+.sec01 .process li:last-of-type {
+  margin-right: 0;
+}
+
+.sec01 .process dl {
+  position: relative;
+}
+
+.sec01 .process dl dt {
+  background: #1f415c;
+  padding: 5px;
+  border-radius: 30px;
+  width: 100px;
+  position: absolute;
+  left: 60px;
+  top: -75px;
+  color: #fff;
+}
+
+.sec01 .process li dl dd {
+  font-size: 1.125em;
+}
+
+.sec02 {
+  clear: both;
+}
+
+.sec02 h3 {
+  float: left;
+}
+
+.sec02 ul {
+  font-size: 1.125rem;
+  width: 1000px;
+  float: right;
+}
+
+ul.ask input {
+  padding: 15px 110px 15px 20px;
+}
+
+select#type {
+  padding: 15px 150px 15px 20px;
+}
+
+ul.ask input,
+select#type,
+textarea#message {
+  font-size: 1em;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul.ask li:first-child {
+  float: left;
+  width: 50%;
+}
+
+ul.ask li:nth-child(2) {
+  float: right;
+}
+
+ul.ask li:nth-child(3) {
+  clear: both;
+}
+
+ul.ask li {
+  margin-bottom: 30px;
+}
+
+ul.ask li dl {
+  overflow: hidden;
+}
+
+ul.ask li dl dt {
+  float: left;
+  width: 100px;
+}
+
+ul.ask li dl dd {
+  float: left;
+}
+
+label::after {
+  content: "*";
+  color: red;
+}
+
+label[for="file"]::after {
+  content: "";
+}
+
+textarea#message {
+  height: 150px;
+  width: 893px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+ul.ask input#file {
+  padding: 0;
+}
+
+ul.ask li:nth-of-type(7) {
+  margin: 70px 0 50px;
+}
+
+ul.ask li:nth-of-type(7) label::after {
+  content: "";
+}
+
+li .agree p:last-of-type {
+  background: #f8f8f8;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 0.875em;
+  margin: 20px 0;
+}
+
+li .agree p:last-of-type span {
+  display: block;
+  margin: 10px 0;
+}
+
+.agree label.check {
+  margin-left: 645px;
+}
+
+li button {
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  padding: 0 50px;
+  border: 0 none;
+  background: #1f415c;
+  cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.125rem;
+}
+
+ul.ask li:last-child {
+  margin: 0 auto 100px;
+  width: 240px;
+}

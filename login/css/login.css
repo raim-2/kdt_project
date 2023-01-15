@@ -1,0 +1,335 @@
+body {
+    background: #f6f6f6;
+}
+
+#content,
+#col2 {
+    background: #fff;
+    width: 450px;
+    margin: 0 auto 50px;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 11px 1px rgb(0 0 0 / 10%);
+}
+
+h1 {
+    text-align: center;
+    padding: 55px 0;
+}
+
+h1 .logo {
+    /* margin: 50px auto 0; */
+    color: #fff;
+    text-indent: -9999%;
+    display: inline-block;
+    width: 216px;
+    height: 43px;
+    background: url(../images/logo.png) 0 0 no-repeat;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#content #id_pw_input ul li,
+#col2 .nameBox,
+#col2 .nameBox li {
+    position: relative;
+}
+
+#id_pw_input li span,
+#col2 .nameBox span {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 18px;
+}
+
+#content ul.find,
+#col2 ul.go {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#content button:not(.cancel) {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#content input,
+#col2 input,
+#col2 #join_button p {
+    margin-bottom: 15px;
+}
+
+#content li input.login_input,
+#content button:not(.cancel),
+#col2 input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+#content li input.login_input:focus,
+#col2 #login2 input.find_input:focus,
+#col2 .telBox #hp1:focus,
+#col2 .telBox #hp2:focus,
+#col2 .telBox #hp3:focus {
+    box-shadow: 1px 1px 5px 1px #01abce80;
+    outline: none;
+    border: 1px solid #01abce;
+    box-sizing: border-box;
+}
+
+#content li input.login_input:focus::placeholder,
+#col2 #login2 input:focus::placeholder {
+    color: transparent;
+}
+
+#content button:not(.cancel),
+#col2 input.find {
+    background: #1f415c;
+    color: #fff;
+    font-size: 1.225rem;
+    font-weight: bold;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#content ul.find li span:first-child,
+#col2 ul.go li:first-child a {
+    position: relative;
+    margin-right: 14px;
+}
+
+#content ul.find li span:first-child::after,
+#col2 ul.go li:first-child a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 6px;
+    width: 1px;
+    height: 15px;
+    border-radius: 0.5px;
+    background-color: #333;
+}
+
+#content ul.find li span:hover a,
+#col2 ul.go li:hover a {
+    color: #01abce;
+}
+
+#content ul.join,
+#col2 #join_button {
+    padding-top: 40px;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+
+#content .join li {
+    float: left;
+    width: 49%;
+    text-align: center;
+}
+
+#content ul.join li:first-of-type {
+    margin-right: 2%;
+}
+
+#content ul.join a,
+#col2 #join_button .go_join {
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 15px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #666;
+    transition: all .3s
+}
+
+#content ul.join a:hover,
+#col2 #join_button .go_join:hover {
+    background: #1f415c;
+    color: #fff;
+}
+
+footer p {
+    margin-top: -10px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+/* 아이디 찾기, 비밀번호 찾기 영역 */
+#col2 #title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#col2 #title h2 {
+    margin-bottom: 10px;
+}
+
+#col2 ul.go {
+    overflow: hidden;
+    width: max-content;
+    margin: 5px auto 40px;
+}
+
+#col2 ul.go li {
+    float: left;
+}
+
+#col2 ul.go li:first-child a {
+    margin-right: 20px;
+}
+
+#col2 #join_button {
+    text-align: center;
+}
+
+#col2 .telBox #hp1,
+#col2 .telBox #hp2,
+#col2 .telBox #hp3 {
+    width: 29.8%;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #ccc;
+    font-size: 1em;
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #01abce;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+/* .hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
+    color: white;
+} */
+
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before,
+#col2 input.find.hvr-sweep-to-right:hover:before,
+#col2 input.find.hvr-sweep-to-right:focus:before,
+#col2 input.find.hvr-sweep-to-right:active:before {
+    transform: scaleX(1);
+}
+
+/* 모달박스 */
+#col2 .modal_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    opacity: .7;
+    display: none;
+}
+
+/* center 공식 사용 */
+#col2 .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -200px;
+    width: 400px;
+    /* height: 276px; */
+    background: #fff;
+    box-shadow: -1px 1px 0px 7px #1f415c;
+    z-index: 60;
+    display: none;
+}
+
+#col2 .popup p {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.1em;
+    color: #1f415c;
+    font-weight: 500;
+}
+
+#col2 .popup #loadtext {
+    width: 94%;
+    padding: 20px 0 20px 6%;
+    border-top: 1px dashed #999;
+    display: block;
+}
+
+#col2 .popup ul {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+
+#col2 .popup ul li {
+    width: 50%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    float: left;
+}
+
+#col2 .popup ul li:last-child {
+    border-right: none;
+}
+
+/* IR 사용 */
+/* #col2 .popup .close_btn {
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    padding: 9px 9px;
+    background: url(../images/cancel1.png) no-repeat;
+} */
+
+.loadtexton {
+    line-height: 1.8em;
+}
+
+.loadtexton strong:first-of-type {
+    font-size: 18px;
+    line-height: 2em;
+    text-align: center;
+}

@@ -1,0 +1,243 @@
+/* 연구활동 본문영역 */
+#content .contentArea {
+  margin-bottom: 70px;
+}
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.contentArea .topMain {
+  margin: 0 auto;
+}
+
+.topMain > span {
+  display: block;
+  width: 130px;
+  padding: 5px 10px;
+  background: #1f415c;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+#content .contentArea .topText {
+  line-height: 1.8em;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 50px;
+}
+
+#content .contentArea section {
+  margin-bottom: 100px;
+  padding: 0 135px;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 70px 0 60px;
+}
+
+#content .contentArea .contentNav {
+  overflow: hidden;
+  background: url(../images/content2/top.jpg) 0 0 no-repeat;
+  height: 340px;
+}
+
+#content .contentArea .contentNav li {
+  float: left;
+  width: 300px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* #content .contentArea .contentNav li:hover a {
+  background: rgba(255, 255, 255, 0.068);
+} */
+
+#content .contentArea .contentNav li.on::after {
+  width: 83%;
+}
+
+#content .contentArea .contentNav a {
+  display: block;
+  color: #fff;
+  padding: 100px 0 130px 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+#content .contentArea .contentNav li a p {
+  font-size: 24px;
+  margin: 20px 0 30px 0;
+}
+
+#content .contentArea .contentNav li a > span {
+  color: #999;
+}
+
+#content .contentArea .contentNav li::after {
+  content: "";
+  display: block;
+  width: 55%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  transition: all 0.4s ease-in-out;
+}
+
+#content .contentArea section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea section p {
+  margin-bottom: 30px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+#content .contentArea section h3 + p {
+  font-size: 18px;
+}
+
+#content .contentArea section .wide {
+  width: 1200px;
+}
+
+#content .contentArea .bottom {
+  margin-top: 80px;
+}
+
+#content .contentArea .bottom ul {
+  width: 520px;
+  float: left;
+}
+
+#content .contentArea .sec01 .bottom ul + img {
+  float: left;
+  width: 410px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#content .contentArea .bottom li {
+  width: 230px;
+  margin: 0 30px 30px 0;
+  float: left;
+  padding: 40px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#content .contentArea .bottom li::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: #1f415c;
+  position: relative;
+  left: 0;
+  top: -41px;
+}
+
+#content .contentArea .bottom li span,
+.bottom dl dt {
+  font-size: 18px;
+  color: #1f415c;
+  font-weight: 500;
+  width: 70px;
+}
+
+#content .contentArea .bottom dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .bottom dl dt {
+  float: left;
+  height: 90px;
+}
+
+#content .contentArea .bottom dl dd {
+  float: left;
+  padding-right: 5px;
+}
+
+#content .contentArea .bottom li img,
+.bottom dl dd {
+  margin-left: 60px;
+}
+
+#content .contentArea .bottom li:nth-of-type(1) img {
+  margin-left: 45px;
+}
+
+#content .contentArea .bottom li:nth-of-type(3) img {
+  margin-left: 30px;
+}
+
+#content .contentArea .sec02 .bottom img {
+  float: left;
+  width: 410px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#content .contentArea .sec02 .bottom ul {
+  float: left;
+  width: 540px;
+}
+
+#content .contentArea .sec02 .bottom ul li {
+  margin: 0 0 30px 30px;
+  box-sizing: border-box;
+  height: 175px;
+  width: 230px;
+}
+
+#content .contentArea .sec02 .bottom dl dd {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+#content .contentArea .sec03 .bottom ul + img {
+  float: left;
+  width: 410px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.sec03 .bottom dl dt {
+  width: 100px;
+}
+
+.sec03 .bottom dl dd {
+  margin-left: 30px;
+}
+
+#content .contentArea .sec04 img {
+  width: 48%;
+  border-radius: 30px;
+}
+
+#content .contentArea .sec04 div img:first-of-type {
+  float: left;
+  margin-right: 30px;
+}
+
+#content .contentArea .sec04 img + img {
+  float: left;
+}
+
+#content .contentArea .content {
+  display: none;
+}

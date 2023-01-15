@@ -1,0 +1,152 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객지원-FAQ</title>
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub6common.css">
+  <link rel="stylesheet" href="./css/sub6_content1.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <? include "../common/sub_header.html" ?>
+
+  <div class="visual">
+    <img src="../sub6/common/images/main.jpg" alt="">
+    <h3>고객지원</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a class="current" href="./sub6_1.html">FAQ</a></li>
+      <li>
+        <!-- <a href="./sub6_2.html">동아위드</a> -->
+        <a href="../greet/list.php">공지사항</a>
+      </li>
+      <li>
+        <a href="../free/list.php">동아위드</a>
+      </li>
+      <li><a href="./sub6_3.html">문의하기</a></li>
+    </ul>
+  </div>
+
+  <article id="content">
+    <div class="titleArea">
+      <div class="lineMap">
+        <i class="fa-solid fa-house"></i>
+        <span>home</span>&gt;<span>고객지원</span>&gt;<strong>FAQ</strong>
+      </div>
+      <h2>FAQ</h2>
+    </div>
+    <div class="contentArea">
+      <!-- 본문 콘텐츠 영역 -->
+      <p>동아ST 자주 묻는 질문입니다.</p>
+
+      <div class="faq">
+        <h3 class="hidden">자주 묻는 질문 리스트</h3>
+        <a class="all" href="#">리스트 모두 열기</a>
+        <ul>
+          <li class="article show">
+            <p class="q">
+              <a class="trigger" href="#">고객센터 운영시간을 알려주세요.</a>
+              <span></span>
+            </p>
+            <p class="a">
+              평일 오전 09:00 부터 17:00 까지입니다. (점심시간 12:00 - 13:00
+              제외, 주말 및 법정 공휴일 제외)
+            </p>
+          </li>
+
+          <li class="article hide">
+            <p class="q">
+              <a class="trigger" href="#">상담 방법을 알려주세요.</a>
+              <span></span>
+            </p>
+            <p class="a">
+              상담은 전화상담 및 우편상담 모두 가능합니다. 전화상담을 원하시면
+              080-920-1001로 문의 바랍니다.<br>
+              우편상담은 서울시 동대문구 천호대로 64, 동아에스티
+              우편상담팀으로 우편 부탁드립니다.
+            </p>
+          </li>
+
+          <li class="article hide">
+            <p class="q">
+              <a class="trigger" href="#">신입채용 프로세스를 알려주세요.</a>
+              <span></span>
+            </p>
+            <p class="a">
+              지원서 접수 → 서류전형 → 온라인전형 → 실무면접 → 임원면접 →
+              최종합격
+            </p>
+          </li>
+
+          <li class="article hide">
+            <p class="q">
+              <a class="trigger" href="#">동아ST 본사 위치를 알고 싶습니다.</a>
+              <span></span>
+            </p>
+            <p class="a">본사 위치는 서울시 동대문구 천호대로 64입니다.</p>
+          </li>
+
+          <li class="article hide">
+            <p class="q">
+              <a class="trigger" href="#">대표 제품에는 어떤 제품이 있나요?</a>
+              <span></span>
+            </p>
+            <p class="a">
+              동아ST 대표 전문의약품으로는 모티리톤, 슈가논, 슈가메트가
+              있습니다. 사업분야 → 제품검색에서 더 자세히 확인 가능합니다.
+            </p>
+          </li>
+
+          <li class="article hide">
+            <p class="q">
+              <a class="trigger" href="#">건물 내 주차가 가능한가요?</a>
+              <span></span>
+            </p>
+            <p class="a">
+              방문객은 주차권 보유 시 1시간 무료 주차가 가능합니다.
+            </p>
+          </li>
+
+          <li class="article hide">
+            <p class="q">
+              <a class="trigger" href="#">제휴 제안을 하고 싶습니다.</a>
+              <span></span>
+            </p>
+            <p class="a">
+              제휴 제안을 원하시면, 동아ST 02-920-8114로 전화주시면 빠른 상담
+              도와드리겠습니다.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <div>
+          <span>궁금하신 점이 있으세요?</span>
+          <p>
+            동아ST에 대해 문의하실 점이 있으시다면, '문의하기' 버튼을
+            눌러주세요.
+          </p>
+        </div>
+        <span><a href="#">문의하기</a></span>
+      </div>
+    </div>
+  </article>
+
+  <? include "../common/sub_footer.html" ?>
+  <script src="./js/faq.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+div#wrap {
+  margin: 1rem 0 3rem;
+}
+
+table {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 55px 0;
+}
+
+.logo {
+  color: #fff;
+  text-indent: -9999%;
+  display: inline-block;
+  width: 216px;
+  height: 43px;
+  background: url(../images/logo02.png) center no-repeat;
+  background-size: 80%;
+}
+
+.join h3,
+.inform .insertDetail,
+#content h2 {
+  text-align: center;
+  padding: 55px 0 40px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#content {
+  width: 90%;
+  margin: 0 5% 2rem;
+}
+
+header .topMenu {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+.topMenu span:first-child {
+  float: left;
+}
+
+.topMenu span:last-child {
+  float: right;
+}
+
+.topMenu a {
+  color: #1f415c;
+}
+
+.member_tab {
+  padding: 30px 0;
+  border-top: 1px solid #333;
+}
+
+.member_tab a {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  color: #aaa;
+}
+
+.member_tab a.on {
+  color: #333;
+  border-bottom: 2px solid #333;
+  font-weight: bold;
+}
+
+.member_tab span {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.join, .inform dd {
+  text-align: left;
+  position: relative;
+}
+
+.join h4 {
+  font-size: 1.35em;
+  margin: 30px 0 10px;
+  color: #333;
+}
+
+.join h4 span, .join h4+span {
+  font-size: 14px;
+  color: red;
+  margin-left: 10px;
+  font-weight: 400
+}
+
+.join h4+span {
+  margin-left: 0;
+}
+
+.join .policy {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 120px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+
+.join .check {
+  color: #333;
+  margin: 20px 0 60px;
+}
+
+.join .button, .inform .button {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.join .button .ok,
+.join .button button,
+.inform a.ok,
+.modify li.nick div:last-child {
+  display: inline-block;
+  width: 200px;
+  line-height: 30px;
+  padding: 13px 0;
+  border: none;
+  background: #1f415c;
+  color: #fff;
+  cursor: pointer;
+  /* margin: 0 5px; */
+}
+
+.join .button .cancel,
+.inform a.cancel {
+  display: inline-block;
+  width: 200px;
+  line-height: 30px;
+  padding: 13px 0;
+  border: none;
+  background: #999;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.join .button .ok,
+.join .button button,
+.join .button .cancel,
+.inform a.ok,
+.inform a.cancel {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+
+.inform a.ok,
+.inform a.cancel {
+  text-align: center;
+}
+
+.join .allcheck {
+  font-size: 1.25em;
+  line-height: 1.7em;
+}
+
+.join .allcheck span {
+  color: red;
+  margin: 0 5px
+}
+
+.join .allcheck p {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]+label::before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 2px solid #999;
+  border-radius: 50%;
+  content: "";
+  margin: 0px 15px -6px 0px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label {
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+input[type="checkbox"]:checked+label::before {
+  background: #fff url(../images/checked_bg.png) center center no-repeat;
+  border: 2px solid #0075ff;
+  transition: all 0.4s;
+}
+
+.inform_tit {
+  position: relative;
+}
+
+.inform_tit p {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -73px;
+  color: #999;
+  font-size: 14px;
+}
+
+.inform_tit span {
+  color: red;
+}
+
+.inform dt {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 30px 0 20px;
+}
+
+.inform label::after,
+.inform dl:nth-child(7) dt::after,
+.inform dl:nth-child(8) dt::after {
+  content: "*";
+  color: red;
+}
+
+.inform input,
+.inform .hp {
+  padding: 20px 15px;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.inform .hp {
+  width: calc(28.9% - 4px);
+  padding: 20px 5%;
+}
+
+.inform dd span.divide {
+  width: 6%;
+  display: inline-block;
+  text-align: center;
+}
+
+span#loadtext span,
+span#loadtext2 span,
+span#loadtext3 span {
+  margin-top: 15px;
+  display: block;
+  margin-left: 10px;
+}
+
+.inform dl:nth-child(8) input#email1,
+.modify input#email1 {
+  width: calc(30%);
+}
+
+.inform dl:nth-child(8) input#email2,
+.modify dl.email input#email2 {
+  width: calc(63% - 5px);
+}
+
+.inform input:focus,
+.inform .hp:focus {
+  box-shadow: 1px 1px 5px 1px #01abce80;
+  outline: none;
+  border: 1px solid #01abce;
+  box-sizing: border-box;
+}
+
+.inform input:focus::placeholder,
+.inform .hp:focus::placeholder {
+  color: transparent;
+}

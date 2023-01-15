@@ -1,0 +1,215 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객지원-문의하기</title>
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub6common.css">
+  <link rel="stylesheet" href="./css/sub6_content3.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <? include "../common/sub_header.html" ?>
+
+  <div class="visual">
+    <img src="../sub6/common/images/main.jpg" alt="">
+    <h3>고객지원</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a href="./sub6_1.html">FAQ</a></li>
+      <li>
+        <!-- <a href="./sub6_2.html">동아위드</a> -->
+        <a href="../greet/list.php">공지사항</a>
+      </li>
+      <li>
+        <a href="../free/list.php">동아위드</a>
+      </li>
+      <li><a class="current" href="./sub6_3.html">문의하기</a></li>
+    </ul>
+  </div>
+
+  <article id="content">
+    <div class="titleArea">
+      <div class="lineMap">
+        <i class="fa-solid fa-house"></i>
+        <span>home</span>&gt;<span>고객지원</span>&gt;<strong>문의하기</strong>
+      </div>
+      <h2>문의하기</h2>
+    </div>
+    <div class="contentArea">
+      <!-- 본문 콘텐츠 영역 -->
+      <p>고객을 먼저 생각하는 기업, 동아ST입니다.</p>
+
+      <div class="summary">
+        <p>
+          궁금하신 사항을 적어주시면<br>
+          담당자가 자세히 안내해드리겠습니다.
+        </p>
+        <ul>
+          <li>
+            <span>
+              <i class="fa-solid fa-headset"></i>
+            </span>
+            <div>
+              <span>고객만족팀</span>
+              <p><span>TEL</span> 080-920-1001</p>
+              <p>
+                9:00 ~ 17:00 (점심 12:00 ~ 13:00 제외)<br>
+                *토, 일요일 및 법정 공휴일 제외
+              </p>
+            </div>
+          </li>
+          <li>
+            <span>
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <div>
+              <span>우편상담팀</span>
+              <p><span>주소</span> 동아에스티 우편상담팀</p>
+              <p>
+                서울시 동대문구 천호대로 64 (우편번호 02587)<br>
+                *우편연락을 주시면 상담 가능합니다.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <section class="sec01">
+        <h3>절차안내</h3>
+        <ol class="process">
+          <li>
+            <dl>
+              <dt>STEP 01</dt>
+              <dd>문의 접수</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>STEP 02</dt>
+              <dd>담당자/ 유관부서 확인</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>STEP 03</dt>
+              <dd>문의 처리</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>STEP 04</dt>
+              <dd>고객 안내</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>STEP 05</dt>
+              <dd>상담 완료</dd>
+            </dl>
+          </li>
+        </ol>
+      </section>
+
+      <section class="sec02">
+        <h3>문의하기</h3>
+        <form action="mail.php" method="post">
+          <ul class="ask">
+            <li>
+              <dl>
+                <dt><label for="name">이름</label></dt>
+                <dd>
+                  <input required type="text" id="name" name="name" placeholder="이름을 입력하세요">
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><label for="tel">연락처</label></dt>
+                <dd>
+                  <input required type="tel" id="tel" name="tel" placeholder="연락처를 입력하세요">
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><label for="email">이메일</label></dt>
+                <dd>
+                  <input required type="email" id="email" name="email" placeholder="이메일을 입력하세요">
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><label for="type">문의유형</label></dt>
+                <dd>
+                  <select name="type" id="type" required>
+                    <option value="">문의유형을 선택하세요.</option>
+                    <option value="IR문의">IR문의</option>
+                    <option value="채용문의">채용문의</option>
+                    <option value="제품문의">제품문의</option>
+                    <option value="기타문의">기타문의</option>
+                  </select>
+                </dd>
+              </dl>
+              <!-- <div>유형 선택하기</div> -->
+            </li>
+            <li>
+              <dl>
+                <dt><label for="message">내용</label></dt>
+                <dd>
+                  <textarea id="message" name="message" cols="5" rows="5" placeholder="내용을 입력하세요" required></textarea>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><label for="file">첨부파일</label></dt>
+                <dd><input type="file" id="file" name="file"></dd>
+              </dl>
+              <!-- <div>파일 찾아보기</div> -->
+            </li>
+            <li>
+              <div class="agree">
+                <p>개인정보 수집 및 이용동의</p>
+                <p>
+                  동아ST㈜ 홈페이지 (이하 '회사')는 고객님의 개인정보를
+                  중요시하며, 개인정보 보호법을 준수하고 있습니다.회사는
+                  개인정보처리방침을 통하여 고객님께서 제공하시는 개인정보가
+                  어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해
+                  어떠한 조치가 취해지고 있는지 알려드립니다. 회사는
+                  개인정보처리방침을 개정하는 경우, 웹사이트 공지사항 (또는
+                  개별공지)을 통하여 공지할 것입니다.
+                  <span>* 본 방침은 : 2015 년 12월 24일 부터 시행됩니다.</span>
+                </p>
+                <label for="agree" class="check">
+                  <input type="checkbox" id="agree" name="agree">
+                  <span>개인정보 수집 및 이용에 대해 동의합니다.</span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <button type="submit" value="Send E-mail" class="submitBtn">문의사항 전송하기</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </div>
+  </article>
+
+  <? include "../common/sub_footer.html" ?>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>고객지원-채용안내</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub4common.css">
+  <link rel="stylesheet" href="./css/sub4_1.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+
+  <!-- 비주얼 영역 -->
+  <div class="main">
+    <h3>고객지원</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a class="current" href="./sub4_1.html">FAQ</a></li>
+      <li><a href="./sub4_2.html">채용안내</a></li>
+      <li><a href="./sub4_3.html">채용일정</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>FAQ</h2>
+      <p>동아ST 자주 묻는 질문입니다.</p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <section class="contentlist" id="faq">
+      <div class="faqTop">
+        <h3 class="hidden">자주 묻는 질문</h3>
+        <a class="all" href="#">모두 열기</a>
+      </div>
+      <ul class="faq">
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">고객센터 운영시간을 알려주세요.
+              <span></span>
+            </a>
+          </p>
+          <p class="a">
+            평일 오전 09:00 부터 17:00 까지입니다. (점심시간 12:00 - 13:00
+            제외, 주말 및 법정 공휴일 제외)
+          </p>
+        </li>
+
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">본사 위치를 알고 싶습니다.<span></span></a>
+          </p>
+          <p class="a">본사 위치는 서울시 동대문구 천호대로 64 입니다.</p>
+        </li>
+
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">제휴 제안을 하고 싶습니다.<span></span></a>
+          </p>
+          <p class="a">
+            제휴 제안을 원하시면, 동아ST 02-920-8114로 전화주시면 빠른 상담
+            도와드리겠습니다.
+          </p>
+        </li>
+
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">신입채용 프로세스를 알려주세요.
+              <span></span>
+            </a>
+          </p>
+          <p class="a">
+            지원서 접수 → 서류전형 → 온라인전형 → 실무면접 → 임원면접 →
+            최종합격
+          </p>
+        </li>
+
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">대표 제품에는 어떤 제품이 있나요?
+              <span></span>
+            </a>
+          </p>
+          <p class="a">
+            동아ST 대표 전문의약품으로는 모티리톤, 슈가논, 슈가메트가
+            있습니다. 사업분야 → 제품검색에서 더 자세히 확인 가능합니다.
+          </p>
+        </li>
+
+        <li class="faqList hide">
+          <p class="q">
+            <a class="trigger" href="#">건물 내 주차가 가능한가요?
+              <span></span>
+            </a>
+          </p>
+          <p class="a">
+            방문객은 주차권 보유 시 1시간 무료 주차가 가능합니다.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="faqBox">
+      <div>
+        <span>궁금하신 점이 있으세요?</span>
+        <p>
+          동아ST에 대해 문의하실 점이 있으시다면,<br>
+          '문의하기' 버튼을 눌러주세요.
+        </p>
+      </div>
+      <span> <a href="mailto:earnestga@naver.com">문의하기</a></span>
+    </div>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+  <script src="./js/faq.js"></script>
+</body>
+
+</html>

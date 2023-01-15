@@ -1,0 +1,186 @@
+/* 해외사업 css */
+
+.subNav ul {
+  width: 95%;
+}
+
+.contentlist .conlist2 {
+  margin: 55px 5%;
+}
+
+.conlist1.conlist {
+  margin: 55px 0;
+}
+
+.contentlist h3 {
+  font-size: 1.4375rem;
+  font-weight: 600;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.conlist1 p {
+  margin: 30px 5% 0;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+.conlist1 img,
+.pop_menu li a img {
+  width: 100%;
+}
+
+.conlist1 img + p {
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.9em;
+}
+
+.conlist1 img + p span {
+  display: block;
+  color: #fff;
+  position: relative;
+}
+
+.conlist1 img + p span::after {
+  content: "";
+  display: block;
+  width: 290px;
+  height: 22px;
+  background: #1f415c;
+  position: absolute;
+  left: -3px;
+  top: 7px;
+  z-index: -1;
+}
+
+.pop .pop_menu {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.pop .pop_menu li {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 10%);
+}
+
+.pop .pop_menu li a {
+  display: block;
+  width: 80%;
+  margin: 15px 10%;
+}
+
+.pop .pop_menu li:focus,
+.pop .pop_menu li:active {
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 30%);
+}
+
+.pop .modal_box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 105;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  display: none;
+}
+
+.pop .pop_btn {
+  position: absolute;
+  z-index: 110;
+  top: 60%;
+  margin-top: -100px;
+  font-size: 100px;
+  width: 100%;
+  display: none;
+}
+
+.pop .pop_btn a {
+  display: block;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  color: #fff;
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+
+.pop .pop_btn a:hover {
+  opacity: 0.9;
+}
+
+.pop .pop_btn .pre {
+  margin-left: -700px;
+}
+
+.pop .pop_btn .next {
+  margin-left: 630px;
+}
+
+.pop .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -40%;
+  width: 80%;
+  height: 400px;
+  background: #fff;
+  box-shadow: 1px 3px 7px 0px #666;
+  border: 4px solid #01abce;
+  z-index: 110;
+  border-radius: 20px;
+  display: none;
+}
+
+.pop .popup img {
+  width: 40%;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px 6%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.pop .popup .txt {
+  width: 90%;
+  padding: 80px 5%;
+  color: #666;
+}
+
+.pop .popup dl {
+  margin: 0 auto;
+}
+
+.pop .popup dt {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+}
+
+.pop .popup dd {
+  margin-bottom: 10px;
+}
+
+.pop .popup dl span {
+  color: #333;
+  display: block;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pop .popup .close_btn {
+  color: #333;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  font-size: 30px;
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s;
+}

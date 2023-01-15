@@ -1,0 +1,135 @@
+/* 진단사업 css */
+
+.contentlist .conlist2 {
+  margin: 55px 5%;
+}
+
+.conlist1.conlist {
+  margin: 55px 0;
+}
+
+.contentlist h3 {
+  font-size: 1.4375rem;
+  font-weight: 600;
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.conlist1 p,
+.conlist2 p {
+  margin: 30px 5% 0;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+.conlist2 p {
+  margin: 30px 0;
+}
+
+.conlist1 img {
+  width: 100%;
+}
+
+.conlist1 img + p {
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.9em;
+}
+
+.conlist1 img + p span {
+  display: block;
+  color: #fff;
+  position: relative;
+}
+
+.conlist1 img + p span::after {
+  content: "";
+  display: block;
+  width: 228px;
+  height: 22px;
+  background: #1f415c;
+  position: absolute;
+  left: -3px;
+  top: 7px;
+  z-index: -1;
+}
+
+.conlist1 p:last-of-type {
+  background: #f8f8f8;
+  padding: 40px 5%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.conlist1 p:last-of-type::before,
+.conlist1 p:last-of-type::after {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  content: "";
+}
+
+.conlist1 p:last-of-type::before {
+  background: url("../images/quoteL1.png") 0 0 no-repeat;
+  top: -20px;
+  left: 0;
+}
+
+.conlist1 p:last-of-type::after {
+  background: url("../images/quoteR1.png") 0 0 no-repeat;
+  right: 0;
+  bottom: -20px;
+}
+
+.conlist p span {
+  color: #01abce;
+}
+
+.conlist2 table {
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+.conlist2 table tr {
+  height: 40px;
+}
+
+.conlist2 table thead tr {
+  background: #f8f8f8;
+  border-top: 2px solid #999;
+}
+
+.conlist2 table th,
+.conlist2 table td {
+  /* width: 33%; */
+  border-bottom: 1px solid #ccc;
+}
+
+.conlist2 table th {
+  font-size: 1.143em;
+}
+
+tbody td:nth-child(2),
+th#product,
+tbody tr.a td {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+tbody tr.a td,
+tbody tr.b td {
+  border-bottom: none;
+}
+
+tbody tr.a td {
+  border-top: 1px solid #ccc;
+}
+
+.conlist2 table th#year {
+  width: 25%;
+}
+
+.conlist2 table th#product {
+  width: 40%;
+}

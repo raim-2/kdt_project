@@ -1,0 +1,290 @@
+/* 해외사업 본문영역 */
+
+#content .contentArea>p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#content .contentArea .content01,
+#content .content01 img {
+  margin-bottom: 70px;
+}
+
+.contentArea .content01 .topMain span {
+  font-size: 1.25em;
+  font-family: "Roboto", sans-serif;
+  color: #01abce;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contentArea .content01 .topMain p {
+  font-size: 2.2em;
+  font-weight: 500;
+  line-height: 1.5em;
+  position: relative;
+}
+
+.contentArea .content01 span+p::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 15px;
+  background: #01abce;
+  opacity: 0.3;
+  position: absolute;
+  left: 145px;
+  top: 35px;
+  z-index: -4;
+  transition: all 0.5s ease-in-out;
+}
+
+.contentArea:hover span+p::before {
+  width: 240px;
+}
+
+.contentArea .content01 span+p:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 15px;
+  background: #01abce;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  z-index: -4;
+  transition: all 0.5s 0.5s ease-in-out;
+}
+
+.contentArea:hover span+p::after {
+  width: 205px;
+}
+
+.contentArea .content02 .con02Left {
+  float: left;
+  width: 550px;
+}
+
+.contentArea .content02 .con02Left+p {
+  float: right;
+  width: 550px;
+}
+
+.contentArea .content02 p {
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 1.125em;
+  line-height: 2em;
+}
+
+.contentArea .content02 p:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.contentArea .content02 span {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin-bottom: 120px;
+}
+
+.contentArea .content02 span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: -170px;
+  height: 150px;
+  width: 90%;
+  margin-bottom: 60px;
+  background: url(../images/content4/overseas01.png) no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+
+.contentArea:hover span::after {
+  background: url(../images/content4/overseas02.png) no-repeat;
+}
+
+
+.contentArea .content02,
+.contentArea .content03 {
+  position: relative;
+  margin-bottom: 100px;
+  clear: both;
+}
+
+.contentArea .content03 {
+  background: #f8f8f8;
+  width: 2000px;
+  left: 50%;
+  margin: 0 0 0 -1000px;
+  padding: 100px 0;
+}
+
+.contentArea .content02::after,
+.content03 .pop .pop_menu::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.content03 h3 {
+  font-size: 1.87em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.pop .pop_menu {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.pop .pop_menu li {
+  float: left;
+  width: 270px;
+  margin: 6px 15px;
+  height: 270px;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 10%);
+}
+
+.pop .pop_menu li a {
+  display: block;
+}
+
+.pop .pop_menu li:hover {
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 30%);
+}
+
+.pop .modal_box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 105;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  display: none;
+}
+
+.pop .pop_btn {
+  position: absolute;
+  z-index: 110;
+  top: 60%;
+  margin-top: -100px;
+  font-size: 100px;
+  width: 100%;
+  display: none;
+}
+
+.pop .pop_btn a {
+  display: block;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  color: #fff;
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+
+.pop .pop_btn a:hover {
+  opacity: 0.9;
+}
+
+.pop .pop_btn .pre {
+  margin-left: -700px;
+}
+
+.pop .pop_btn .next {
+  margin-left: 630px;
+}
+
+.pop .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -500px;
+  width: 1000px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 1px 3px 7px 0px #666;
+  z-index: 110;
+  border-radius: 20px;
+  display: none;
+}
+
+.pop .popup img {
+  width: 40%;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px 6%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.pop .popup .txt {
+  float: left;
+  color: #666;
+}
+
+.pop .popup dl {
+  width: 100%;
+  margin: 90px 5%;
+}
+
+.pop .popup dt {
+  margin-bottom: 30px;
+  font-size: 1.125em;
+}
+
+.pop .popup dd {
+  margin-bottom: 20px;
+  font-size: 1.125em;
+}
+
+.pop .popup dl span {
+  color: #333;
+  display: block;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pop .popup dt span {
+  font-size: 1.4em;
+}
+
+.pop .popup .close_btn {
+  color: #333;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 35px;
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s;
+}
+
+.pop .popup .close_btn:hover {
+  color: #01abce;
+}
+
+.hidden {
+  display: block;
+  position: absolute;
+  left: -1000%;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  color: #fff;
+  overflow: hidden;
+}

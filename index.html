@@ -1,0 +1,473 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동아ST</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./common/css/common.css">
+  <link rel="stylesheet" href="./maincss/main.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="./common/js/prefixfree.min.js"></script>
+  <script src="./mainjs/mainpopup.js"></script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "./common/main_header.html" ?>
+
+  <!-- 비주얼 영역 -->
+  <div class="visual">
+    <div class="gallery">
+      <ul>
+        <li class="link1">
+          <a href="#">
+            <img src="./images/main01.jpg" alt="비주얼이미지1">
+            <div class="text">
+              <p>글로벌 혁신 제약기업 동아ST</p>
+              <p>
+                동아ST는 최적의 연구 인프라를 바탕으로<br>
+                글로벌 제약기업을 향해 도약합니다.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="link2">
+          <a href="#">
+            <img src="./images/main02.jpg" alt="비주얼이미지2">
+            <div class="text">
+              <p>고객을 먼저 생각하는 동아ST</p>
+              <p>
+                동아ST는 고객 중심 경영을 바탕으로<br>
+                기업의 사회적 책임을 선도합니다.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="link3">
+          <a href="#">
+            <img src="./images/main03.jpg" alt="비주얼이미지3">
+            <div class="text">
+              <p>건강과 행복을 위한 동아ST</p>
+              <p>
+                동아ST는 의료 분야의 전문화를 통한<br>
+                국민 건강 향상을 위해 노력합니다.
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="dock">
+      <span class="mbutton btn1">01</span>
+      <span class="mbutton btn2">02</span>
+      <span class="mbutton btn3">03</span>
+
+      <span class="ps"></span>
+    </div>
+
+    <span class="btn btnLeft">
+      <img src="./images/arrow01.png" alt="왼쪽 화살표">
+    </span>
+    <span class="btn btnRight">
+      <img src="./images/arrow02.png" alt="오른쪽 화살표">
+    </span>
+  </div>
+
+  <article id="content">
+    <h2 class="hidden">본문콘텐츠영역</h2>
+
+    <!-- 제품검색 영역 -->
+    <section id="search_box">
+      <h3 class="hidden">제품검색</h3>
+      <p>찾으시는 제품을 입력하세요.</p>
+      <form action="./concert/list.php?mode=search&table=concert" method="post" autocomplete="off">
+        <input type="hidden" name="find" id="find" value="subject">
+        <!--필드+ 제목 담고 넘겨야 하므로-->
+        <label for="search" class="hidden">제품검색</label>
+        <div class="searchInner">
+          <input type="text" id="search" name="search" placeholder="제품명 검색 가능">
+          <button type="submit">
+            <span class="hidden">검색</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </form>
+      <dl>
+        <dt>추천제품</dt>
+        <dd>
+          <a href="#">비리얼</a>
+        </dd>
+        <dd>
+          <a href="#">슈가메트</a>
+        </dd>
+        <dd>
+          <a href="#">슈가논</a>
+        </dd>
+        <dd>
+          <a href="#">가스터정</a>
+        </dd>
+      </dl>
+    </section>
+
+    <!-- 신제품 영역 -->
+    <section class="new">
+      <h3>신제품</h3>
+
+      <!-- 
+        <ul>
+          <li class="newList">
+            <div class="newLeftSide">
+              <span class="eName">Suganon Tab</span>
+              <dl>
+                <dt>슈가논정</dt>
+                <dd>1일 1회 1정 복용</dd>
+                <dd>#당뇨병 #인슐린분비촉진</dd>
+              </dl>
+              <span class="more"><a href="#">View more</a></span>
+            </div>
+            <div class="newRightSide">
+              <img src="./images/product01.png" alt="슈가논정"/>
+              <img src="./images/circle.png" alt=""/>
+              <span>01</span>
+            </div>
+          </li>
+
+          <li class="newList">
+            <div class="newLeftSide">
+              <span class="eName">Jublia Topical</span>
+              <dl>
+                <dt>주블리아 외용액</dt>
+                <dd>1일 1회 사용</dd>
+                <dd>#피부질환 #진균증</dd>
+              </dl>
+              <span class="more"><a href="#">View more</a></span>
+            </div>
+            <div class="newRightSide">
+              <img src="./images/product02.png" alt="주블리아 외용액"/>
+              <img src="./images/circle.png" alt=""/>
+              <span>02</span>
+            </div>
+          </li>
+          <li class="newList">
+            <div class="newLeftSide">
+              <span class="eName">Sugamet XR Tab.</span>
+              <dl>
+                <dt>슈가메트</dt>
+                <dd>1일 1회 1정 복용</dd>
+                <dd>#당뇨병 #혈당조절</dd>
+              </dl>
+              <span class="more"><a href="#">View more</a></span>
+            </div>
+            <div class="newRightSide">
+              <img src="./images/product03.png" alt="슈가메트"/>
+              <img src="./images/circle.png" alt=""/>
+              <span>03</span>
+            </div>
+          </li>
+          <li class="newList">
+            <div class="newLeftSide">
+              <span class="eName">Edarbyclor Tab.</span>
+              <dl>
+                <dt>이달비클로정</dt>
+                <dd>1일 1회 1정 복용</dd>
+                <dd>#고혈압 #혈압조절</dd>
+              </dl>
+              <span class="more"><a href="#">View more</a></span>
+            </div>
+            <div class="newRightSide">
+              <img src="./images/product04.png" alt="이달비클로정"/>
+              <img src="./images/circle.png" alt=""/>
+              <span>04</span>
+            </div>
+          </li>
+        </ul> -->
+
+      <div id="ajaxContent"></div>
+
+      <div class="button">
+        <a href="#" class="leftBtn" id="back">
+          <span class="hidden">왼쪽</span>
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="#" class="rightBtn" id="next">
+          <span class="hidden">오른쪽</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- 사업분야 영역 -->
+    <section class="business">
+      <div class="bizInner">
+        <div class="businessText">
+          <h3>사업분야</h3>
+          <p>인류 건강 증진을 위한 동아ST의 사업분야</p>
+          <a href="#" class="more">View more</a>
+        </div>
+        <ul class="blist" id="native">
+          <li class="blist1">
+            <a href="./concert/list.php">
+              <div class="bizLeftSide">
+                <span>01 전문의약품</span>
+                <dl>
+                  <dt>인류 건강 증진을 위한 혁신적 의약품 개발</dt>
+                  <dd>전문의약품</dd>
+                </dl>
+              </div>
+              <span>
+                <img src="./images/bicon1.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="blist2">
+            <a href="./sub2/sub2_2.html">
+              <div class="black bizLeftSide">
+                <span>02 의료기기사업</span>
+                <dl>
+                  <dt>최첨단 하이테크 공급 및 맞춤형 의료기기 제작</dt>
+                  <dd>의료기기사업</dd>
+                </dl>
+              </div>
+              <span>
+                <img src="./images/bicon2.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="blist3">
+            <a href="./sub2/sub2_3.html">
+              <div class="bizLeftSide">
+                <span>03 진단사업</span>
+                <dl>
+                  <dt>정확한 조기진단을 통한 앞선 서비스 제공</dt>
+                  <dd>진단사업</dd>
+                </dl>
+              </div>
+              <span>
+                <img src="./images/bicon3.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="blist4">
+            <a href="#">
+              <div class="black bizLeftSide">
+                <span>04 해외사업</span>
+                <dl>
+                  <dt>자체적 파이프라인 기반 글로벌 시장 확보</dt>
+                  <dd>해외사업</dd>
+                </dl>
+              </div>
+              <span>
+                <img src="./images/bicon4.png" alt="">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="scroll">
+        <img src="./images/scroll.png" alt="스크롤아이콘">
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- 정도경영 영역 -->
+    <section class="management">
+      <h3>정도경영</h3>
+      <p>밝고 따뜻한 사회를 위한 동아ST의 사회적책임</p>
+      <ul>
+        <li>
+          <a href="./sub4/sub4_2.html">
+            <div class="manageImg">
+              <img src="./images/manage01.jpg" alt="사회가치경영">
+            </div>
+            <div class="manageTitle">
+              <span>Social Value</span>
+            </div>
+            <dl class="manageCaption">
+              <dt>사회공헌</dt>
+              <dd>
+                사회정의 실천을 목표로<br>
+                행복과 나눔의 가치를 실현합니다.
+                <span>more</span>
+              </dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="./sub4/sub4_3.html">
+            <div class="manageImg">
+              <img src="./images/manage02.jpg" alt="환경경영">
+            </div>
+            <div class="manageTitle">
+              <span>Environment</span>
+            </div>
+            <dl class="manageCaption">
+              <dt>환경경영</dt>
+              <dd>
+                환경 규범을 준수하고<br>
+                환경 보호를 위해 노력합니다.
+                <span>more</span>
+              </dd>
+            </dl>
+          </a>
+        </li>
+        <li class="center">
+          <a href="./sub4/sub4_4.html">
+            <div class="manageImg">
+              <img src="./images/manage03.jpg" alt="소비자경영">
+            </div>
+            <div class="manageTitle">
+              <span>Customer</span>
+            </div>
+            <dl class="manageCaption">
+              <dt>소비자경영</dt>
+              <dd>
+                동아ST는 언제나 고객님의<br>
+                편의를 먼저 생각합니다.
+                <span>more</span>
+              </dd>
+            </dl>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 공지사항/뉴스 영역 -->
+    <!-- 최근 글 불러오기 시작 -->
+
+    <? include "./lib/func.php"; ?>
+    <section class="news">
+      <h3>동아위드</h3>
+      <div class="newsInnerBox">
+        <div class="newsInner">
+          <ul>
+            <!-- <li>
+              <a href="#">
+                <img src="./images/news01.jpg" alt="동아ST 인공지능...바로가기">
+                <dl>
+                  <dt>동아ST 인공지능 활용 신약 발굴 나서</dt>
+                  <dd>
+                    제4회 동아ST MR Conference가 지난 4월 8일 동아쏘시오그룹
+                    신관 7층 강당에서 진행됐다...
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/news02.jpg" alt="동아ST, 제 4회...바로가기">
+                <dl>
+                  <dt>동아ST, 제4회 MR Conference 개최</dt>
+                  <dd>
+                    제4회 동아ST MR Conference가 지난 4월 8일 동아쏘시오그룹
+                    신관 7층 강당에서 진행됐다...
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/news03.jpg" alt="송도 제 4회...바로가기">
+                <dl>
+                  <dt>송도 바이오텍연구소 개소식 개최</dt>
+                  <dd>
+                    동아ST가 송도에 바이오텍연구소를 신축, 이전함에 따라 지난
+                    4월 8일 동아쏘시오그룹...
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/news04.jpg" alt="제1회 ':D-nnovation'...바로가기">
+                <dl>
+                  <dt>제1회 ':D-nnovation' 개최</dt>
+                  <dd>
+                    "우리는 변화에 끌려가고 있지는 않은가? 변화와 혁신은CEO,
+                    핵심 부서만의 몫인가?”...
+                  </dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/news05.jpg" alt="피부 연구가...바로가기">
+                <dl>
+                  <dt>피부 연구가, ‘피부는 민동성’을 만나다</dt>
+                  <dd>
+                    제4회 동아ST MR Conference가 지난 4월 8일 동아쏘시오그룹
+                    신관 7층 강당에서 진행됐다...
+                  </dd>
+                </dl>
+              </a>
+            </li> -->
+            <? latest_article("free", 5, 20, 35); ?>
+          </ul>
+        </div>
+      </div>
+      <div class="button">
+        <a href="#" class="newsLeftBtn btn">
+          <span class="hidden">이전</span>
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="#" class="newsRightBtn btn">
+          <span class="hidden">다음</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+        <a href="./sub6/sub6_2.html" class="newsMore">
+          <span class="hidden">더보기</span>
+          <i class="fa-solid fa-plus"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- 인재채용 영역 -->
+    <section class="recruit">
+      <div class="recruitLeft">
+        <h3>인재채용</h3>
+        <p>비전을 함께 할 역량있는 인재를 찾습니다.</p>
+      </div>
+      <a href="./sub5/sub5_3.html">
+        <span> 바로가기 </span>
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </a>
+    </section>
+  </article>
+
+  <!-- 푸터 영역 -->
+  <? include "./common/main_footer.html" ?>
+  <!-- <div class="topText">0</div> -->
+
+  <!-- 공지팝업 -->
+  <div id="showimage">
+    <script>
+      function closeWin() {
+        if (chk.checked) {
+          setCookie("Notice", "done", 1);
+        }
+      }
+      if (getCookie("Notice") == "done") {
+        hidebox();
+      }
+    </script>
+    <div>
+      <img src="./popup/pop.png"
+        alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+    </div>
+    <div style="font-size: 12px; text-align: center; color: #666">
+      <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을
+        열지 않음.</label>
+      <a href="#" onclick="closeWin();hidebox();return false;"> [close] </a>
+    </div>
+  </div>
+</body>
+
+</html>

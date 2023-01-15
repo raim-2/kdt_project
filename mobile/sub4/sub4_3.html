@@ -1,0 +1,128 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>고객지원-채용일정</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub4common.css">
+  <link rel="stylesheet" href="./css/sub4_3.css">
+  <link href='./css/main.min.css' rel='stylesheet'>
+
+  <style>
+    .fc .fc-toolbar-title {
+      font-size: 1.2em;
+      margin: 0;
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+
+  <!-- 비주얼 영역 -->
+  <div class="main">
+    <h3>고객지원</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a href="./sub4_1.html">FAQ</a></li>
+      <li><a href="./sub4_2.html">채용안내</a></li>
+      <li><a class="current" href="./sub4_3.html">채용일정</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>채용일정</h2>
+      <p>
+        동아ST 채용일정입니다.
+      </p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <div id='calendar'></div>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+
+  <script src='./js/main.min.js'></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var cdate = new Date();
+      var cy = cdate.getFullYear();
+      var cm = (cdate.getMonth() + 1);
+      var cd = cdate.getDate();
+
+      if (cm < 10) cm = '0' + cm;
+      if (cd < 10) cd = '0' + cd;
+      console.log(cy, cm, cd)
+
+      var ctoday = cy + '-' + cm + '-' + cd;
+
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        headerToolbar: {
+          left: 'prev,next', //prevYear,nextYear
+          center: 'title',
+          right: 'dayGridMonth' //,dayGridWeek,dayGridDay
+        },
+        //initialDate: '2020-10-12',
+        initialDate: ctoday,
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        dayMaxEvents: true, // allow "more" link when too many events
+        events: [{
+          groupId: 999,
+          start: '2022-10-28',
+          title: '최종합격 발표',
+          display: 'background',
+          color: 'red'
+        },
+        {
+          title: '2022 하반기 서류기간',
+          start: '2022-10-07',
+          end: '2022-10-10'
+        },
+        {
+          title: '2022 하반기 면접기간',
+          start: '2022-10-20',
+          end: '2022-10-22',
+          color: 'red'
+        }
+        ]
+      });
+
+      calendar.render();
+    });
+  </script>
+</body>
+
+</html>

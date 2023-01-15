@@ -1,0 +1,106 @@
+/* 경영철학 본문영역 */
+#content .contentArea {
+}
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#content .contentArea .sec01 .process ol::after,
+.sec01 .detail::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea section {
+  margin: 100px 0;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.sec01 h3 + span {
+  margin: 70px 0 30px;
+  font-size: 24px;
+  font-weight: 500;
+  display: block;
+}
+
+#content .contentArea .sec01 h3 span + p {
+}
+
+.sec01 .process ol {
+  margin: 30px 0 70px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.sec01 .process ol li {
+  float: left;
+  text-align: center;
+  width: 200px;
+  padding: 30px 0 50px;
+  position: relative;
+}
+
+.sec01 .process ol li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80%;
+  background: #ccb;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.sec01 .process ol li:last-of-type::after {
+  opacity: 0;
+}
+
+.sec01 .process ol li span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #01abce;
+  line-height: 1.8em;
+  color: #fff;
+  margin: 20px auto;
+}
+
+.sec01 .detail ol {
+  float: left;
+  width: 600px;
+}
+
+.sec01 .detail dl dt {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.sec01 dt span {
+  color: #01abce;
+  margin-right: 10px;
+}
+
+.sec01 .detail dl dd p {
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 2em;
+  word-break: keep-all;
+  font-size: 16px;
+}
+
+.sec01 .detail img {
+  margin-top: 30px;
+  float: right;
+}

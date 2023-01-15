@@ -1,0 +1,385 @@
+/* 연구본부 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.contentArea .topMain {
+  margin: 0 auto;
+}
+
+.topMain > span {
+  display: block;
+  width: 130px;
+  padding: 5px 10px;
+  background: #1f415c;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+#content .contentArea .topText {
+  line-height: 1.8em;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 50px;
+}
+
+#content .contentArea .contentNav {
+  /* overflow: hidden; */
+  margin: 100px 0;
+}
+
+#content .contentArea .contentNav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .contentNav img {
+  border-radius: 50%;
+  filter: contrast(0.8) brightness(0.5);
+}
+
+#content .contentArea .contentNav li {
+  float: left;
+  width: 375px;
+  padding-left: 25px;
+  position: relative;
+}
+
+#content .contentArea .contentNav li:hover img {
+  filter: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#content .contentArea .contentNav li:hover span {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#content .contentArea .contentNav li span {
+  position: absolute;
+  display: block;
+  width: 200px;
+  text-align: center;
+  left: 50%;
+  margin-left: -100px;
+  top: 160px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+
+#content .contentArea section {
+  padding: 0 135px;
+  margin-bottom: 100px;
+}
+
+#content .contentArea section .wide {
+  margin-left: -135px;
+  width: 1200px;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 70px 0 60px;
+  text-align: center;
+}
+
+#content .contentArea section h4 {
+  margin: 70px 0 60px 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#content .contentArea section p {
+  margin-bottom: 30px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+#content .contentArea section h3 + p {
+  font-size: 18px;
+}
+
+.sec01 img {
+  width: 980px;
+}
+
+/*common*/
+.background text {
+  fill: #666;
+}
+ul.accessibility {
+  font-size: 1px;
+  height: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  width: 1px;
+}
+.background .fields text {
+  fill: #666;
+}
+.foreground .labels text {
+  fill: #666;
+}
+.tooltip text {
+  fill: #777;
+  font-size: 16px;
+}
+.tooltip rect {
+  fill: rgba(255, 255, 255, 0.9);
+  /* stroke: #ccc;
+  stroke-width: 0.5; */
+}
+.fields text {
+  fill: #666;
+}
+.guide_line {
+  stroke: #4010ad;
+  stroke-width: 1;
+}
+
+/* Column Type 그래프 */
+.Nwagon_column .background line.h {
+  stroke: #000;
+  stroke-width: 0.2;
+}
+.Nwagon_column .background line.v {
+  stroke: #fff;
+  stroke-width: 0.1;
+}
+
+/* .Nwagon_column .background g.fields {
+  transform: translate(-130px, -40px);
+} */
+
+.Nwagon_column .foreground .columns g rect {
+  fill-opacity: 0.7;
+  cursor: pointer;
+  width: 35px;
+  transform: translateX(30px);
+}
+
+.Nwagon_column .foreground .tooltip text {
+  fill: #777;
+  font-size: 18px;
+}
+.Nwagon_column .foreground .tooltip rect {
+  fill: rgba(255, 255, 255, 0.9);
+  /* stroke: #ccc;
+  stroke-width: 0.5; */
+}
+
+.Nwagon_column .labels {
+  transform: translateX(30px);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Nwagon_column .labels text {
+  transform: translateY(20px);
+}
+
+.Nwagon_column .labels text,
+.Nwagon_column .background text {
+  fill: #666;
+}
+/* Column Type 그래프 */
+
+#content .contentArea .sec02 > ul {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  /* width: 1200px; */
+}
+
+#content .contentArea .sec02 ul > li > span {
+  font-size: 20px;
+  padding: 35px;
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
+  background: #01abce;
+  display: block;
+}
+
+#content .contentArea .sec02 ul > li > span::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 120px;
+  background: #ccc;
+  position: absolute;
+  margin-left: 85px;
+  top: 90px;
+  z-index: -1;
+}
+
+#content .contentArea .sec02 > ul > li:nth-of-type(2) {
+  font-size: 18px;
+  padding: 10px;
+  width: 170px;
+  border: 1px solid #01abce;
+  color: #01abce;
+  position: absolute;
+  left: 210px;
+  top: 130px;
+}
+
+#content .contentArea .sec02 > ul > li:nth-of-type(2)::before {
+  content: "";
+  display: block;
+  width: 631px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  margin-left: 181px;
+  top: 25px;
+  z-index: -1;
+}
+
+#content .contentArea .sec02 > ul > li:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  width: 575px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  margin-left: -49px;
+  top: 78px;
+  z-index: -1;
+}
+
+#content .contentArea .sec02 > ul .second {
+  overflow: hidden;
+}
+
+#content .contentArea .sec02 .second > li {
+  width: 235px;
+  float: left;
+}
+
+#content .contentArea .sec02 .second > li {
+  margin-right: 52px;
+}
+
+#content .contentArea .sec02 .second > li:first-of-type {
+  margin-left: 52px;
+}
+
+#content .contentArea .sec02 .second > li dt {
+  background: #1f415c;
+  padding: 15px 0;
+  font-size: 18px;
+  margin: 150px 0 60px 0;
+}
+
+#content .contentArea .sec02 .second > li:last-of-type dt {
+  background: #4c677d;
+}
+
+#content .contentArea .sec02 .second > li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 160px;
+  background: #ccc;
+  position: absolute;
+  margin-left: 120px;
+  top: 210px;
+  z-index: -1;
+}
+
+#content .contentArea .sec02 .second > li:last-of-type::after {
+  height: 220px;
+  top: 156px;
+}
+
+#content .contentArea .sec02 .second > li dd {
+  background: #8697a7;
+  padding: 15px 0;
+}
+
+#content .contentArea .sec03 ul {
+  overflow: hidden;
+}
+
+#content .contentArea .sec03 li {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+#content .contentArea .sec03 ul span:nth-of-type(2) {
+  font-size: 32px;
+}
+
+#content .contentArea .sec03 li:nth-of-type(2) {
+  text-align: right;
+  float: right;
+}
+
+#content .contentArea .sec03 li dt {
+  font-size: 24px;
+  margin: 20px 20px 0;
+  color: #fff;
+}
+
+#content .contentArea .sec03 dl {
+  position: relative;
+}
+
+#content .contentArea .sec03 li:first-of-type dt::after {
+  content: "";
+  display: block;
+  width: 1000px;
+  background: #01abce;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  z-index: -1;
+}
+
+#content .contentArea .sec03 li dd {
+  position: relative;
+  left: 220px;
+  top: -90px;
+  color: #1f415c;
+  font-size: 24px;
+}
+
+#content .contentArea .sec03 li:last-of-type dd {
+  position: relative;
+  left: -230px;
+  top: -105px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#content .contentArea .sec03 li dd i {
+  margin-left: 170px;
+}
+
+#content .contentArea .sec03 div p {
+  text-align: right;
+  margin-top: -20px;
+}
+
+#content .contentArea .sec03 li:last-of-type img {
+  width: 191px;
+  height: 151px;
+}
+
+.contlist {
+  display: none;
+}

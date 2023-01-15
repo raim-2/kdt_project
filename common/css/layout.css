@@ -1,0 +1,127 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "돋움", "돋움체";
+	font-size: 14px;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+body {}
+
+.wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+#headerArea {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0);
+	z-index: 10;
+	transition: background .5s;
+}
+
+#headerArea .headerInner {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* gnb만 잘 맞춰라 */
+#gnb {
+	clear: both;
+	width: 1200px;
+}
+
+#gnb ul.dropdownmenu {
+	float: left;
+	width: 100%;
+}
+
+#gnb ul.dropdownmenu li.menu {
+	position: relative;
+	float: left;
+	width: 16.66%;
+	height: 50px;
+}
+
+#gnb ul.dropdownmenu li a.depth1 {
+	display: block;
+	padding: 15px 0;
+	color: #fff;
+	text-align: center;
+	transition: all .5s;
+}
+
+
+/* 2depth */
+#gnb ul.dropdownmenu li ul {
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	padding: 15px 0;
+	line-height: 2em;
+	display: none;
+}
+
+#gnb ul.dropdownmenu li ul li {
+	text-align: center;
+	font-weight: bold;
+}
+
+#gnb ul.dropdownmenu li ul li a {
+	display: block;
+	color: #666;
+	transition: all .5s;
+}
+
+#gnb ul.dropdownmenu li ul li a:hover {
+	color: #fff;
+	background: green;
+	border-radius: 5px;
+}
+
+/*비주얼영역*/
+
+.visual {
+	position: relative;
+	width: 2000px;
+	left: 50%;
+	margin-left: -1000px;
+}
+
+/*본문영역*/
+#content {
+	width: 1200px;
+	margin: 0 auto;
+	height: 1000px;
+	background: pink;
+}
+
+/*푸터영역*/
+#footerArea {
+	width: 1200px;
+	margin: 0 auto;
+	height: 200px;
+	background: #999;
+}

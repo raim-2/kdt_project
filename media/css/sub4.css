@@ -1,0 +1,156 @@
+/*gallery css*/
+/* 와이드 pc  */
+/* content 영역 */
+#content .gallery {
+    padding: 6rem 3%;
+}
+
+.grid-image-item strong {
+    text-align: center;
+    display: block;
+}
+
+h3.twinkle {
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right, #000, #000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.twinkle:hover {
+    color: #16ff6f;
+    transition: color .3s ease-in;
+}
+
+
+/* @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+} */
+
+.twinkle::before {
+    left: 0;
+    top: 0;
+    content: "Moana Gallery";
+    padding: 0 5px 0 0;
+    width: 100%;
+    height: 105%;
+    background-image: linear-gradient(var(--rotate), #55ffe3, #16ff6fb8 43%, #0980d0);
+    background-image: linear-gradient(#55ffe3, #16ff6fb8 43%, #0980d0);
+    position: absolute;
+    -webkit-background-clip: text;
+    animation: spin 2.5s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+/* gallery grid */
+.grid-image-item,
+.grid--images .grid-sizer {
+    width: 20%;
+}
+
+.grid-image-item {
+    float: left;
+    margin-bottom: 10px;
+    transition: all .3s ease-in;
+}
+
+.grid-image-item:hover {
+    transform: translateY(-10px);
+}
+
+.grid-image-item:hover img {
+    filter: sepia(0.7) hue-rotate(304deg);
+}
+
+.grid-image-item img {
+    border-radius: 3%;
+    display: block;
+    width: 96%;
+    margin: 10px auto;
+    /* filter: saturate(0.7); */
+    transition: all .5s;
+    border-radius: 93% 7% 95% 5% / 11% 90% 10% 89%;
+    transform: rotate(3deg);
+}
+
+.grid-image-item h4 {
+    display: block;
+    width: 96%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.grid-image-item p {
+    display: block;
+    width: 96%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+    #content .mainstory p {
+        width: 70%;
+    }
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+    .grid-image-item,
+    .grid--images .grid-sizer {
+        width: 25%;
+    }
+
+    #content .mainstory p {
+        width: 75%;
+    }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+    .grid-image-item,
+    .grid--images .grid-sizer {
+        width: 33.33%;
+    }
+
+    #content .mainstory p {
+        width: 85%;
+        font-size: 3vw;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+    .grid-image-item,
+    .grid--images .grid-sizer {
+        width: 50%;
+    }
+
+    #content .mainstory p {
+        font-size: 1.1rem;
+        text-align: justify;
+        width: 95%;
+    }
+
+    #content .gallery {
+        padding: 1.8rem 3% 3rem;
+    }
+}

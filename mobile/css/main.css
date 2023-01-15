@@ -1,0 +1,561 @@
+/* CSS Document */
+
+/* main 영역 */
+
+.main {
+  position: relative;
+  overflow: hidden;
+  width: 300%;
+}
+
+.main ul {
+  overflow: hidden;
+}
+
+.main ul li {
+  float: left;
+  width: 33.33%;
+  position: relative;
+}
+
+.main .gallery ul li img {
+  width: 100%;
+}
+
+.main ul li .text {
+  color: #fff;
+  position: absolute;
+  left: 7%;
+  top: 35%;
+  opacity: 0;
+}
+
+.main ul li .text p {
+  line-height: 1.7em;
+}
+
+.main ul li .text p:first-child {
+  font-size: 1.857em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main ul li .text p:last-child {
+  font-weight: 400;
+  word-spacing: -1px;
+}
+
+.main .dock {
+  position: absolute;
+  width: 33.33%;
+  bottom: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.main .dock .mbutton {
+  float: left;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 5px;
+  display: block;
+  background: #fff;
+}
+
+section {
+  margin-top: 60px;
+}
+
+/* new 영역 */
+
+/* #new ul {
+  text-align: center;
+  position: relative;
+} */
+
+#new {
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+#new .newTop {
+  /* margin: 30px 0 0 7%; */
+  text-align: center;
+}
+
+#new .newTop h3 {
+  font-weight: 600;
+  font-size: 1.714em;
+}
+
+#new .newTop p {
+  font-size: 1.143rem;
+  margin: 10px 0;
+}
+
+#new ul {
+  text-align: center;
+  /* position: relative;
+  width: 400%; */
+  /* overflow: hidden; */
+}
+
+#new ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul.tab_menu {
+  display: flex;
+  margin: 20px 0 30px;
+}
+
+#new ul.contBox li {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
+
+
+ul.tab_menu li {
+  box-sizing: border-box;
+  width: 97%;
+  margin-right: 3%;
+  float: left;
+}
+
+
+ul.tab_menu li:first-child {
+  margin-left: 3%;
+}
+
+ul.tab_menu a.tab {
+  display: block;
+  height: 70px;
+  background: beige;
+  box-sizing: border-box;
+  padding: 25px 0;
+  border-radius: 10px;
+  text-indent: -1000%;
+  color: #fff;
+  overflow: hidden;
+}
+
+ul.tab_menu a.tab1 {
+  background: #eee url('../images/product01x2.png') center no-repeat;
+  background-size: contain;
+}
+
+ul.tab_menu a.tab2 {
+  background: #eee url('../images/product02x2.png') center no-repeat;
+  background-size: contain;
+}
+
+ul.tab_menu a.tab3 {
+  background: #eee url('../images/product03x2.png') center no-repeat;
+  background-size: contain;
+}
+
+ul.tab_menu a.tab4 {
+  background: #eee url('../images/product04x2.png') center no-repeat;
+  background-size: contain;
+}
+
+/* #new ul li {
+  position: relative;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+} */
+
+#new ul li div img {
+  width: 100%;
+}
+
+#content #new ul li span {
+  font-size: 1.571em;
+  display: block;
+  padding: 30px 0 20px;
+  font-weight: 600;
+  color: #1f415c;
+}
+
+#content #new ul.contBox li::before {
+  content: "01";
+  width: 24px;
+  font-size: 1.329rem;
+  color: #999;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  top: 0px;
+}
+
+#content #new ul.contBox li:nth-child(2)::before {
+  content: "02";
+}
+
+#content #new ul.contBox li:nth-child(3)::before {
+  content: "03";
+}
+
+#content #new ul.contBox li:last-child::before {
+  content: "04";
+}
+
+#content #new ul li p {
+  line-height: 1.7em;
+  /* 임시 */
+  margin-top: 20px;
+}
+
+#new ul li div {
+  background: url(../images/circle.png) center no-repeat;
+  background-size: contain;
+  width: 80%;
+  margin: 10px 10%
+}
+
+/* #new .scrollbar {
+  height: 10px;
+  border-radius: 10px;
+  background: #eee;
+  margin: 20px 20px 0;
+  overflow: hidden;
+}
+
+#new .scrollbar span {
+  display: block;
+  width: 25%;
+  height: 100%;
+  background: #1f415c;
+  border-radius: inherit;
+  transition: width 0.3s ease 0s;
+} */
+
+#new .scrollbar {
+  border-radius: 10px;
+  background: #eee;
+  width: 90%;
+  height: 5px;
+  margin: 5% 5% 0 5%;
+  overflow: hidden;
+}
+
+#new .scrollbar span {
+  display: block;
+  width: 25%;
+  height: 100%;
+  background: #1f415c;
+  border-radius: inherit;
+  transition: width 0.3s ease 0s;
+}
+
+/* 사업분야 영역 */
+
+section#business {
+  background: #1f415c;
+  padding: 45px 0;
+  height: 100%;
+}
+
+#business .bizText p:first-child {
+  color: #fff;
+  font-size: 1.143rem;
+}
+
+#business .bizText p:first-child::after {
+  content: "";
+  display: block;
+  width: 246px;
+  height: 1px;
+  background: #fff;
+  margin: 5px 0 10px;
+}
+
+#business .bizText p:last-of-type {
+  /* font-size: 1.714em; */
+  font-size: 1.857em;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4em;
+  font-family: "Roboto", sans-serif;
+}
+
+#business .bizText {
+  line-height: 1.7em;
+  margin-left: 7%;
+}
+
+/* #business .bizText p + img {
+  width: 100%;
+  margin: 20px 0;
+} */
+
+
+#business ul li {
+  width: 60%;
+  height: 100%;
+}
+
+#business ul li a {
+  display: block;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: rgb(0 0 0 / 10%) 5px 4px 11px 2px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#business ul li dl dt {
+  /* font-size: 1.143rem; */
+  font-size: 1.286em;
+  font-weight: 500;
+  color: #01abce;
+}
+
+#business ul li dl dd {
+  line-height: 1.6em;
+  text-align: center;
+  word-break: keep-all;
+  margin-top: 15px;
+}
+
+#business ul li a dl+span {
+  display: block;
+  box-sizing: border-box;
+  margin: 30px 0 0;
+}
+
+ul.swiper-wrapper {
+  margin-bottom: 40px;
+}
+
+/* 정도경영 영역 */
+#management h3 {
+  font-weight: 600;
+  font-size: 1.714em;
+  text-align: center;
+}
+
+#management .value {
+  margin: 30px 0 50px;
+}
+
+#management .value li {
+  position: relative;
+}
+
+#management .value li:first-child {
+  margin-right: 50px;
+}
+
+#management .value dl {
+  text-align: center;
+}
+
+#management .value dt {
+  font-size: 1.143em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#management .value dd {
+  font-size: 1.571em;
+  color: #01abce;
+  font-weight: 600;
+}
+
+#management .value li dd::after {
+  font-size: 0.857rem;
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  margin-left: -50%;
+  bottom: -20px;
+  color: #999;
+  font-weight: 400;
+}
+
+#management .value li:first-child dd::after {
+  content: "(2021년 기준)";
+}
+
+#management .value li:last-child dd::after {
+  content: "(2021년 대비)";
+}
+
+#management .value {
+  display: flex;
+  justify-content: center;
+}
+
+#management .manageList {
+  margin: 0 5%;
+  width: 90%;
+}
+
+ul.box1.social,
+ul.box2.environment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#management .manageList .text a {
+  display: block;
+  padding: 10%;
+  background: rgba(31, 65, 92, .9);
+  height: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  line-height: 2;
+}
+
+#management .manageList .text span {
+  font-size: 1.163em;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 500;
+}
+
+#management .manageList .text p {
+  line-height: 1.3rem;
+  font-size: 0.875em;
+}
+
+#management .manageList li {
+  height: 140px;
+}
+
+#management .manageList .social li:first-child {
+  background: url(../images/manage01x2.png) center no-repeat;
+  background-size: cover;
+}
+
+#management .manageList .environment li:last-child {
+  background: url(../images/manage02x2.png) center no-repeat;
+  background-size: cover;
+}
+
+/* 자주 묻는 질문 */
+
+#faq .faqTop {
+  margin: 0 7%;
+  position: relative;
+}
+
+#faq .faqTop::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#faq h3 {
+  font-weight: 600;
+  float: left;
+  font-size: 1.714em;
+}
+
+/* #faq .faqTop a.more {
+  display: block;
+  height: 100%;
+  float: right;
+  padding: 2px 9px 3px;
+  border-radius: 50%;
+  opacity: 0.4;
+  border: 2px solid #333;
+  font-size: 1.429em;
+} */
+
+#faq .faqTop a.more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 40px;
+  background: url(../images/more.png) 50% 50% no-repeat;
+  background-size: 26px auto;
+  opacity: 0.5;
+  font-size: 0;
+  text-indent: -9999%;
+}
+
+.faq {
+  border-bottom: 1px solid #ccc;
+  margin: 30px 5% 50px;
+  position: relative;
+}
+
+.faq .q {
+  border-top: 1px solid #ccc;
+  position: relative;
+}
+
+.faq .q a.trigger {
+  display: block;
+  padding: 25px 0 25px 15%;
+  color: #333;
+  text-align: left;
+  text-decoration: none;
+}
+
+.faq .q a.trigger::before,
+.faq .a::before {
+  display: block;
+  position: absolute;
+  left: 5%;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.faq .q a.trigger::before {
+  content: "Q";
+  top: 23px;
+  color: #01abce;
+}
+
+.faq .a::before {
+  content: "A";
+  color: #1f415c;
+}
+
+.faq .q a.trigger:focus {
+  color: #01abce;
+}
+
+.faq .hide .q a.trigger {
+  font-weight: normal;
+  background: none;
+}
+
+.faq .q a.trigger span {
+  display: block;
+  position: absolute;
+  right: 6%;
+  top: 22px;
+  font-size: 1.125em;
+}
+
+.faq .a {
+  padding: 25px 5% 25px 15%;
+  background: #f8f8f8;
+  display: none;
+  word-break: keep-all;
+}
+
+.faq li:nth-of-type(2) .a {
+  line-height: 1.7em;
+}

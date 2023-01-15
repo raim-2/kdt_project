@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* 공지사항- 일반게시판 */
+
+.contentArea>p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#content #col2 {
+    width: 1100px;
+    margin: 0 auto 120px;
+    position: relative;
+}
+
+#col2 form {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* #col2 form:last-child {
+  width: max-content;
+} */
+
+button[type="submit"] {
+    cursor: pointer;
+}
+
+.list_count a {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 9px;
+    box-sizing: border-box;
+}
+
+.list_count a:nth-of-type(2) {
+    margin: 0 10px 0 0;
+    border-left: 0;
+    padding-top: 7px;
+}
+
+/* list css */
+
+
+#list_search {
+    height: 30px;
+    float: left;
+    font-size: 1.1em;
+    line-height: 2.1em;
+}
+
+
+#list_search span {
+    color: #01abce;
+}
+
+
+#list_content {
+    padding-bottom: 100px;
+    border-top: 2px solid #aaa;
+}
+
+.list_item {
+    padding: 20px 10px;
+    border-bottom: solid 1px #eeeeee;
+    overflow: hidden;
+}
+
+.list_item .list_img {
+    float: left;
+    width: 32%;
+    height: 230px;
+}
+
+.list_item .list_img img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.list_item .list_text {
+    float: right;
+    width: 63%;
+    height: 230px;
+    box-sizing: border-box;
+    line-height: 2em;
+}
+
+.list_text p.list_sub {
+    padding: 15px 0 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.list_text p.list_con {
+    margin: 10px 0;
+    height: 100px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    color: #666;
+}
+
+.list_info {
+    padding-top: 10px;
+}
+
+.list_text .list_info span {
+    margin: 0 10px; 
+}
+
+#page_button {
+    clear: both;
+    margin-top: 20px;
+}
+
+#page_num {
+    width: 40%;
+    margin: 30px auto 40px;
+    text-align: center;
+}
+
+#button,
+#write_button {
+    text-align: right;
+}
+
+#page_num a,
+#page_num span {
+    margin: 0 5px;
+    padding: 0 5px;
+    position: relative;
+}
+
+#page_num span:not(.arrow) {
+    color: #fff;
+}
+
+#page_num span:not(.arrow)::after {
+    content: '';
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #01abce;
+    position: absolute;
+    left: -5px;
+    top: -2px;
+    z-index: -1;
+}
+
+#page_num span.arrow {
+    color: #999
+}
+
+#button a,
+#write_button a,
+#write_button button,
+#view_button a {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.list_count {
+    float: right;
+}
+
+.list_count::after,
+#col2 form::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.list_count li{
+    float: left;
+}
+
+.list_count li:nth-child(2) a {
+    margin-right: 10px;
+    border-left: none;
+}
+
+.list_count select#scale,
+.searchBox #list_search3 select,
+.searchBox #list_search4 input {
+    padding: 10px 35px 10px 10px;
+    outline: none;
+    font-size: 1em;
+    border-color: #ccc;
+    height: 43px;
+    box-sizing: border-box;
+}
+
+/* .searchBox {
+    margin: 0 auto;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    overflow: hidden;
+    position: relative;
+} */
+
+.searchBox {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -210px;
+}
+
+
+.searchBox #list_search3 {
+    float: left;
+    margin-top: 1px;
+}
+
+
+.searchBox #list_search4 {
+    float: left;
+    margin-left: 3px;
+}
+
+.searchBox #list_search4 input {
+    border: 1px solid #ccc;
+    margin-top: 1px;
+}
+
+.searchBox #list_search5 {
+    float: left;
+}
+
+#list_search5 button {
+    font-size: 1rem;
+    margin-top: 1px;
+    text-align: center;
+    padding: 10px 20px;
+    height: 43px;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+/* write_form css */
+
+#write_form {
+    border-top: 1px solid #666;
+}
+
+#write_form #write_row1,
+#write_form #write_row2,
+#write_form #write_row3,
+#write_form #write_row4,
+#write_form #write_row5,
+#write_form #write_row6 {
+    overflow: hidden;
+}
+
+#write_form .col1 {
+    float: left;
+    width: 10%;
+    padding: 20px 15px;
+    background-color: #eee;
+}
+
+#write_form #write_row3 .col1 {
+    height: 174px;
+    padding-top: 120px;
+}
+
+#write_form #write_row2 .col1 {
+    height: 34px;
+}
+
+#write_form #write_row4 .col1,
+#write_form #write_row5 .col1,
+#write_form #write_row6 .col1 {
+    height: 26px;
+}
+
+#write_form .col2 {
+    float: left;
+    width: 80%;
+    padding: 20px 15px;
+    position: relative;
+}
+
+#write_form dl {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+#write_form #write_row1 .col2 {
+    float: left;
+}
+
+#write_row2 .col2 input {
+    width: 100%;
+    height: 30px;
+    border: solid 1px #cccccc;
+}
+
+#write_row3 .col2 textarea {
+    width: 100%;
+    margin-top: 1px;
+    border: solid 1px #cccccc;
+}
+
+
+#write_row3 .col2 .col3 {
+    margin-bottom: 10px;
+}
+
+#write_button {
+    margin-top: 20px;
+}
+
+#write_button button {
+    background: #fff;
+    display: block;
+    float: right;
+    width: auto;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* view.php css */
+
+#view_title {
+    text-align: center;
+    border-top: solid 2px #aaaaaa;
+}
+
+#view_title1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 20px 0;
+    background-color: #eeeeee;
+}
+
+#view_title2 {
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+}
+
+#view_title2 span {
+    margin: 0 10px;
+}
+
+#view_content {
+    text-align: center;
+    min-height: 300px;
+    padding: 30px 15px;
+    line-height: 150%;
+    border-bottom: solid 1px #ccc;
+}
+
+#view_button {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.delete_ok {
+    position: absolute;
+    left: 210px;
+    top: 50%;
+    margin-top: -12px;
+    font-size: 0.9rem;
+}

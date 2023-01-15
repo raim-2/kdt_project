@@ -1,0 +1,354 @@
+/* body {
+  background: url(../images/member_bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+body {
+  background: #f6f6f6;
+}
+
+div#wrap {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 55px 0;
+}
+
+.logo {
+  /* margin: 50px auto 0; */
+  color: #fff;
+  text-indent: -9999%;
+  display: inline-block;
+  width: 216px;
+  height: 43px;
+  background: url(../images/logo02.png) 0 0 no-repeat;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+#content {
+  background: #fff;
+  width: 750px;
+  margin: 0 auto 50px;
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 11px 1px rgb(0 0 0 / 10%);
+}
+
+.member_tab {
+  padding: 30px 0;
+  border-top: 1px solid #333;
+}
+
+.member_tab a {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  color: #aaa;
+}
+
+.member_tab a.on {
+  color: #333;
+  border-bottom: 2px solid #333;
+  font-weight: bold;
+}
+
+.member_tab span {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.join {
+  text-align: left;
+  position: relative;
+}
+
+.join h4 {
+  font-size: 20px;
+  margin: 30px 0;
+  color: #333;
+}
+
+.join h4 span {
+  font-size: 14px;
+  color: red;
+  margin-left: 10px;
+  font-weight: 400
+}
+
+.join h3,
+.inform .insertDetail {
+  font-size: 28px;
+  margin-bottom: 70px;
+  color: #333;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.inform .insertDetail {
+  margin-left: 0;
+}
+
+
+.join .policy {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 200px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+.join .policy.last {
+  height: 130px;
+}
+
+.join .check {
+  color: #333;
+  margin: 20px 0 60px;
+}
+
+.join .button {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.join .button .ok,
+.join .button button,
+.join .allcheck,
+.inform a.ok,
+.modify li.nick div:last-child {
+  display: inline-block;
+  width: 200px;
+  line-height: 30px;
+  padding: 13px 0;
+  border: none;
+  background: #1f415c;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.join .button .cancel,
+.inform a.cancel {
+  display: inline-block;
+  width: 200px;
+  line-height: 30px;
+  padding: 13px 0 12px;
+  border: none;
+  background: #999;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inform a.ok,
+.inform a.cancel {
+  text-align: center;
+  margin: 0;
+}
+
+.join .allcheck {
+  background: transparent;
+  border: 1px solid #999;
+  color: #333;
+}
+
+input[type="checkbox"]+label::before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 2px solid #999;
+  border-radius: 50%;
+  content: "";
+  margin: 0px 15px -6px 0px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label::before {
+  background: #fff url(../images/checked_bg.png) center center no-repeat;
+  border: 2px solid #0075ff;
+  transition: all 0.4s;
+}
+
+.inform_tit {
+  position: relative;
+}
+
+.inform_tit p {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  margin-left: -73px;
+  color: #999;
+  font-size: 14px;
+}
+
+.inform_tit span {
+  color: red;
+}
+
+.inform th {
+  text-align: left;
+  font-weight: 500;
+  width: 150px;
+}
+
+.inform tr {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.inform td {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.inform label::after,
+.inform tr:nth-child(6) th::after,
+.inform tr:nth-child(7) th::after {
+  content: "*";
+  color: red;
+}
+
+.inform input,
+.inform .hp {
+  padding: 20px 30px;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.inform .hp {
+  /* padding: 15px 20px 20px; */
+  width: 32.2%;
+}
+
+.inform tr:nth-child(7) input {
+  width: 48.5%;
+}
+
+span#loadtext,
+span#loadtext2 {
+  margin-left: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.inform tr:last-child td {
+  padding: 50px 0 0;
+  width: max-content;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.inform input:focus,
+.inform .hp:focus {
+  box-shadow: 1px 1px 5px 1px #01abce80;
+  outline: none;
+  border: 1px solid #01abce;
+  box-sizing: border-box;
+}
+
+.inform input:focus::placeholder,
+.inform .hp:focus::placeholder {
+  color: transparent;
+}
+
+/* modify css */
+
+.modify dl {
+  margin-bottom: 30px;
+}
+
+.modify dl::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.modify dt {
+  width: 20%;
+  float: left;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.modify dd {
+  width: 80%;
+  float: right;
+}
+
+.modify li.email input {
+  width: 48.1%;
+}
+
+.modify li.nick::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.modify li.nick div:first-child {
+  width: 72%;
+  float: left;
+}
+
+.modify li.nick div:last-child a {
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+.modify li.nick div:last-child {
+  width: 26%;
+  margin: 0;
+  margin-left: 2%;
+  line-height: 2em;
+  border-radius: 10px;
+}
+
+.modify div#button {
+  padding: 50px 0 0;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.modify .hp {
+  width: 31.9%;
+}
+
+.modify .pass_box {
+  position: relative;
+}

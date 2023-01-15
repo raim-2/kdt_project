@@ -1,0 +1,138 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>사업분야-전문의약품</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub2common.css">
+  <link rel="stylesheet" href="./css/sub2_1.css">
+  <!-- <link rel="stylesheet" href="./css/Nwagon.css"> -->
+  <style>
+    .Nwagon_column {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+
+  <!-- 비주얼 영역 -->
+  <div class="main">
+    <h3>사업분야</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a class="current" href="./sub2_1.html">전문의약품</a></li>
+      <li><a href="./sub2_2.html">의료기기</a></li>
+      <li><a href="./sub2_3.html">진단사업</a></li>
+      <li><a href="./sub2_4.html">해외사업</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>전문의약품</h2>
+      <p>
+        인류 건강 증진을 위한<br>
+        동아ST의 혁신적 제품
+      </p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <section class="contentlist">
+      <div>
+
+        <h3>전문의약품</h3>
+        <div id="chart8">
+          <a href="#" class="hidden">연구개발 투자그래프</a>
+        </div>
+        <span>■ 투자액(억원)</span>
+      </div>
+      <p>동아ST는 지속적인 R&D 투자를 통해 국제규격의 인프라를 구축해 나가고 있으며, 차별화된 기술 도입을 위해 국내외 전문가들과 폭넓은 공동연구 체제를 구축하는 한편, 세계적인 제약회사 및 연구기관들과
+        전략적 제휴 관계를 쌓아 혁신적 의약품 개발을 추진하고 있습니다.</p>
+
+    </section>
+
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+  <script src="./js/Nwagon.js"></script>
+  <script>
+    var options = {
+      legend: {
+        names: ["2017년", "2018년", "2019년", "2020년", "2021년"],
+        hrefs: [],
+      },
+      dataset: {
+        title: "Playing time per day",
+        values: [787, 740, 741, 762, 823],
+        colorset: ["#1f415c"],
+        //fields: ["투자액(억원)"],
+      },
+      chartDiv: "chart8",
+      chartType: "column",
+      chartSize: {
+        width: 800,
+        height: 530,
+      },
+      maxValue: 900,
+      minValue: 500,
+      increment: 100,
+    };
+
+    Nwagon.chart(options);
+  </script>
+  <script>
+    var chart = document.querySelector('.Nwagon_column');
+
+    chart.style.marginLeft = "5";
+    chart.style.marginRight = "5";
+
+    chartWidth = $(window).width();
+    chartHeight = $(window).height();
+
+    $(window).resize(function () {
+      //웹브라우저 크기 조절시 반응하는 이벤트 메소드()
+      chartWidth = $(window).width();
+      chartHeight = $(window).height();
+
+      $('chart').css("margin-left", "5")
+      $('chart').css("margin-right", "5")
+    });
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+/* 제품검색 본문영역 */
+#content .contentArea {
+  margin-bottom: 70px;
+}
+
+#content .contentArea>p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#content .content01 img {
+  margin-bottom: 100px;
+}
+
+.contentArea .content01 .topMain span {
+  font-size: 1.25em;
+  font-family: "Roboto", sans-serif;
+  color: #01abce;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contentArea .content01 .topMain p {
+  font-size: 2.2em;
+  font-weight: 500;
+  line-height: 1.5em;
+  position: relative;
+}
+
+.contentArea .content01 .topMain p::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 15px;
+  background: #01abce;
+  opacity: 0.3;
+  position: absolute;
+  left: 395px;
+  top: 30px;
+  z-index: -4;
+  transition: all 0.7s ease-in-out;
+}
+
+.contentArea:hover .topMain p::before {
+  width: 190px;
+}
+
+.contentArea .content01 .topMain p::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 15px;
+  background: #01abce;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  z-index: -4;
+  transition: all 0.7s 0.7s ease-in-out;
+}
+
+.contentArea:hover .topMain p::after {
+  width: 215px;
+}
+
+.content02 {
+  position: relative;
+}
+
+.contentArea .content02 ul {
+  margin-top: 100px;
+}
+
+.contentArea .content02 li {
+  margin-bottom: 120px;
+  overflow: hidden;
+}
+
+.contentArea .content02 .list1 img,
+.contentArea .content02 .list2 dl {
+  float: left;
+}
+
+.contentArea .content02 .list1 dl,
+.contentArea .content02 .list2 img {
+  float: right;
+}
+
+.contentArea .content02 dl {
+  width: 500px;
+  padding-top: 80px;
+}
+
+.contentArea .content02 dt {
+  margin: 0 0 20px;
+  color: #01abce;
+  font-size: 1.25em;
+}
+
+.contentArea .content02 dl dd {
+  word-break: keep-all;
+  padding-right: 35px;
+}
+
+.contentArea .content02 dl dd p {
+  margin-bottom: 30px;
+  text-align: justify;
+  font-size: 1.125em;
+  line-height: 1.8em;
+}
+
+.contentArea .content02 dl dd:first-of-type p {
+  font-size: 1.7em;
+  font-weight: 600;
+  line-height: 1.6em;
+  color: #333;
+}
+
+.contentArea .content02 li img {
+  width: 540px;
+  border-radius: 30px;
+}
+
+.contentArea .content02 .list2 img {
+  filter: hue-rotate(16deg) contrast(1.1);
+}
+
+.content02 a {
+  text-align: center;
+  padding: 20px 80px;
+  background: #1f415c;
+  color: #fff;
+  border-radius: 10px;
+  opacity: 0.9;
+  position: absolute;
+  right: 200px;
+  top: 580px;
+  transition: all 0.5s;
+}
+
+.content02 a:hover {
+  opacity: 1;
+}

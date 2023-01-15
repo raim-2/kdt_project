@@ -1,0 +1,112 @@
+<!-- 헤더 공통 요소 -->
+
+<div id="skipNav">
+    <a href="#content">본문바로가기</a>
+    <a href="#gnb">네비게이션바로가기</a>
+</div>
+
+<div id="wrap">
+    <!-- 모달 박스 -->
+    <div class="box"></div>
+    <header id="headerArea">
+        <div class="header_top">
+            <h1>
+                <a href="index.html">동아ST로고</a>
+            </h1>
+            <a href="#" class="bar">
+                <span class="hidden">햄버거 메뉴</span>
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- 네비게이션 -->
+        <nav id="gnb">
+            <h2 class="hidden">글로벌네비게이션영역</h2>
+            <ul class="mainMenu">
+                <li class="depth1">
+                    <a href="#">
+                        <h3>회사소개</h3>
+                        <span><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+                    </a>
+                    <ul>
+                        <li><a href="./sub1/sub1_1.html">기업소개</a></li>
+                        <li><a href="./sub1/sub1_2.html">인사말</a></li>
+                        <li><a href="./sub1/sub1_3.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">
+                        <h3>사업분야</h3>
+                        <span><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+                    </a>
+                    <ul>
+                        <li><a href="./sub2/sub2_1.html">전문의약품</a></li>
+                        <li><a href="./sub2/sub2_2.html">의료기기</a></li>
+                        <li><a href="./sub2/sub2_3.html">진단사업</a></li>
+                        <li><a href="./sub2/sub2_4.html">해외사업</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">
+                        <h3>정도경영</h3>
+                        <span><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+                    </a>
+                    <ul>
+                        <li><a href="./sub3/sub3_1.html">사회공헌</a></li>
+                        <li><a href="./sub3/sub3_2.html">환경경영</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">
+                        <h3>고객지원</h3>
+                        <span><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+                    </a>
+                    <ul>
+                        <li><a href="./sub4/sub4_1.html">FAQ</a></li>
+                        <li><a href="./sub4/sub4_2.html">채용안내</a></li>
+                        <li><a href="./sub4/sub4_3.html">채용일정</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="log">
+
+                <?
+                @extract($_GET); 
+                @extract($_POST); 
+                @extract($_SESSION); 
+              
+                //$userid = $_SESSION['userid'] 정규
+              
+                  if(!$userid) //세션변수가 아니면,
+                {
+              ?>
+
+                <li>
+                    <a href="./login/login_form.php"><span>로그인</span></a>
+                </li>
+                <li>
+                    <a href="./member/join.html"><span>회원가입</span></a>
+                </li>
+
+                <?
+                }
+                else
+                {
+            ?>
+
+                <li>
+                    <a href="./login/logout.php"><span>로그아웃</span></a>
+                </li>
+                <li>
+                    <a href="./member/member_form_modify.php"><span>회원정보수정</span></a>
+                </li>
+
+                <?
+                }
+            ?>
+            </ul>
+            <a class="close" href="#">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+        </nav>
+    </header>

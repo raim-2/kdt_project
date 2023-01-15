@@ -1,0 +1,138 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>사업분야-진단사업</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub2common.css">
+  <link rel="stylesheet" href="./css/sub2_3.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+  <div class="main">
+    <h3>사업분야</h3>
+  </div>
+  <div class="subNav">
+    <ul>
+      <li><a href="./sub2_1.html">전문의약품</a></li>
+      <li><a href="./sub2_2.html">의료기기</a></li>
+      <li><a class="current" href="./sub2_3.html">진단사업</a></li>
+      <li><a href="./sub2_4.html">해외사업</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>진단사업</h2>
+      <p>
+        인류 건강 증진을 위한<br>
+        동아ST의 진단서비스
+      </p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <div class="contentlist">
+      <div class="conlist1 conlist">
+        <img src="./images/img3x2.png" alt="">
+        <p>
+          <span>진단사업부는 조기진단을 위한</span>
+          앞선 서비스를 제공합니다.
+        </p>
+        <p>
+          의료 분야의 전문화를 통한 국민 건강 향상을 목적으로
+          <span>1984년 설립</span>되었습니다. 설립된 이후 자사 연구소와의
+          연계를 통한 국내 최초의 E.I.A. B형 간염 진단 시약을 개발하였으며,
+          이후 AISDIA 1/2, 동아 HCV, 동아 HBsAg, 동아 Anti HBs, 동아 Syphilis
+          등 지속적으로 <span>진단 제품의 국산화를 위하여 노력</span>하였으며,
+          Thermo Fisher Scientific, BD 등 해외 우수 진단 업체의 진단용 제품
+          소개를 통하여
+          <span>질병의 정확한 조기 진단을 위하여 이바지</span>하고 있습니다.
+        </p>
+      </div>
+
+      <div class="conlist2 conlist">
+        <h3>수상내역</h3>
+        <p>
+          자사 연구소와 연계하여 일찍부터 국산 시약 개발에 주력하여
+          <span>유전자 재조합 기술을 이용 각종 임상병리 검사용 진단 시약 개발에
+            성공</span>하였으며 그 우수성을 인정받아 각종 수상 경력을 가지고 있습니다.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" id="year">수상년도</th>
+              <th scope="col" id="product">수상제품</th>
+              <th scope="col" id="award">수상내역</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1991년</td>
+              <td>에이즈 진단시약</td>
+              <td>장영실상 수상</td>
+            </tr>
+            <tr>
+              <td>1994년</td>
+              <td>에이즈 진단시약</td>
+              <td>장영실상 수상</td>
+            </tr>
+            <tr>
+              <td>1995년</td>
+              <td>에이즈디아 원/투</td>
+              <td>장영실상 수상</td>
+            </tr>
+            <tr>
+              <td rowspan="2">1998년</td>
+              <td rowspan="2">동아 HCV 3.2</td>
+              <td>특허 대전 특허청장상 수여</td>
+            </tr>
+            <tr>
+              <td>산/학/연 협동상 수상</td>
+            </tr>
+            <tr class="b">
+              <td rowspan="2">1999년</td>
+              <td>동아 시필리스</td>
+              <td rowspan="2">국산 신기술(KT) 수상</td>
+            </tr>
+            <tr class="a">
+              <td>동아 HMPAO</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+</body>
+
+</html>

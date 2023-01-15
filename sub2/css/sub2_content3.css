@@ -1,0 +1,168 @@
+/* 제품검색 본문영역 */
+
+#content .contentArea>p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.content01,
+.content02 {
+  margin-bottom: 100px;
+}
+
+.contentArea .content02 .con2Left span {
+  font-size: 1.25em;
+  font-family: "Roboto", sans-serif;
+  color: #01abce;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contentArea .content02 .con2Left p,
+.content03 span {
+  font-size: 2.2em;
+  font-weight: 500;
+}
+
+.contentArea .content02 .con2Left p {
+  line-height: 1.5em;
+  position: relative;
+}
+
+.contentArea .content02 .con2Left p::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 15px;
+  background: #01abce;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 90px;
+  z-index: -4;
+  transition: all 0.7s ease-in-out;
+}
+
+.contentArea:hover .con2Left p::before {
+  width: 240px;
+}
+
+.contentArea .content02 .con2Left p::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 15px;
+  background: #01abce;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  z-index: -4;
+  transition: all 0.7s 0.7s ease-in-out;
+}
+
+.contentArea:hover .con2Left p::after {
+  width: 280px;
+}
+
+.content02 {
+  overflow: hidden;
+}
+
+.contentArea .content02 .con2Left{
+  float: left;
+}
+
+.contentArea .content02 .con2Right {
+  width: 700px;
+  padding-left: 100px;
+  float: right;
+}
+
+.contentArea .content02 .con2Right p,
+.contentArea .content03 .con3Left p {
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 2em;
+  font-size: 1.125em;
+  color: #666;
+}
+
+.contentArea .content02 .con2Right p:first-child,
+.contentArea .content03 .con3Left span+p {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+.contentArea .content03 {
+  position: relative;
+  margin-bottom: 100px;
+  clear: both;
+}
+
+.contentArea .content03 .con3Left {
+  width: 600px;
+  float: left;
+  padding-top: 150px;
+  margin: 20px 0 60px 0;
+}
+
+.contentArea .content03 .con3Left::after {
+  content: "";
+  display: block;
+  width: 700px;
+  height: 300px;
+  margin-left: -20px;
+  background: #fff;
+  position: absolute;
+  top: 142px;
+  z-index: -2;
+}
+
+.contentArea .content03 .con3Left span+p {
+  margin-top: 40px;
+}
+
+.contentArea .content03 .con3Left span i {
+  color: #01abce;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.contentArea .content03 .con3Left+img {
+  float: right;
+  position: absolute;
+  right: 0;
+  z-index: -3;
+}
+
+.contentArea .content03 table {
+  clear: both;
+  width: 1200px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.contentArea .content03 table tr {
+  height: 80px;
+}
+
+.contentArea .content03 table thead tr {
+  background: #f8f8f8;
+  /* font-size: 1.125em; */
+  border-top: 2px solid #999;
+}
+
+.contentArea .content03 table th,
+.contentArea .content03 table td {
+  width: 33%;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.contentArea .content03 table th {
+  font-size: 1.25rem
+}

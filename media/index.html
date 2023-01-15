@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>모아나 Moana</title>
+
+	<!-- 이거 3개 파일 만들기 -->
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+	<link rel="apple-touch-startup-image" href="./startup.png">
+
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+
+	<script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+	<script src="./js/prefixfree.min.js"></script>
+
+	<script>
+		// <![CDATA[
+		try {
+			window.addEventListener(
+				"load",
+				function () {
+					setTimeout(scrollTo, 0, 0, 1);
+				},
+				false
+			);
+		} catch (e) { }
+		// ]]>
+	</script>
+</head>
+
+<body>
+	<div id="skipNav">
+		<a href="#content">Contents Area</a>
+		<a href="#gnb">Global Navigation Area</a>
+	</div>
+
+	<div id="wrap">
+		<div class="videoBox">
+			<video autoplay loop muted id="videoBG"></video>
+			<img src="images/back1.jpg" id="imgBG" alt="visual image">
+
+			<a class="down" href="#">
+				<img class="scrollImg" src="./images/scroll.png" alt="scroll image">
+				<span>scroll down</span>
+			</a>
+		</div>
+
+		<header id="headerArea">
+			<div class="headerInner">
+				<h1><a href="#">MOANA</a></h1>
+				<a href="#" class="btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<nav id="gnb">
+					<h2 class="hidden">Global Navigation Area</h2>
+					<ul>
+						<li>
+							<h3><a href="./sub1.html">Story</a></h3>
+						</li>
+						<li>
+							<h3><a href="./sub2.html">Character</a></h3>
+						</li>
+						<li>
+							<h3><a href="./sub3.html">Trailer</a></h3>
+						</li>
+						<li>
+							<h3><a href="./sub4.html">Gallery</a></h3>
+						</li>
+					</ul>
+					<a href="#" class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+				</nav>
+			</div>
+		</header>
+
+		<article id="content">
+			<h2 class="hidden">Contents Area</h2>
+			<section class="story">
+				<ul>
+					<li>
+						<h3>STORY</h3>
+						<div class="storyText">
+							<p>Three thousand years ago, the greatest sailors in the world voyaged across the vast
+								Pacific,
+								discovering the many islands of Oceania. But then, for a millennium, their voyages
+								stopped,
+								and no one knows why.</p>
+							<p>Walt Disney Animation Studios’ Moana is about an adventurous teenager who, with help from
+								mighty demigod Maui, sails out on a daring mission across the open ocean, encountering
+								enormous monsters and impossible odds to prove herself a master wayfinder and to fulfil
+								the
+								ancient quest of her ancestors and save her people.</p>
+							<p>Moana is set on the fictional island of Motunui in the Pacific Ocean and draws
+								inspiration
+								from elements of the real-life island nations of Fiji, Samoa and Tonga.</p>
+						</div>
+						<a href="./sub1.html" class="more">more</a>
+					</li>
+					<li class="storyImg none"></li>
+					<li class="storyImg filter"></li>
+					<li class="storyImg filter"></li>
+					<li class="storyImg filter"></li>
+					<li class="storyImg filter"></li>
+				</ul>
+				<img class="wave" src="./images/story6_1.png" alt="wave image">
+			</section>
+
+			<section class="character">
+				<h3>CHARACTER</h3>
+				<ul class="main">
+					<li>
+						<img class="moana" src="./images/charact1.png" alt="Moana">
+					</li>
+					<li class="sketch sketch1">
+						<img src="./images/charact2.jpg" alt="Moana concept art1">
+					</li>
+					<li class="sketch sketch2">
+						<img src="./images/charact3.jpg" alt="Moana concept art2">
+					</li>
+					<li class="cText">
+						<p>Moana is the 16-year-old daughter of a South Pacific chief. As the next chieftain of her
+							village she is at odds with her responsibility to her people and her desire to explore the
+							sea.</p>
+						<a href="./sub2.html" class="more">more?</a>
+					</li>
+					<li class="sketch sketch3">
+						<img src="./images/charact4.jpg" alt="Maui concept art1">
+					</li>
+					<li class="sketch sketch4">
+						<img src="./images/charact5.jpg" alt="Maui concept art1">
+					</li>
+					<li class="cText">
+						<p class="mauiIntro">Maui is the greatest shape-shifting demigod of the wind and sea and master
+							of sailing in all of the Pacific. Maui steals the Te Fiti’s heart to give humanity the power
+							of creation.</p>
+						<a href="./sub2.html" class="more">more?</a>
+					</li>
+					<li>
+						<img class="maui" src="./images/charact6.png" alt="Maui">
+					</li>
+				</ul>
+				<div class="sub">
+					<ul>
+						<li>
+							<img src="./images/charact8.jpg" alt="Puaa">
+							<span>PUAA</span>
+						</li>
+						<li>
+							<img src="./images/charact12.jpg" alt="Heihei">
+							<span>HEIHEI</span>
+						</li>
+						<li>
+							<img src="./images/charact10.jpg" alt="Tamatoa">
+							<span>TAMATOA</span>
+						</li>
+						<li>
+							<img src="./images/charact11.jpg" alt="Tala">
+							<span>TALA</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="trailer">
+				<h3>TRAILER</h3>
+				<div class="trailerMain">
+					<div class="innerImg">
+						<a href="./sub3.html#clip1">
+							<img src="./images/trailer1.png" alt="Official trailer Image">
+						</a>
+					</div>
+					<dl class="innerText">
+						<dt>
+							Official Main Trailer
+						</dt>
+						<dd>
+							<p>Watch the brand new teaser trailer for Disney’s Moana!</p>
+							<p>From Walt Disney Animation Studios comes “Moana,” a sweeping, CG-animated feature film
+								about an adventurous teenager who sails out on a daring mission to save her people.
+								<!-- During her journey, Moana (voice of Auli’i Cravalho) meets the once-mighty demigod Maui
+								(voice of Dwayne Johnson), who guides her in her quest to become a master wayfinder.</p> -->
+						</dd>
+					</dl>
+					<a href="./sub3.html" class="more">more</a>
+				</div>
+				<div class="trailerSub">
+					<ul>
+						<li class="clip_part">
+							<div class="imgBox cd1 contentArea">
+								<a href="./sub3.html#music">
+									<img src="./images/trailer3.jpg" alt="trailer Image1">
+								</a>
+							</div>
+							<div class="text cd1">
+								<span>Moana</span>
+								<span>“How Far I'll Go”</span>
+							</div>
+						</li>
+						<li class="clip_part">
+							<div class="imgBox cd2 contentArea">
+								<a href="./sub3.html#music">
+									<img src="./images/trailer2.jpg" alt="trailer Image2">
+								</a>
+							</div>
+							<div class="text">
+								<span>Maui</span>
+								<span>“You're Welcome”</span>
+							</div>
+						</li>
+						<li class="clip_part">
+							<div class="imgBox contentArea">
+								<a href="./sub3.html#music">
+									<img src="./images/trailer5.jpg" alt="trailer Image3">
+								</a>
+							</div>
+							<span>Tala</span>
+							<span>“Tala's Deathbed”</span>
+						</li>
+						<li class="clip_part">
+							<div class="imgBox contentArea">
+								<a href="./sub3.html#music">
+									<img src="./images/trailer4.jpg" alt="trailer Image4">
+								</a>
+							</div>
+							<span>Tomatoa</span>
+							<span>“Shiny”</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="midBg"></div>
+			<section class="gallery">
+				<div class="galleryText">
+					<h3>GALLERY</h3>
+					<!-- <p>"It's called wayfinding, princess. It's not just sails and knots, it's seeing where you're going
+						in your mind. Knowing where you are by knowing where you've been."</p> -->
+				</div>
+				<!-- <div class="moreBox"> -->
+				<a href="./sub4.html" class="more">more</a>
+				<!-- </div> -->
+				<ul>
+					<li><img src="./images/gallery1.jpg" alt="gallery image1"></li>
+					<li><img src="./images/gallery2.jpg" alt="gallery image2"></li>
+					<li><img src="./images/gallery3.jpg" alt="gallery image3"></li>
+					<li><img src="./images/gallery4.jpg" alt="gallery image4"></li>
+					<li><img src="./images/gallery5.jpg" alt="gallery image5"></li>
+					<li><img src="./images/gallery6.jpg" alt="gallery image6"></li>
+					<li><img src="./images/gallery7.jpg" alt="gallery image7"></li>
+				</ul>
+			</section>
+		</article>
+
+		<footer id="footerArea">
+			<a class="topMove" href="#">
+				TOP
+			</a>
+			<img src="./images/logo3.png" alt="Disney logo">
+			<p>&copy;Disney &copy;Disney/Pixar &copy;MARVEL &copy; ™ Lucasfilm Ltd. ©2021 20CS</p>
+		</footer>
+		<!-- <div class="topText">0</div> -->
+	</div>
+
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery-migrate-1.4.1.min.js"></script>
+	<script src="./js/nav.js"></script>
+	<script src="./js/video.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

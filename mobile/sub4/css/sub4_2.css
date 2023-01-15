@@ -1,0 +1,96 @@
+/* 채용안내 css */
+
+#content .contentlist {
+  margin: 55px 0;
+}
+
+.contentlist h3 {
+  font-size: 1.4375rem;
+  font-weight: 600;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.con1 h3+p {
+  padding: 20px;
+  text-align: justify;
+  background: #01abce;
+  color: #ffff;
+  line-height: 1.7em;
+}
+
+.talent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin: 30px 0;
+}
+
+.talent img {
+  margin: 0 30px 0 0;
+}
+
+.talent2 img {
+  margin: 0 0 0 30px;
+}
+
+.talent p span {
+  display: block;
+  font-size: 1.143em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #01abce;
+}
+
+.process {
+  margin: 0 5%;
+}
+
+.process li {
+  width: 90%;
+  margin: 0 5% 30px;
+  text-align: justify;
+}
+
+.process dt {
+  margin-bottom: 10px;
+  font-size: 1.143em;
+  font-weight: 600;
+}
+
+.process dt span {
+  color: #01abce;
+}
+
+.process li {
+  width: 90%;
+  margin: 0 5% 50px;
+  text-align: justify;
+  border-radius: 15px;
+  border: 3px solid #1f415c;
+  position: relative;
+}
+
+.process li:last-child {
+  margin-bottom: 0;
+}
+
+.process li::after {
+  content: "▼";
+  display: block;
+  position: absolute;
+  font-size: 1.786em;
+  left: 50%;
+  margin-left: -12px;
+  bottom: -40px;
+  color: #999;
+}
+
+.process li:last-child::after {
+  content: none;
+}
+
+.process li dl {
+  padding: 5%;
+}

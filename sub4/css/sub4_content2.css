@@ -1,0 +1,381 @@
+/* 사회공헌 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+ul.tab_menu {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#content .contentArea .tabs .tab_menu li a {
+  display: block;
+  padding: 15px 20px;
+  background: #f8f8f8;
+  border-radius: 30px;
+}
+
+#content .contentArea .topText {
+  line-height: 2em;
+  font-size: 22px;
+}
+
+#content .contentArea .tab_menu li {
+  width: 150px;
+  text-align: center;
+  float: left;
+}
+
+#content .contentArea .tab_menu li:first-child {
+  margin-right: 20px;
+}
+
+#content .contentArea .tab_menu::after,
+#content .contentArea .sec01 .value > div::after,
+#content .contentArea .sec01 .part ul::after,
+.sec01 .value ul::after,
+.sec02 ul li::after,
+.sec02 .partner::after,
+.partner ul::after,
+.sec02 .result ul li dl::after,
+.sec02 .result ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .topMain {
+  margin-top: 50px;
+}
+
+#content .contentArea .topMain img {
+  margin-left: -1000px;
+  position: relative;
+  left: 50%;
+  margin-bottom: 80px;
+}
+
+#content .contentArea .topMain img + p {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2em;
+  margin-bottom: 20px;
+}
+
+#content .contentArea .topMain p:last-child {
+  font-size: 18px;
+  line-height: 2em;
+  width: 660px;
+  text-align: left;
+}
+
+#content .contentArea section.contlist {
+  margin: 100px 0;
+  /* display: none; */
+}
+
+#content .contentArea section p,
+#content .contentArea section .value {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+#content .contentArea .sec01 {
+  background: #f8f8f8;
+
+  padding: 90px 30px;
+}
+
+#content .contentArea .sec01 h3 + p {
+  font-size: 20px;
+  line-height: 2em;
+}
+
+#content .contentArea .sec01 h3 + p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  position: relative;
+  left: 0;
+  top: 50px;
+}
+
+#content .contentArea .sec01 .value img {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+#content .contentArea section h4 {
+  margin: 60px 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#content .contentArea .sec01 .value {
+  margin-bottom: 70px;
+}
+
+.sec01 .value ul {
+  width: 750px;
+  margin: 50px auto 60px;
+}
+
+.sec01 .value ul li {
+  position: relative;
+  font-weight: 500;
+  float: left;
+  font-size: 22px;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  color: #1f415c;
+  margin: 0 25px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 85px 0;
+  box-sizing: border-box;
+  box-shadow: 0px 12px 17px 1px rgb(0 0 0 / 10%);
+}
+
+.sec01 .value ul li:first-child::after,
+.value ul li:nth-child(2)::after {
+  content: "+";
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: -30px;
+}
+
+#content .contentArea section .value p {
+  width: 610px;
+  word-break: keep-all;
+  text-align: center;
+  line-height: 2em;
+  background: #fff;
+  padding: 30px 50px;
+  border: 1px dashed #ccc;
+}
+
+#content .contentArea .sec01 .part {
+  clear: both;
+  text-align: center;
+}
+
+#content .contentArea .sec01 .part h4 + p {
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+.sec01 .part > span::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #01abce;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 113px;
+  bottom: -5px;
+}
+
+#content .contentArea .sec01 .part ul {
+  width: 1100px;
+  margin: 60px auto 0;
+  padding: 0 110px;
+  box-sizing: border-box;
+}
+
+#content .contentArea .sec01 .part li {
+  float: left;
+  text-align: center;
+  margin: 10px;
+  width: 200px;
+  height: 225px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40px 0;
+  position: relative;
+}
+
+#content .contentArea .sec01 .part i {
+  font-size: 45px;
+  color: #01abce;
+}
+
+#content .contentArea .sec01 .part dt {
+  font-size: 18px;
+  margin: 20px 0 10px;
+  font-weight: 500;
+  color: #1f415c;
+}
+
+/* .sec02 h3 + span {
+  margin-left: 110px;
+  font-size: 20px;
+}
+
+.sec02 h3 + span span,
+.sec02 p span {
+  color: #01abce;
+} */
+
+#content .contentArea .sec02 h4 {
+  margin-top: 100px;
+}
+
+#content .contentArea .sec02 .left p {
+  /* margin-top: 30px;  */
+  width: inherit;
+  margin-top: 20px;
+  text-align: justify;
+  line-height: 2em;
+}
+
+/* .sec02 h3 + ul {
+  padding: 0 52px;
+} */
+
+.sec02 h3 + ul li {
+  margin-bottom: 50px;
+}
+
+.sec02 ul li .left {
+  float: left;
+  width: 680px;
+}
+
+.sec02 ul li .left span {
+  font-size: 22px;
+  word-spacing: -2px;
+  font-weight: 500;
+  color: #1f415c;
+}
+
+.sec02 ul li .left span::after {
+  content: "";
+  display: block;
+  background: #1f415c;
+  width: 60%;
+  height: 1px;
+  margin: 20px 0 30px;
+}
+
+.sec02 h3 + ul li img {
+  float: right;
+  /* margin-left: 60px; */
+}
+
+.sec02 .result > span {
+  display: block;
+  margin-left: 68%;
+  margin-bottom: 60px;
+  /* width: 92px; */
+  /* margin: 0 auto; */
+}
+
+.sec02 .result ul {
+  margin: 0 auto;
+  width: 680px;
+}
+
+.sec02 .result ul li {
+  float: left;
+  width: 280px;
+}
+
+.sec02 .result ul li:last-child {
+  margin-left: 80px;
+}
+
+.sec02 .result ul li dt {
+  font-size: 18px;
+  float: left;
+  word-spacing: -2px;
+}
+
+.sec02 .result dl dt::after {
+  content: "";
+  display: block;
+  width: 170%;
+  height: 1px;
+  background: #333;
+  margin: 20px 0;
+}
+
+.sec02 .result ul li dd {
+  float: right;
+  position: relative;
+}
+
+.sec02 .result ul li dd::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -70px;
+  bottom: -50px;
+  z-index: -1;
+}
+
+.sec02 .result ul li dd span {
+  font-size: 50px;
+  color: #01abce;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.sec02 .partner {
+  margin: 130px 0 0 -1000px;
+  width: 2000px;
+  background: #1f415c;
+  color: #fff;
+  position: relative;
+  left: 50%;
+  padding: 30px 0 60px;
+  clear: both;
+  overflow: hidden;
+}
+
+.sec02 .partner .partnerBox {
+  width: 4320px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.sec02 .partner ul {
+  float: left;
+}
+
+.sec02 .partner ul li {
+  float: left;
+  /* width: 240px;
+  margin: 0 30px 40px; */
+}
+
+/* .sec02 .partner ul li:hover {
+  box-shadow: 1px 1px 6px 3px rgb(0 0 0 / 10%);
+} */
+
+#content .contentArea section .partner h4 {
+  margin: 0 0 60px;
+}

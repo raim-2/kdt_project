@@ -1,0 +1,304 @@
+/* 주요연혁 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+ul.contentNav {
+  width: 490px;
+  margin: 0 auto;
+}
+
+ul.contentNav::after,
+.contentArea .y2020Content::after,
+.contentArea .y2010Content::after,
+.contentArea .y2000Content::after,
+.contentArea .bottom::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .contentNav li {
+  width: 150px;
+  text-align: center;
+  float: left;
+}
+
+.contentNav li:nth-of-type(2) {
+  margin: 0 20px;
+}
+
+/* 상단에 고정 sticky menu */
+.navOn {
+  position: fixed;
+  width: 100%;
+  z-index: 60;
+  left: 0;
+  top: 0;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 1px 1px 6px 1px;
+}
+
+.navBox .contentNav li a {
+  display: block;
+  padding: 15px 20px;
+  background: #f8f8f8;
+  border-radius: 30px;
+  transition: all 0.8s;
+}
+
+/* 메뉴 활성화  scroll spy */
+.navBox .contentNav li a.spy {
+  background: #1f415c;
+  color: #fff;
+}
+
+#content .contentArea .navBox + p {
+  font-size: 30px;
+  text-align: center;
+  margin: 80px 0;
+  line-height: 1.6em;
+}
+
+#content .contentArea .navBox + p span {
+  color: #01abce;
+}
+
+.contentArea .y2020Content {
+  /* position: relative; */
+  height: 2995px; /* 2996 */
+}
+.contentArea .y2010Content {
+  height: 3985px; /* 3986 */
+}
+.contentArea .y2000Content {
+  height: 1615px; /* 1617 */
+}
+
+/* scroll animation 최종값(목적지)  */
+#sectionBox section .historyMain + div.boxLMove {
+  right: 0;
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+#sectionBox section .yleft + div.boxRMove {
+  left: 0;
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+.text {
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-size: 50px;
+  z-index: 100;
+}
+
+/* */
+
+#content .contentArea .historyMain {
+  width: 2000px;
+  height: 380px;
+  position: relative;
+  left: 50%;
+  top: 0;
+  margin-left: -1000px;
+  margin-bottom: 40px;
+}
+
+/* 아마 no-repeat 때문 */
+#content .contentArea .y2020Content .historyMain {
+  background: url(../images/content3/history1.jpg) center fixed no-repeat;
+  background-size: cover;
+}
+
+#content .contentArea .y2010Content .historyMain {
+  background: url(../images/content3/history2.jpg) center fixed no-repeat;
+  background-size: cover;
+}
+
+#content .contentArea .y2000Content .historyMain {
+  background: url(../images/content3/history3.jpg) center fixed no-repeat;
+  background-size: cover;
+}
+
+.contentArea .historyMain .historyMainInner h3 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 9px rgb(31 30 30 / 50%);
+}
+
+.contentArea .historyMain .historyMainInner {
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  right: 430px;
+  bottom: 130px;
+}
+
+div#sectionBox {
+  position: relative;
+}
+
+div#sectionBox::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: calc(100% - 520px);
+  background: #01abce;
+  position: absolute;
+  left: 50%;
+  top: 460px;
+}
+
+.yleft {
+  float: left;
+  position: relative;
+  right: 100px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.yright {
+  float: right;
+  position: relative;
+  width: 600px;
+  left: 100px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+/* .contentArea .yright ul::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  left: -100px;
+  margin-top: 10px;
+} */
+
+.contentArea .yleft li {
+  font-size: 100px;
+  font-weight: 500;
+  color: #01abce;
+}
+
+.contentArea .y2020Content .y2020Left li span {
+  display: block;
+}
+
+.contentArea .y2020Content .y2020Left li:first-child {
+  height: 700px;
+  position: relative;
+}
+
+.contentArea .y2020Content .y2020Left li:nth-child(2) {
+  height: 1040px;
+  position: relative;
+}
+
+.contentArea .y2020Content .y2020Left li:last-child {
+  height: 830px;
+}
+
+.contentArea .y2010Content .y2010Left li:first-child {
+  height: 390px;
+}
+
+.contentArea .y2010Content .y2010Left li:nth-child(2) {
+  height: 480px;
+}
+
+.contentArea .y2010Content .y2010Left li:nth-child(3) {
+  height: 680px;
+}
+
+.contentArea .y2010Content .y2010Left li:nth-child(4) {
+  height: 560px;
+}
+
+.contentArea .y2010Content .y2010Left li:nth-child(5) {
+  height: 460px;
+}
+
+.contentArea .y2010Content .y2010Left li:nth-child(6) {
+  height: 530px;
+}
+
+.contentArea .y2010Content .y2010Left li:nth-child(7) {
+  height: 230px;
+}
+
+.contentArea .y2000Content .y2000Left li:nth-child(3),
+.y2000Left li:nth-child(4) {
+  margin-top: 35px;
+}
+
+.contentArea .y2000Content .y2000Left li:nth-child(5) {
+  margin: 10px 0 50px;
+}
+
+.contentArea .yright ul {
+  margin: 30px 0 0 100px;
+  position: relative;
+}
+
+.contentArea .yright li dl::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  margin-top: 15px;
+}
+
+.contentArea .yright dl {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.contentArea .y2000Content .y2000Right dl {
+  margin-bottom: 80px;
+}
+
+.contentArea .yright dt {
+  font-size: 20px;
+  font-weight: 500;
+  color: #01cbf4;
+  margin-bottom: 23px;
+}
+
+.contentArea .yright dt::before {
+  display: block;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border: 3px solid #01cbf4;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: -108px;
+  margin-top: 9px;
+}
+
+.contentArea .yright dd {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contentArea .y2010Content,
+.contentArea .y2000Content {
+  clear: both;
+}

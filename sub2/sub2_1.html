@@ -1,0 +1,168 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사업분야-제품검색</title>
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub2common.css">
+  <link rel="stylesheet" href="./css/sub2_content1.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <? include "../common/sub_header.html" ?>
+
+  <div class="visual">
+    <img src="../sub2/common/images/main.jpg" alt="">
+    <h3>사업분야</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a class="current" href="../concert/insert.php">제품검색</a></li>
+      <li><a href="./sub2_2.html">의료기기사업</a></li>
+      <li><a href="./sub2_3.html">진단사업</a></li>
+      <li><a href="./sub2_4.html">해외사업</a></li>
+    </ul>
+  </div>
+
+  <article id="content">
+    <div class="titleArea">
+      <div class="lineMap">
+        <i class="fa-solid fa-house"></i>
+        <span>home</span>&gt;<span>사업분야</span>&gt;<strong>제품검색</strong>
+      </div>
+      <h2>제품검색</h2>
+    </div>
+    <div class="contentArea">
+      <!-- 본문 콘텐츠 영역 -->
+      <p>인류 건강 증진을 위한 동아ST의 혁신적 제품</p>
+      <div class="recommend">
+        <dl>
+          <dt>추천제품 :</dt>
+          <dd>
+            <a href="#">#비리얼</a>
+          </dd>
+          <dd>
+            <a href="#">#슈가메트</a>
+          </dd>
+          <dd>
+            <a href="#">#슈가논</a>
+          </dd>
+        </dl>
+      </div>
+
+      <!-- 검색 부분 -->
+      <div class="search">
+        <form action="a.asp" method="post" autocomplete="off">
+          <select id="optionType" name="optionType">
+            <option value="1">제품명</option>
+            <option value="2">효능별</option>
+          </select>
+          <label for="searchbar" class="hidden">제품검색</label>
+          <input type="text" id="searchbar" name="searchbar" placeholder="제품명 · 효능별 검색 가능">
+          <button type="submit">
+            <span class="hidden">검색</span><i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- 제품 영역 -->
+      <div class="productSection">
+        <div class="innerTop">
+          <p>총 <span>15</span> 개의 게시물이 있습니다.</p>
+
+          <div class="right">
+            <a href="#">
+              <span class="hidden">리스트</span>
+              <img src="./images/content1/list.png" alt="리스트">
+            </a>
+            <a href="#">
+              <span class="hidden">그리드</span>
+              <img src="./images/content1/grid.png" alt="그리드">
+            </a>
+            <form action="a.asp" method="post">
+              <select id="showType" name="showType">
+                <option value="1">6개씩</option>
+                <option value="2">9개씩</option>
+                <option value="3">15개씩</option>
+              </select>
+            </form>
+          </div>
+        </div>
+
+        <div class="innerMiddle">
+          <ul>
+            <li>
+              <a href="#"><img src="./images/content1/product1.png" alt="가스터정"><span>가스터정</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product2.png" alt="그로트로핀"><span>그로트로핀</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product3.png" alt="네노마정"><span>네노마정</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product4.png" alt="메바페넴"><span>메바페넴</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product5.png" alt="모티리톤정"><span>모티리톤정</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product6.png" alt="비리얼"><span>비리얼</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product7.png" alt="슈가논"><span>슈가논</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product8.png" alt="슈가메트"><span>슈가메트</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product9.png" alt="스티렌투엑스정"><span>스티렌2X정</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product10.png" alt="엘라스폴"><span>엘라스폴</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product11.png" alt="이달비클로정"><span>이달비클로정</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product12.png" alt="이리보정"><span>이리보정</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product13.png" alt="주블리아 외용액"><span>주블리아 외용액</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product14.png" alt="코자르탄"><span>코자르탄</span></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/content1/product15.png" alt="타치온주사"><span>타치온주사</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page">
+          <a href="#"><span>&lt;</span></a>
+          <a href="#"><span>1</span></a>
+          <a href="#"><span>2</span></a>
+          <a href="#"><span>3</span></a>
+          <a href="#"><span>4</span></a>
+          <a href="#"><span>&gt;</span></a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <? include "../common/sub_footer.html" ?>
+</body>
+
+</html>

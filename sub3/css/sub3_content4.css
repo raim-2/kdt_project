@@ -1,0 +1,197 @@
+/* 라이센싱 본문영역 */
+
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.topMain > span {
+  display: block;
+  width: 120px;
+  padding: 5px 10px;
+  background: #1f415c;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+#content .contentArea .topText {
+  line-height: 1.8em;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 50px;
+}
+
+#content .contentArea .topImg {
+  background: url(../images/content4/top.jpg) 0 0 no-repeat;
+  height: 390px;
+}
+
+#content .contentArea .topImg::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#content .contentArea .topImg li {
+  float: left;
+  width: 200px;
+  margin-top: 65px;
+  transition: all 0.4s ease-in-out;
+}
+
+#content .contentArea .topImg li img {
+  margin: 50px 0 0 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+#content .contentArea .topImg li span {
+  display: block;
+  padding: 25px 52px 50px;
+  color: #fff;
+  font-size: 24px;
+}
+
+#content .contentArea .topImg:hover li {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#content .contentArea .topImg:hover li span {
+  color: #999;
+}
+
+#content .contentArea .topImg:hover li img {
+  transform: scale(1.1);
+  transition-delay: 0.4s;
+}
+
+#content .contentArea section {
+  padding: 0 135px;
+  margin-bottom: 100px;
+}
+
+#content .contentArea section p {
+  margin-bottom: 20px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+#content .contentArea section h3 + p,
+#content .contentArea .sec02 h3 + span {
+  font-size: 18px;
+}
+
+#content .contentArea .sec02 p > span {
+  color: #01abce;
+  font-weight: 500;
+}
+
+#content .contentArea section h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 70px 0 60px;
+  color: #01abce;
+}
+
+#content .contentArea section h3 span {
+  color: #333;
+}
+
+#content .contentArea section h4 {
+  margin: 60px 0 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#content .contentArea section h4 + span {
+  font-size: 20px;
+}
+
+#content .contentArea .sec02 p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+#content .contentArea .bottom {
+  margin-top: 70px;
+}
+
+#content .contentArea .bottom div {
+  float: left;
+  font-size: 24px;
+  font-weight: 500;
+  width: 380px;
+  height: inherit;
+  margin-left: 150px;
+}
+
+#content .contentArea .bottom div span {
+  display: block;
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+#content .contentArea .bottom ul li {
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  overflow: hidden;
+}
+
+#content .contentArea .bottom ul li ul li:hover {
+  background: #1f415c;
+  color: #fff;
+}
+
+#content .contentArea .bottom > ul > li {
+  background: rgba(248, 248, 248, 0.5);
+  height: 380px;
+  padding: 40px 0;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#content .contentArea .bottom > ul > li::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 100%;
+  background: #1f415c;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#content .contentArea .bottom ul li dl {
+  float: left;
+  width: 350px;
+}
+
+#content .contentArea .bottom ul li ul {
+  float: left;
+  width: 340px;
+}
+
+#content .contentArea .bottom li:last-child ul {
+  margin-top: 40px;
+}
+
+#content .contentArea .bottom ul li dt {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.contentArea .bottom li img {
+  width: 70%;
+}
+
+.contentArea .bottom li:first-child img {
+  width: 80%;
+  margin-top: 10px;
+}

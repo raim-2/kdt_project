@@ -1,0 +1,123 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>사업분야-의료기기</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub2common.css">
+  <link rel="stylesheet" href="./css/sub2_2.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+  <div class="main">
+    <h3>사업분야</h3>
+  </div>
+  <div class="subNav">
+    <ul>
+      <li><a href="./sub2_1.html">전문의약품</a></li>
+      <li><a class="current" href="./sub2_2.html">의료기기</a></li>
+      <li><a href="./sub2_3.html">진단사업</a></li>
+      <li><a href="./sub2_4.html">해외사업</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>의료기기</h2>
+      <p>
+        인류 건강 증진을 위한<br>
+        동아ST의 의료서비스
+      </p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <div class="contentlist">
+      <div class="conlist1 conlist">
+        <img src="./images/img2x2.png" alt="">
+        <p>
+          <span>서비스의 질 향상을 위해</span>
+          최선을 다하겠습니다.
+        </p>
+      </div>
+
+      <!-- <div class="swiper-container"> -->
+      <div class="conlist2 conlist swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="innerTop">
+              <span></span>
+              <div class="textTop">
+                <h3>의료기기 사업부</h3>
+                <p>보건 향상을 위한 최첨단 의료기기를 수입합니다.</p>
+              </div>
+            </div>
+            <p>
+              의료분야의 전문서비스를 통한 국민보건 향상에 기여 하고자
+              세계굴지의 기업으로부터 최첨단 의료기기를 수입하여 국내시장에
+              공급하고 있습니다.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <div class="innerTop">
+              <span></span>
+              <div class="textTop">
+                <h3>의료기기 사업팀</h3>
+                <p>글로벌 제약회사 동아ST의 사업팀을 소개합니다.</p>
+              </div>
+            </div>
+            <p>
+              외과용 전기수술장비, 내과용 동맥경화진단장비, 중심대동맥
+              혈압측정장비, 전자동혈압계, 비뇨기과 스텐트를 수입하여 판매하고
+              있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+  <script src="../js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

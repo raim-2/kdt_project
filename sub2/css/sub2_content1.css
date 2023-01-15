@@ -1,0 +1,171 @@
+/* 제품검색 본문영역 */
+#content .contentArea > p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.search {
+  width: 600px;
+  margin: 30px auto;
+  border-radius: 15px;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  padding: 20px 75px;
+}
+
+.search form {
+  height: 47px;
+}
+
+.search select {
+  padding: 12px;
+  font-size: 1.125em;
+  margin-right: 5px;
+  color: #666;
+}
+
+.search input#searchbar {
+  padding: 11px 70px 10px 10px;
+  font-size: 1.125em;
+  outline: none;
+  color: #666;
+}
+
+.search button {
+  font-size: 1.125em;
+  padding: 13px;
+  position: absolute;
+  background: #01abce;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.recommend dl {
+  overflow: hidden;
+  margin: 10px auto;
+  width: 460px;
+  font-size: 18px;
+}
+
+.recommend dl dt {
+  float: left;
+  margin-right: 30px;
+  font-size: 1.125rem;
+  line-height: 2.3em;
+}
+
+.recommend dl dd {
+  float: left;
+  padding: 8px 0;
+  margin: 0 10px 0 0;
+  background: #01abce;
+  width: 110px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.recommend dl dd:last-child {
+  margin-right: 0;
+}
+
+.recommend dl dd a {
+  display: block;
+  color: #fff;
+}
+
+.productSection {
+  margin-bottom: 100px;
+}
+
+.innerTop {
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+}
+
+.innerTop p {
+  float: left;
+  line-height: 3;
+}
+
+.innerTop p span {
+  color: #01abce;
+}
+
+.innerTop .right {
+  float: right;
+  display: flex;
+}
+
+.innerTop .right a {
+  border: 2px solid rgb(118, 118, 118);
+  padding: 6px 8px 6px 10px;
+}
+
+.innerTop .right a:nth-of-type(2) {
+  margin: 0 10px 0 0;
+  border-left: 0;
+  padding-top: 7px;
+}
+
+.right select {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.innerMiddle {
+  clear: both;
+}
+
+.innerMiddle ul {
+  width: 1158px;
+  margin: 0 auto;
+}
+
+.innerMiddle ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.innerMiddle li {
+  position: relative;
+  float: left;
+  margin: 0 10px 20px 10px;
+  box-shadow: 1px 1px 6px 1px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+}
+
+.innerMiddle li:hover {
+  box-shadow: 1px 1px 13px 1px rgb(0 0 0 / 20%);
+}
+
+.innerMiddle li a {
+  display: block;
+}
+
+.innerMiddle span {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  bottom: 20px;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.page {
+  clear: both;
+  margin: 40px auto 0;
+  width: 196px;
+  text-align: center;
+}
+
+.page span {
+  margin: 0 10px;
+}

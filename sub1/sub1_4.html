@@ -1,0 +1,337 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-오시는길</title>
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub1common.css">
+  <link rel="stylesheet" href="./css/sub1_content4.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a3bf414e8fb6a7c3bd14d0d1a5e67f5d"></script>
+  <script src="./js/kakao_map2.js"></script>
+</head>
+
+<body>
+  <? include "../common/sub_header.html" ?>
+
+  <div class="visual">
+    <img src="../sub1/common/images/main.jpg" alt="">
+    <h3>회사소개</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a href="./sub1_1.html">기업소개</a></li>
+      <li><a href="./sub1_2.html">인사말</a></li>
+      <li><a href="./sub1_3.html">주요연혁</a></li>
+      <li><a class="current" href="./sub1_4.html">오시는길</a></li>
+    </ul>
+  </div>
+
+  <article id="content">
+    <div class="titleArea">
+      <div class="lineMap">
+        <i class="fa-solid fa-house"></i>
+        <span>home</span>&gt;<span>회사소개</span>&gt;<strong>오시는길</strong>
+      </div>
+      <h2>오시는길</h2>
+    </div>
+
+    <div class="contentArea">
+      <!-- 본문 콘텐츠 영역 -->
+      <p>글로벌 혁신 제약기업을 향해 도약하는 동아ST</p>
+      <!-- 본사 및 연구소 -->
+      <div class="tabs">
+        <ul class="tab_menu">
+          <li>
+            <a class="tab tab1" href="#">본사 및 연구소</a>
+          </li>
+          <li><a class="tab tab2" href="#">공장</a></li>
+          <li><a class="tab tab3" href="#">지점</a></li>
+        </ul>
+
+        <div class="contlist section01">
+          <div class="map" id="head">
+            <div id="mapHead"></div>
+            <div id="mapLab" class="map2"></div>
+            <div class="summary">
+              <dl>
+                <dt>동아ST 본사</dt>
+                <dd>서울특별시 동대문구 천호대로 64</dd>
+                <dd>
+                  <a href="#" class="btn">
+                    <span>연구소 위치</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </a>
+                </dd>
+              </dl>
+            </div>
+
+            <!-- click시 연구소 지도로 변경 -->
+            <!-- <div id="mapLab"></div>
+            <div class="summary">
+              <dl>
+                <dt>연구소</dt>
+                <dd>용인시 기흥구 금화로 105번길 21</dd>
+                <dd>
+                  <a href="#">
+                    <span>본사 위치</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </a>
+                </dd>
+              </dl>
+            </div> -->
+          </div>
+
+          <div class="location">
+            <h3>본사 및 연구소</h3>
+            <ul>
+              <li>
+                <dl>
+                  <dt>본사</dt>
+                  <dd>
+                    <p>
+                      <span>주소</span>
+                      서울특별시 동대문구 천호대로 64
+                    </p>
+                    <p>
+                      <span>전화</span>
+                      02 - 920 - 81111
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>연구소</dt>
+                  <dd>
+                    <p>
+                      <span>주소</span>
+                      경기도 용인시 기흥구 금화로 105번길 21
+                    </p>
+                    <p>
+                      <span>전화</span>
+                      031 - 280 - 1400
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <dl>
+                  <dt>
+                    <i class="fa-solid fa-train-subway"></i>
+                    지하철
+                  </dt>
+                  <dd class="subway">
+                    <p>
+                      <span>1호선</span>
+                      신설동역 6번 출구 도보 10분 거리
+                    </p>
+                    <p>
+                      <span>2호선</span>
+                      신설동역 9번 출구 도보 5분 거리
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="last">
+                <dl>
+                  <dt>
+                    <i class="fa-solid fa-bus-simple"></i>
+                    버스
+                  </dt>
+                  <dd>
+                    <p>용두동신동아아파트, 동아제약 앞</p>
+                    <div class="bus">
+                      <p><span>간선</span> 370, 721, 303, N32</p>
+                      <p><span>지선</span> 2112</p>
+                      <p><span>광역</span> 9403, 9301</p>
+                    </div>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contlist section02">
+          <div class="map" id="factory">
+            <div id="mapCheonan"></div>
+            <div id="mapDalseong" class="map2"></div>
+            <div class="summary">
+              <dl>
+                <dt>천안공장</dt>
+                <dd>천안시 서북구 백석공단1로 200-23</dd>
+                <dd>
+                  <a href="#" class="btn2">
+                    <span>달성공장 위치</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </a>
+                </dd>
+              </dl>
+            </div>
+
+            <!-- click시 달성공장 지도로 변경 -->
+            <!-- <div id="mapDalseong"></div>
+            <div class="summary">
+              <dl>
+                <dt>달성공장</dt>
+                <dd>대구광역시 달성군 논공읍 논공로 493</dd>
+                <dd>
+                  <a href="#">
+                    <span>천안공장 위치</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </a>
+                </dd>
+              </dl>
+            </div> -->
+          </div>
+
+          <div class="location">
+            <h3>공장</h3>
+            <ul>
+              <li>
+                <dl>
+                  <dt>천안공장</dt>
+                  <dd>
+                    <p>
+                      <span>주소</span>
+                      천안시 서북구 백석공단1로 200-23
+                    </p>
+                    <p>
+                      <span>전화</span>
+                      041 - 520 - 9756
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>달성공장</dt>
+                  <dd>
+                    <p>
+                      <span>주소</span>
+                      대구광역시 달성군 논공읍 논공로 493
+                    </p>
+                    <p>
+                      <span>전화</span>
+                      053 - 610 - 0500
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contlist section03">
+          <div class="map" id="branch">
+            <img src="./images/content4/map02.jpg" alt="지점 지도">
+            <div class="point">
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
+          <div class="branch">
+            <h3>지점</h3>
+            <ul>
+              <li>
+                <dl>
+                  <dt>서울 1,2,3,4 지점 (서울)</dt>
+                  <dd>서울특별시 동대문구 천호대로 14길 18</dd>
+                  <dd>02-920-8385</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>경기1, 2 지점 (안양)</dt>
+                  <dd>경기도 안양시 만안구 안양로 552</dd>
+                  <dd>070-8636-2523</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>영남2지점 (경주)</dt>
+                  <dd>경상북도 경주시 공단로 41</dd>
+                  <dd>054-776-3311</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>안동사업소 (안동)</dt>
+                  <dd>경상북도 안동시 공단로 48</dd>
+                  <dd>054-859-7811~2</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>대구지점 (대구)</dt>
+                  <dd>대구광역시 동구 동부로 22길 34</dd>
+                  <dd>053-260-1114</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>부산지점 (부산)</dt>
+                  <dd>부산광역시 연제구 거제천로 270번길 16</dd>
+                  <dd>051-804-1201</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>제주사업소</dt>
+                  <dd>제주시 아라2동 1545-1</dd>
+                  <dd>064-746-5274</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>영남1지점 (창원)</dt>
+                  <dd>경상남도 창원시 마산회원구 내서읍 중리공단로 187</dd>
+                  <dd>070-8636-3301</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>대전지점 (대전)</dt>
+                  <dd>대전광역시 중구 어덕마을로 18</dd>
+                  <dd>042-253-6001</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>충청지점 (천안)</dt>
+                  <dd>충남 천안시 서북구백석공단1로 200-23</dd>
+                  <dd>041-520-9756</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <? include "../common/sub_footer.html" ?>
+  <script src="./js/tab.js"></script>
+  <script src="./js/change.js"></script>
+</body>
+
+</html>

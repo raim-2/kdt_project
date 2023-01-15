@@ -1,0 +1,126 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>회사소개-기업소개</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub1common.css">
+  <link rel="stylesheet" href="./css/sub1_1.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+
+  <!-- 비주얼 영역 -->
+  <div class="main">
+    <h3>회사소개</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a class="current" href="./sub1_1.html">기업소개</a></li>
+      <li><a href="./sub1_2.html">인사말</a></li>
+      <li><a href="./sub1_3.html">오시는길</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>기업소개</h2>
+      <p>
+        글로벌 혁신 제약기업을 향해<br>
+        빠르게 도약하는 동아ST
+      </p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <section class="contentlist info">
+      <img src="./images/company1x2.png" alt="기업개요 이미지">
+      <h3>기업개요</h3>
+      <p>
+        동아ST는 국내개발신약인 <span>스티렌, 자이데나, 모티리톤</span> 등의
+        전문의약품과 의료기기, 진단과 해외사업에 주력합니다. 2011년 완공된
+        <span>세계적 수준의 최첨단 연구소와 뛰어난 역량의 연구 인력</span> 등
+        최적의 연구 인프라를 바탕으로 글로벌 신약 개발에 더욱 매진하고
+        있습니다.
+      </p>
+      <div class="ciBox">
+        <img src="./images/company2x2.png" alt="">
+        <img src="./images/cix2.png" alt="" width="87" height="84" class="ci">
+      </div>
+      <h3>피닉스 심볼</h3>
+      <p>
+        디자인 모티브는 불사조의 불멸성과 힘차게 비상하는 날개를 컨셉으로
+        무궁한 발전을 나타냅니다. 동아블루 컬러를 원칙으로 하며, 흑백 매체는
+        블랙 컬러를, 시각적으로 특수 효과를 필요로 할 경우 금색과 은색을
+        적용할 수도 있습니다.
+      </p>
+    </section>
+    <section class="contentlist vision">
+      <h3 class="hidden">2025 비전</h3>
+      <div>
+        <ul class="visionlist">
+          <li>
+            <span>혁신추구</span>
+            <p>
+              새로운 시각으로<br>
+              작은 혁신부터 시작하자
+            </p>
+          </li>
+          <li>
+            <span>변화주도</span>
+            <p>
+              흐름을 읽고<br>
+              능동적으로 변화하자
+            </p>
+          </li>
+        </ul>
+        <ul class="visionlist">
+          <li>
+            <span>상호신뢰</span>
+            <p>
+              신뢰를 통한<br>
+              시너지를 창출하자
+            </p>
+          </li>
+          <li>
+            <span>함께성장</span>
+            <p>구성원, 고객, 사회와 함께 성장하자</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+  <script src="../js/swiper.min.js"></script>
+</body>
+
+</html>

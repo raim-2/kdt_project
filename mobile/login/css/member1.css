@@ -1,0 +1,36 @@
+body{background-color: #f5f5ee; color: #776}
+.hidden{display: block; position: absolute; z-index: 10; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+a{text-decoration: none; color: #776}
+p{text-align: center}
+
+#wrap{width: 1200px; margin: 80px auto}
+.logo{display: block; width: 180px; height: 167px; background: url(../../common/images/logo.png) no-repeat; text-indent: -999%; margin: 0 0 50px -90px; position: relative; top: 0; left: 50%}
+#title{text-align: center}
+
+fieldset{width: 500px; margin: 0 auto; border: none}
+input{border: none; display: block; margin: 20px 0; width: 480px; height: 50px; background-color: #eed; padding: 0 10px; font-size: 16px; border-radius: 3px; outline: none}
+
+.signup,.go_join, .find{display: block; width: 500px; background-color: #aa9; color: #ffe; text-align: center; transition: all .5s}
+.signup, .find{height: 50px; margin-bottom: 10px; cursor: pointer}
+.go_join{height: 40px; line-height: 40px; margin: 30px auto; border-radius: 3px}
+.signup:hover,.go_join:hover, .find:hover{background: rgb(150,180,95)}
+
+ul{list-style: none; overflow: hidden; width: 500px; margin: 0 auto; padding: 0}
+ul li{margin: 30px auto; overflow: hidden; float: left; text-align: center}
+ul li:last-child{float: right}
+ul li span{margin-left: 20px}
+ul li i{margin-right: 8px}
+
+#join_button{position: relative; margin-top: 50px}
+#join_button::before{content: ''; width: 500px; height: 1px; background: #ccc; position: absolute; top: -20px; left: 50%; margin-left: -250px}    
+
+/*find*/
+.telBox {clear: both;margin: -20px 0}
+.telBox select {width: 135px; border: 0px; font-size: 18px; color: #777; height: 60px; background: #eed; height: 50px; padding: 7px}
+.telBox input{width: 135px; display: inline}
+
+#id_input_button .go li{margin: 30px 0; width: auto}
+#id_input_button .go li:last-of-type a{margin-left: 10px}
+
+.loadtexton{text-align: center; border: 1px dashed #ccc; width: 500px; overflow: hidden; margin: 20px 0 20px -250px; position: relative; left: 50%; border-radius: 10px; display: block; padding: 20px 0; line-height: 1.5em}
+.loadtexton strong:first-of-type{font-size: 20px; line-height: 2em}

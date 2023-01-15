@@ -1,0 +1,113 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>사업분야-해외사업</title>
+
+  <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+  <link rel="apple-touch-startup-image" href="../startup.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/sub2common.css">
+  <link rel="stylesheet" href="./css/sub2_4.css">
+
+  <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
+  <script src="../js/prefixfree.min.js"></script>
+
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <? include "../sub_header.html" ?>
+  <div class="main">
+    <h3>사업분야</h3>
+  </div>
+  <div class="subNav">
+    <ul>
+      <li><a href="./sub2_1.html">전문의약품</a></li>
+      <li><a href="./sub2_2.html">의료기기</a></li>
+      <li><a href="./sub2_3.html">진단사업</a></li>
+      <li><a class="current" href="./sub2_4.html">해외사업</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="titleArea">
+      <h2>해외사업</h2>
+      <p>동아ST의 새로운 시장으로의 진출</p>
+    </div>
+    <!-- 본문 콘텐츠 영역 -->
+    <!-- <h2 class="hidden">본문콘텐츠영역</h2> -->
+    <div class="contentlist">
+      <div class="conlist1 conlist">
+        <img src="./images/imgx2.png" alt="">
+        <p>
+          <span>성공적 제품개발과 R&D 역량을 토대로</span>
+          새로운 시장으로 진출합니다.
+        </p>
+        <p>
+          동아ST 해외사업부는 글로벌 확장을 위해 R&D 중심의 접근을 추구하고
+          있으며, 국내시장의 독보적인 지위를 넘어서, 세계시장에서도 스티렌,
+          자이데나, 고나도핀 등 자체적인 파이프라인을 토대로 시장확보에
+          주력하고 있습니다. 또한 해외사업부는 강화된 글로벌 마케팅을 통해
+          국제적인 브랜드 가치 상승을 추구하고 있습니다.
+        </p>
+      </div>
+
+      <div class="conlist2 conlist">
+        <div class="pop">
+          <h3>수출품목</h3>
+
+          <ul class="pop_menu">
+            <li>
+              <a href="#"><img src="./images/product01x2.png" alt="스티렌투엑스정"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/product02x2.png" alt="그로트로핀주"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/product03x2.png" alt="박카스D"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/product04x2.png" alt="모닝케어D"></a>
+            </li>
+          </ul>
+
+          <div class="modal_box"></div>
+
+          <div class="popup">
+            <div class="txt"></div>
+            <a href="#" class="close_btn">
+              <span class="hidden">닫기</span>
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <!-- 푸터영역 -->
+  <? include "../sub_footer.html" ?>
+  <!-- <script src="./js/sub2Ajax.js"></script> -->
+  <script src="./js/sub2_4.js"></script>
+</body>
+
+</html>

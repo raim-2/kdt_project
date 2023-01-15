@@ -1,0 +1,397 @@
+# Translation of Themes - Twenty Nineteen in Korean
+# This file is distributed under the same license as the Themes - Twenty Nineteen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-13 00:02:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: ko_KR\n"
+"Project-Id-Version: Themes - Twenty Nineteen\n"
+
+#. Description of the theme
+#, gp-priority: high
+msgid "Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes."
+msgstr "Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes."
+
+#. Theme Name of the theme
+#: inc/block-patterns.php:20
+#, gp-priority: high
+msgid "Twenty Nineteen"
+msgstr "Twenty Nineteen"
+
+#: functions.php:149
+msgid "Blue"
+msgstr "파란색"
+
+#: functions.php:154
+msgid "Dark Blue"
+msgstr "어두운 파란색"
+
+#: classes/class-twentynineteen-walker-comment.php:98
+msgid "Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved."
+msgstr "댓글을 검토하려고 기다리는 중입니다. 이는 미리보기이고, 댓글은 승인 후에 보일 것입니다."
+
+#. translators: %s: Parent post link.
+#: single.php:31
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
+msgstr "<span class=\"meta-nav\">발행됨</span><span class=\"post-title\">%s</span>"
+
+#: image.php:87
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><br><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">발행됨</span><br><span class=\"post-title\">%title</span>"
+
+#: template-parts/content/content-excerpt.php:18
+#: template-parts/content/content.php:18
+msgctxt "post"
+msgid "Featured"
+msgstr "특성"
+
+#. translators: %s: WordPress version.
+#: inc/back-compat.php:43 inc/back-compat.php:60 inc/back-compat.php:83
+msgid "Twenty Nineteen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Nineteen 은 최소한 워드프레스 4.7 버전이 필수입니다. 현재 %s 버전을 사용하고 있습니다. 업그레이드 후 다시 해주세요."
+
+#: inc/template-functions.php:144
+msgid "Back"
+msgstr "뒤로"
+
+#: inc/template-functions.php:137
+msgid "More"
+msgstr "더 보기"
+
+#: inc/customizer.php:98
+msgid "Apply a filter to featured images using the primary color"
+msgstr "특성이미지에 주 색상을 사용하기 위해 필터 추가"
+
+#: inc/customizer.php:78
+msgid "Apply a custom color for buttons, links, featured images, etc."
+msgstr "버튼, 링크, 특성이미지 등에 커스텀 색상 적용"
+
+#: inc/customizer.php:56
+msgctxt "primary color"
+msgid "Custom"
+msgstr "사용자 정의"
+
+#: inc/customizer.php:55
+msgctxt "primary color"
+msgid "Default"
+msgstr "기본"
+
+#: functions.php:169
+msgid "White"
+msgstr "흰색"
+
+#: functions.php:164
+msgid "Light Gray"
+msgstr "연한 회색"
+
+#: functions.php:159
+msgid "Dark Gray"
+msgstr "어두운 회색"
+
+#: functions.php:137
+msgid "XL"
+msgstr "XL"
+
+#: functions.php:136
+msgid "Huge"
+msgstr "매우 큰"
+
+#: functions.php:131
+msgid "L"
+msgstr "L"
+
+#: functions.php:130
+msgid "Large"
+msgstr "크게"
+
+#: functions.php:125
+msgid "M"
+msgstr "M"
+
+#: functions.php:124
+msgid "Normal"
+msgstr "보통"
+
+#: functions.php:118
+msgid "Small"
+msgstr "작게"
+
+#: functions.php:119
+msgid "S"
+msgstr "S"
+
+#: footer.php:37 functions.php:60
+msgid "Footer Menu"
+msgstr "푸터 메뉴"
+
+#: functions.php:208 template-parts/footer/footer-widgets.php:12
+msgid "Footer"
+msgstr "푸터"
+
+#: functions.php:210
+msgid "Add widgets here to appear in your footer."
+msgstr "푸터에 표시할 위젯을 여기에 추가하세요."
+
+#: image.php:56
+msgid "Page"
+msgstr "페이지"
+
+#: image.php:70
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr "전체 크기"
+
+#: inc/customizer.php:53
+msgid "Primary Color"
+msgstr "주 색상"
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "해당 위치에서 찾을 수 있는 것이 아무 것도 없는 것 같습니다. 검색을 해보시겠습니까?"
+
+#: 404.php:20
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "이런! 해당 페이지를 찾을 수 없습니다."
+
+#: comments.php:115
+msgid "Comments are closed."
+msgstr "댓글이 닫혀있습니다."
+
+#: functions.php:61 template-parts/header/site-branding.php:46
+msgid "Social Links Menu"
+msgstr "소셜 링크 메뉴"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "콘텐츠로 바로가기"
+
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content-single.php:40
+#: template-parts/content/content.php:49
+msgid "Pages:"
+msgstr "페이지:"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: functions.php:239 template-parts/content/content-single.php:27
+#: template-parts/content/content.php:36
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "더 보기<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: comments.php:96
+msgid "Next"
+msgstr "다음"
+
+#: comments.php:95
+msgid "Previous"
+msgstr "이전"
+
+#: single.php:41
+msgid "Previous Post"
+msgstr "이전 글"
+
+#: template-parts/content/content-none.php:16
+msgid "Nothing Found"
+msgstr "찾을 수 없습니다"
+
+#: template-parts/content/content-none.php:39
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "죄송하지만 검색어와 일치하는 것이 없습니다. 다른 검색어로 다시 시도해보세요."
+
+#: template-parts/content/content-none.php:46
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "찾고 있는 것을 찾을 수 없는 것 같습니다. 검색이 도움이 될 수도 있습니다."
+
+#: template-parts/header/site-branding.php:33
+msgid "Top Menu"
+msgstr "상단 메뉴"
+
+#. translators: Used between list items, there is a space after the comma.
+#: functions.php:195
+msgid ", "
+msgstr ", "
+
+#: single.php:38
+msgid "Next Post"
+msgstr "다음 글"
+
+#. translators: %s: WordPress.
+#: footer.php:28
+msgid "Proudly powered by %s."
+msgstr "Proudly powered by %s."
+
+#: template-parts/post/discussion-meta.php:18
+msgid "No comments"
+msgstr "댓글 없음"
+
+#. translators: %d: Number of comments.
+#: template-parts/post/discussion-meta.php:16
+msgid "%d Comment"
+msgid_plural "%d Comments"
+msgstr[0] "댓글 %d개"
+
+#: template-parts/post/author-bio.php:26
+msgid "View more posts"
+msgstr "더 많은 글 보기"
+
+#. translators: %s: Post author.
+#: template-parts/post/author-bio.php:17
+msgid "Published by %s"
+msgstr "공개됨: %s"
+
+#: single.php:42
+msgid "Previous post:"
+msgstr "이전 글:"
+
+#: single.php:39
+msgid "Next post:"
+msgstr "다음 글:"
+
+#: search.php:22
+msgid "Search results for: "
+msgstr "다음에 대한 검색 결과:"
+
+#: inc/template-tags.php:231
+msgid "Older posts"
+msgstr "이전 글"
+
+#: inc/template-tags.php:227
+msgid "Newer posts"
+msgstr "최근 글"
+
+#: inc/template-tags.php:102
+msgid "Tags:"
+msgstr "태그:"
+
+#: inc/template-tags.php:91
+msgid "Posted in"
+msgstr "게시됨:"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: inc/template-tags.php:63
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "<span class=\"screen-reader-text\">%s</span>에 댓글 남기기"
+
+#: inc/template-tags.php:46
+msgid "Posted by"
+msgstr "올린이:"
+
+#: inc/template-functions.php:82
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y년 F"
+
+#: inc/template-functions.php:80
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-functions.php:92
+msgid "Archives:"
+msgstr "글 보관함:"
+
+#. translators: %s: Taxonomy singular name.
+#: inc/template-functions.php:90
+msgid "%s Archives:"
+msgstr "%s 글 보관함:"
+
+#: inc/template-functions.php:86
+msgid "Post Type Archives: "
+msgstr "글 타입 보관함"
+
+#: inc/template-functions.php:84
+msgid "Daily Archives: "
+msgstr "날짜별 글 보관함:"
+
+#: inc/template-functions.php:82
+msgid "Monthly Archives: "
+msgstr "월별 글 보관함:"
+
+#: inc/template-functions.php:80
+msgid "Yearly Archives: "
+msgstr "년도별 글 보관함:"
+
+#: inc/template-functions.php:78
+msgid "Author Archives: "
+msgstr "작성자별 글 보관함:"
+
+#: inc/template-functions.php:76
+msgid "Tag Archives: "
+msgstr "태그 글 보관함:"
+
+#: inc/template-functions.php:74
+msgid "Category Archives: "
+msgstr "카테고리 글 보관함:"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: inc/template-tags.php:118 template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "<span class=\"screen-reader-text\">%s</span> 편집"
+
+#: functions.php:59
+msgid "Primary"
+msgstr "기본"
+
+#: comments.php:92 comments.php:95 comments.php:96
+msgid "Comments"
+msgstr "댓글"
+
+#. translators: 1: Number of comments, 2: Post title.
+#: comments.php:44
+msgctxt "comments title"
+msgid "%1$s reply on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo;에 대한 %1$s개의 댓글"
+
+#. translators: %s: Post title.
+#: comments.php:40
+msgctxt "comments title"
+msgid "One reply on &ldquo;%s&rdquo;"
+msgstr "&ldquo;%s&rdquo;에 대한 한 개의 댓글"
+
+#: comments.php:35 comments.php:105
+msgid "Leave a comment"
+msgstr "댓글 남기기"
+
+#: comments.php:33
+msgid "Join the Conversation"
+msgstr "대화에 참여"
+
+#: classes/class-twentynineteen-walker-comment.php:96
+msgid "Your comment is awaiting moderation."
+msgstr "입력한 댓글이 검토를 기다리고 있습니다."
+
+#: classes/class-twentynineteen-walker-comment.php:89
+msgid "Edit"
+msgstr "편집"
+
+#. translators: 1: Comment date, 2: Comment time.
+#: classes/class-twentynineteen-walker-comment.php:78
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
+
+#. translators: %s: Comment author link.
+#: classes/class-twentynineteen-walker-comment.php:59
+msgid "%s <span class=\"screen-reader-text says\">says:</span>"
+msgstr "%s의 <span class=\"screen-reader-text says\">댓글:</span>"
+
+#. Theme URI of the theme
+#, gp-priority: low
+msgid "https://wordpress.org/themes/twentynineteen/"
+msgstr "https://wordpress.org/themes/twentynineteen/"
+
+#. Author of the theme
+#, gp-priority: low
+msgid "the WordPress team"
+msgstr "워드프레스 팀"
+
+#. Author URI of the theme
+#: footer.php:25
+#, gp-priority: low
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"

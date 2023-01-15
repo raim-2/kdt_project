@@ -1,0 +1,483 @@
+/*trailer css*/
+/* 와이드 pc 1280 이상 */
+/* content 영역 */
+
+#content .trailer {
+    padding: 8rem 5.25% 3rem;
+}
+
+#content .mainstory p {
+    width: 50%;
+}
+
+#content .mid {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/sub3/trailer2.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-position: center 80%;
+    background-attachment: fixed;
+    padding: 20% 0 50px 0;
+    position: relative;
+}
+
+.mid p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    font-size: 3.3em;
+    font-family: "Carter One", cursive;
+}
+
+.music {
+    padding: 7rem 6.25%;
+    background: rgba(0, 0, 0, .8);
+    background: url(../images/sub3/musicbg1.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.music h3 {
+    text-align: center;
+    display: block;
+    margin-bottom: 6rem;
+}
+
+.musicInner {
+    position: relative;
+    left: 7%;
+    overflow: hidden;
+}
+
+.tab img {
+    border-radius: 50%;
+    width: 100%;
+    box-shadow: 0px 1px 9px 1px rgb(245 245 245)
+}
+
+ul.tab_menu {
+    float: left;
+    width: 40%;
+}
+
+ul.tab_menu li {
+    position: relative;
+}
+
+div.tab {
+    display: inline-block;
+    /* box-shadow: 0px 1px 9px 1px rgb(245 245 245); */
+    /* border-radius: 50%; */
+    width: 40%;
+    margin: 4% 10%;
+    box-sizing: border-box;
+}
+
+.player {
+    width: 38%;
+    margin: 5%;
+    float: left;
+    /* position: relative; */
+}
+
+.player img {
+    width: 100%;
+}
+
+/* .click_box {
+    font-size: 4vw;
+    position: absolute;
+    bottom: 2vw;
+    right: 4vw;
+} */
+.click_box {
+    font-size: 4vw;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 60%;
+    transform: translate(10%, -50%);
+}
+
+a.playBtn,
+a.stopBtn {
+    color: #fff;
+    opacity: .7;
+}
+
+.tab_menu li span {
+    position: absolute;
+    width: 200px;
+    left: 60%;
+    top: 40%;
+    transform: translate(0, -50%);
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-style: italic;
+    color: #fff;
+}
+
+
+
+.music .tab img.rotationImg1 {
+    animation: animationBig1 .6s ease-in-out,
+        animationRotation1 2s .5s infinite linear;
+}
+
+.music .tab img.rotationImg2 {
+    animation: animationBig2 .6s ease-in-out,
+        animationRotation2 2s .5s infinite linear;
+}
+
+.music .tab img.rotationImg3 {
+    animation: animationBig3 .6s ease-in-out,
+        animationRotation3 2s .5s infinite linear;
+}
+
+
+@keyframes animationBig1 {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: translate(325%, 90%) scale(1.7)
+    }
+}
+
+@keyframes animationBig2 {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: translate(325%, -30%) scale(1.7);
+    }
+}
+
+@keyframes animationBig3 {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: translate(325%, -150%) scale(1.7);
+    }
+}
+
+@keyframes animationRotation1 {
+    from {
+        transform: translate(325%, 90%) scale(1.7);
+    }
+
+
+    to {
+        transform: translate(325%, 90%) scale(1.7) rotate(360deg);
+    }
+}
+
+@keyframes animationRotation2 {
+    from {
+        transform: translate(325%, -30%) scale(1.7);
+    }
+
+
+    to {
+        transform: translate(325%, -30%) scale(1.7) rotate(360deg);
+    }
+}
+
+@keyframes animationRotation3 {
+    from {
+        transform: translate(325%, -150%) scale(1.7);
+    }
+
+
+    to {
+        transform: translate(325%, -150%) scale(1.7) rotate(360deg);
+    }
+}
+
+@keyframes animationBig4 {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: translate(50%, 190%) scale(1.5);
+    }
+}
+
+@keyframes animationRotation4 {
+    from {
+        transform: translate(50%, 190%) scale(1.5);
+    }
+
+    to {
+        transform: translate(50%, 190%) scale(1.5) rotate(360deg);
+        ;
+    }
+}
+
+
+footer#footerArea {
+    clear: both;
+}
+
+/* youtube popup area */
+.clip {
+    overflow: hidden
+}
+
+.subTitle {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Cormorant Infant', serif;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2;
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 95% 5% 94% 6% / 11% 94% 6% 145%;
+    background: linear-gradient(338deg, #dfcc3a, transparent), linear-gradient(349deg, #ff7c14, transparent), linear-gradient(113deg, #ff3131 70%, transparent);
+}
+
+
+.clip:nth-child(2n-1) .clip_part {
+    width: 60%;
+    margin: 0 20%;
+    float: left;
+    margin-bottom: 5rem;
+}
+
+.clip:nth-child(2n) .clip_part {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 3rem;
+}
+
+
+.clip_part .contentArea {
+    position: relative;
+    width: 90%;
+    margin: 30px auto
+}
+
+.imgPart {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px;
+    perspective: 1200px;
+}
+
+a.popup-youtube {
+    border-width: 1px 3px 2px 3px;
+    border: solid #fff;
+    border-radius: 75% 25% 217% 13% / 20% 15% 25% 80%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 30%);
+    overflow: hidden;
+}
+
+.clip_part:nth-child(2n) a.popup-youtube {
+    border-radius: 20% 15% 25% 80% / 75% 25% 217% 13%;
+}
+
+.clip_part .contentArea .imgPart .popup-youtube>img {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 30%);
+    transform: scale(1.2) rotate(6deg);
+    transition: all .3s;
+    filter: saturate(0.8) contrast(0.8);
+}
+
+.clip_part .contentArea .imgPart .popup-youtube>img:hover {
+    transform: scale(1);
+    filter: none;
+}
+
+.clip_part .contentArea p {
+    color: #fff;
+    text-align: justify;
+}
+
+
+.clip_part .playBnt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -32px 0 0 -56px;
+}
+
+.clip_part .playBnt::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all 0.3s;
+    width: 106px;
+    height: 65px;
+    margin-left: -53px;
+    margin-top: -32px;
+    background: url(../images/youtube1.png);
+    opacity: 0;
+}
+
+.clip_part:hover .playBnt::before {
+    opacity: 1;
+}
+
+
+.clip_part .playBnt img {
+    width: 100%;
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #content .mainstory p {
+        width: 60%;
+    }
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .mainstory p {
+        width: 70%;
+    }
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content .trailer {
+        padding: 5rem 5.25% 3rem;
+    }
+
+    #content .mainstory p {
+        width: 80%;
+    }
+
+    .clip:nth-child(2n) .clip_part {
+        width: 46%;
+        margin: 0 2%;
+    }
+
+    .clip:nth-child(2n-1) .clip_part {
+        margin: 0 2%;
+        width: auto;
+    }
+
+    .clip:nth-child(2n) .clip_part:last-child {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .mid p {
+        font-size: 2.5rem;
+    }
+
+    .music {
+        padding: 5rem 2.25%;
+    }
+
+    .click_box {
+        font-size: 6.5vw;
+    }
+
+    .musicInner {
+        width: 120%;
+        left: 0;
+    }
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #content .mainstory p {
+        font-size: 1.1rem;
+        text-align: justify;
+        width: 95%;
+    }
+
+    .subTitle {
+        font-size: 1.5em
+    }
+
+    .clip_part .contentArea {
+        width: auto
+    }
+
+
+    .clip:nth-child(2n) .clip_part {
+        margin: 0 2%;
+        width: auto;
+    }
+
+    .music h3 {
+        font-size: 8.225vw;
+        margin-bottom: 3rem;
+    }
+
+    .musicInner {
+        width: auto;
+        left: 0;
+    }
+
+    ul.tab_menu {
+        float: none;
+        width: 80%;
+        margin: 0 10% 2rem;
+    }
+
+    ul.tab_menu li:nth-child(2),
+    ul.tab_menu li:last-child {
+        display: none
+    }
+
+    .player {
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .music .tab img.rotationImg1 {
+        animation: animationBig4 .6s ease-in-out,
+            animationRotation4 2s .5s infinite linear;
+    }
+
+    ul.tab_menu li.on:first-child::before {
+        display: block;
+        content: "How far I'll go♪";
+        font-size: 2.4rem;
+        font-family: 'Cormorant Infant', serif;
+        /* transform: scale(1.3); */
+        position: absolute;
+        left: 40%;
+        top: 10%;
+        margin-left: -110px;
+        font-weight: 800;
+        line-height: 1.3;
+        color: transparent;
+        background: linear-gradient(45deg, #fffa00, transparent), linear-gradient(273deg, #ff9b00, transparent);
+        -webkit-background-clip: text;
+        animation: blink .8s infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

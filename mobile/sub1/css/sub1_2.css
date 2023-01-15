@@ -1,0 +1,49 @@
+/* 인사말 css */
+
+#content .contentlist {
+  margin: 25px 0 55px;
+}
+
+#content .contentlist p {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.ceoBox {
+  margin: 55px 5% 30px;
+}
+
+.ceoBox img {
+  width: 100%;
+}
+
+#content .contentlist .ceoBox + p {
+  font-size: 1.714em;
+  font-weight: 600;
+  text-align: center;
+  color: #1f415c;
+}
+
+#content .contentlist p:first-child {
+  margin-top: 15px;
+}
+
+.ceoSign {
+  text-align: right;
+  padding: 0 5% 15px 0;
+}
+
+.ceoSign span {
+  margin-right: 5px;
+  font-weight: 500;
+  font-size: 1.143em;
+}
+
+.ceoText {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  padding: 30px 25px 80px;
+  line-height: 2rem;
+  background: url(../images/boxx2.png) left center no-repeat;
+  background-size: cover;
+}
