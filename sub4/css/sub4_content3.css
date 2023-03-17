@@ -416,3 +416,11 @@ ul.tab_menu {
   background: #333;
   margin: 20px 0;
 }
+
+.topText {
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-size: 50px;
+  z-index: 100;
+}
