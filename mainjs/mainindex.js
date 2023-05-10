@@ -3,27 +3,29 @@ $(document).ready(function () {
 
   var timeonoff; //타이머 처리
   var imageCount = $(".gallery ul li").size(); //이미지 총개수
-  var cnt = 1; //이미지 순서 1 2 3 4 5 1 2 3 4 5....(주인공!!=>현재 이미지 순서)
+  var cnt = 1; //이미지 순서 1 2 3 1 2 3 ....(주인공!!=>현재 이미지 순서)
   var onoff = true; // true=>타이머 동작중 , false=>동작하지 않을때
 
+  /* 최초 상태 셋팅*/
   $(".btn1").css("background", "rgba(31, 65, 92, .8)"); //첫번째 불켜
   $(".btn1").css("width", "90"); // 버튼의 너비 증가
   $(".btn1").css("text-indent", "50px");
-  $(".ps").html('<i class="fa-solid fa-pause"></i>');
+  $(".ps").html('<i class="fa-solid fa-pause"></i>'); //정지
 
   $(".gallery .link1").fadeIn("slow"); //첫번째 이미지 보여줌
   $(".gallery .link1 .text").delay(1500).animate({
-      top: 340,
+      top: 340, //위로 올라옴
       opacity: 1,
     },
     "slow"
   );
 
   function moveg() {
-    if (cnt == imageCount + 1) cnt = 1;
+    //맨 처음에 cnt = 1로 시작하므로, 조건을 나눠둔것
+    if (cnt == imageCount + 1) cnt = 1; 
     if (cnt == imageCount) cnt = 0; //카운트 초기화
 
-    cnt++; //카운트 1씩 증가 5되면 초기화, 0  1 2 3 4 5 1 2 3 4 5..
+    cnt++; //카운트 1씩 증가 5되면 초기화, 0 1 2 3 1 2 3...
 
     $(".gallery li").hide(); //이미지 모두 off
     $(".gallery .link" + cnt).fadeIn("slow"); // 자신만 보임
