@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //v2
   // visual move 비주얼이미지
 
   var timeonoff; //타이머 처리
