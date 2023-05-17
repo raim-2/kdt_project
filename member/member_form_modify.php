@@ -210,9 +210,6 @@
                         <dd class="nick_box">
                             <div id="nick1">
                                 <input type="text" name="nick" id="nick" value="<?= $row[nick] ?>"></div>
-                                <!-- <div id="nick2" >
-                                <a href="#" onclick="check_nick()">중복확인</a>
-                            </div> -->
                             <span id="loadtext2"></span>
                         </dd>
                     </dl>

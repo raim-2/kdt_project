@@ -44,8 +44,6 @@ body {}
 	margin: 0 auto;
 }
 
-
-/* gnb만 잘 맞춰라 */
 #gnb {
 	clear: both;
 	width: 1200px;
@@ -70,7 +68,6 @@ body {}
 	text-align: center;
 	transition: all .5s;
 }
-
 
 /* 2depth */
 #gnb ul.dropdownmenu li ul {
@@ -102,7 +99,6 @@ body {}
 }
 
 /*비주얼영역*/
-
 .visual {
 	position: relative;
 	width: 2000px;

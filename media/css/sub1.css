@@ -2,7 +2,6 @@
 /* 와이드 pc 1280 이상 */
 /* content 영역 */
 
-
 section {
     padding: 5rem 0;
     /* background: rgba(0, 0, 0.8); */
@@ -20,18 +19,10 @@ section {
     margin-bottom: 80px;
 }
 
-/* .plot .img {
-    width: 50%;
-} */
-
 .plot .img {
     width: 40%;
     margin: 2em 5% 0;
 }
-
-/* .plot2 .img {
-    margin-top: 100px;
-} */
 
 .plot .img img {
     object-fit: cover;
@@ -339,6 +330,4 @@ section {
         grid-row: 3/4;
         margin-top: 30px;
     }
-
-
 }

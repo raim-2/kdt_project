@@ -154,7 +154,6 @@ header#headerArea {
   display: block;
   width: 109px;
   height: 62px;
-  /* padding: 15px 0; */
   margin-left: 15px;
   text-indent: -1000px;
   overflow: hidden;
@@ -203,16 +202,13 @@ header#headerArea {
 }
 
 nav#gnb {
-  /* width: 76%; */
   width: 96%;
   background: #fff;
   position: absolute;
-  /* right: 0; */
   right: -100%;
   top: 0;
   opacity: 0;
   z-index: 50;
-  /* padding: 8%; */
 }
 
 ul.mainMenu {
@@ -247,14 +243,12 @@ li.depth1 a span {
 #gnb ul li h3 {
   font-size: 1.429rem;
   font-weight: 500;
-  /* margin: 20px 0 30px; */
   margin-bottom: 30px;
 }
 
 #gnb li ul {
   display: none;
   padding: 0 20px 15px;
-  /* background: blue; */
 }
 
 #gnb li ul li {
@@ -262,10 +256,6 @@ li.depth1 a span {
   font-size: 1.214rem;
   margin-bottom: 15px;
 }
-
-/* #gnb li ul li:last-child {
-  margin-bottom: 0;
-} */
 
 li.depth1 ul li a::before {
   content: "-";
@@ -275,9 +265,7 @@ li.depth1 ul li a::before {
 #gnb ul.log {
   display: flex;
   justify-content: center;
-  /* margin-top: 70px; */
   margin-top: 10%;
-  /* border-top: 1px solid; */
   background: #f8f8f8;
 }
 
@@ -341,7 +329,6 @@ a.close {
 
 .footerMiddle {
   overflow: hidden;
-  /* margin: 0 5px 0 10px; */
   margin: 0 5% 0 5%;
 }
 
@@ -411,7 +398,6 @@ a.close {
 }
 
 .copy .family .arrow i {
-  /* margin-right: 5%; */
   padding: 2px 5% 0 0;
   float: right;
 }
@@ -425,25 +411,9 @@ a.close {
   z-index: 100;
 }
 
-/* .copy .family ul li {
-  position: relative;
-}
-
-.copy .family ul li::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #ccc;
-  position: absolute;
-  left: 0;
-} */
-
 .copy .family ul a {
   display: block;
   padding: 20px 0 20px 20px;
-  /* background: #f8f8f8;
-  color: #333; */
   background: #8697a7;
   color: #fff;
 }

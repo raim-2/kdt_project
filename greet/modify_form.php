@@ -63,7 +63,7 @@
 	</div>
 
 	<div class="contentArea">
-			<!-- 본문 콘텐츠 영역 -->
+			<!-- content area -->
 			<p>동아ST의 공지사항을 알려드립니다.</p>
 	<div id="col2">       
 		<form  name="board_form" method="post" action="insert.php?mode=modify&num=<?=$num?>&page=<?=$page?>&scale=<?=$scale?>"> 

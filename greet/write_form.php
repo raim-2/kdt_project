@@ -59,12 +59,10 @@
 						<dt class="col1"> 닉네임 </dt>
 						<dd class="col2"><?=$usernick?></dd>
 					</dl>
-					<!-- <div class="write_line"></div> -->
 					<dl id="write_row2">
 						<dt class="col1"> 제목   </dt>
 						<dd class="col2"><input type="text" name="subject"></dd>
 					</dl>
-					<!-- <div class="write_line"></div> -->
 					<dl id="write_row3">
 						<dt class="col1"> 내용   </dt>
 						<dd class="col2">
@@ -73,11 +71,9 @@
 							<textarea rows="15" cols="79" name="content"></textarea>
 						</dd>
 					</dl>
-					<!-- <div class="write_line"></div> -->
 				</div>
 
 				<div id="write_button">
-					<!-- type = "image" >> submit -->
 					<a href="list.php?page=<?=$page?>&scale=<?=$scale?>">목록</a>
 					<button type="submit">완료</button>&nbsp; 
 					

@@ -1,5 +1,3 @@
-/* CSS Document */
-
 /* main 영역 */
 
 .main {
@@ -69,19 +67,12 @@ section {
 }
 
 /* new 영역 */
-
-/* #new ul {
-  text-align: center;
-  position: relative;
-} */
-
 #new {
   cursor: pointer;
   margin-top: 40px;
 }
 
 #new .newTop {
-  /* margin: 30px 0 0 7%; */
   text-align: center;
 }
 
@@ -97,9 +88,6 @@ section {
 
 #new ul {
   text-align: center;
-  /* position: relative;
-  width: 400%; */
-  /* overflow: hidden; */
 }
 
 #new ul::after {
@@ -165,13 +153,6 @@ ul.tab_menu a.tab4 {
   background-size: contain;
 }
 
-/* #new ul li {
-  position: relative;
-  box-sizing: border-box;
-  width: 25%;
-  float: left;
-} */
-
 #new ul li div img {
   width: 100%;
 }
@@ -210,7 +191,6 @@ ul.tab_menu a.tab4 {
 
 #content #new ul li p {
   line-height: 1.7em;
-  /* 임시 */
   margin-top: 20px;
 }
 
@@ -220,23 +200,6 @@ ul.tab_menu a.tab4 {
   width: 80%;
   margin: 10px 10%
 }
-
-/* #new .scrollbar {
-  height: 10px;
-  border-radius: 10px;
-  background: #eee;
-  margin: 20px 20px 0;
-  overflow: hidden;
-}
-
-#new .scrollbar span {
-  display: block;
-  width: 25%;
-  height: 100%;
-  background: #1f415c;
-  border-radius: inherit;
-  transition: width 0.3s ease 0s;
-} */
 
 #new .scrollbar {
   border-radius: 10px;
@@ -279,7 +242,6 @@ section#business {
 }
 
 #business .bizText p:last-of-type {
-  /* font-size: 1.714em; */
   font-size: 1.857em;
   margin-bottom: 20px;
   font-weight: 600;
@@ -292,12 +254,6 @@ section#business {
   line-height: 1.7em;
   margin-left: 7%;
 }
-
-/* #business .bizText p + img {
-  width: 100%;
-  margin: 20px 0;
-} */
-
 
 #business ul li {
   width: 60%;
@@ -318,7 +274,6 @@ section#business {
 }
 
 #business ul li dl dt {
-  /* font-size: 1.143rem; */
   font-size: 1.286em;
   font-weight: 500;
   color: #01abce;
@@ -466,17 +421,6 @@ ul.box2.environment {
   float: left;
   font-size: 1.714em;
 }
-
-/* #faq .faqTop a.more {
-  display: block;
-  height: 100%;
-  float: right;
-  padding: 2px 9px 3px;
-  border-radius: 50%;
-  opacity: 0.4;
-  border: 2px solid #333;
-  font-size: 1.429em;
-} */
 
 #faq .faqTop a.more {
   position: absolute;

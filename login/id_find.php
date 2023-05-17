@@ -13,7 +13,6 @@
     <title>동아ST-아이디찾기</title>
     <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="./css/login.css">
-<!-- <script src="https://kit.fontawesome.com/f8a0f5a24e.js" crossorigin="anonymous"></script> -->
 <script src="https://kit.fontawesome.com/7a47db0dc1.js" crossorigin="anonymous"></script>
 <script src="../common/js/jquery-1.12.4.min.js"></script>
 <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
@@ -91,15 +90,11 @@
                     <div class="popup">
                         <p>아이디 찾기가 완료되었습니다.</p>
                         <span id="loadtext"></span>
-                        <!-- <a href="#" class="close_btn">닫기</a> -->
                         <ul>
                             <li><a href="login_form.php">로그인하기</a></li>
                             <li><a href="pw_find.php">비밀번호 찾기</a></li>
                         </ul>
                     </div>
-
-                    <!-- <span id="loadtext">
-                    </span> -->
 
                     <ul class="go">
                         <li><a href="login_form.php">로그인하기</a></li>

@@ -115,7 +115,6 @@
     text-align: center;
     line-height: 2em;
     padding: 50px 5%;
-    /* position: relative; */
 }
 
 .mainstory h3,
@@ -159,7 +158,6 @@
     font-size: 4.7rem;
     font-weight: 700;
     letter-spacing: 10px;
-    /* filter: blur(1px); */
 }
 
 .smoke ul li span {

@@ -20,14 +20,8 @@
     "slow"
   );
 
-  /* 이미지 자동슬라이드 처리 */
-  function moveg() {
-    //맨 처음에 cnt = 1로 시작하므로, 조건을 나눠둔것
-    if (cnt == imageCount + 1) cnt = 1; 
-    if (cnt == imageCount) cnt = 0; //카운트 초기화
-
-    cnt++; 
-
+  /* 변화줄 css를 담은 함수 */
+  function csschange() {
     $(".gallery li").hide(); //이미지 모두 off
     $(".gallery .link" + cnt).fadeIn("slow"); //해당 이미지 on
 
@@ -55,6 +49,16 @@
     if (cnt == imageCount) cnt = 0; //카운트의 초기화 0
   }
 
+  /* 이미지 자동슬라이드 처리 */
+  function moveg() {
+    //맨 처음에 cnt = 1로 시작하므로, 조건을 나눠둔것
+    if (cnt == imageCount + 1) cnt = 1; 
+    if (cnt == imageCount) cnt = 0; //카운트 초기화
+    cnt++; 
+
+    csschange()
+  }
+
   // 타이머 동작 - 자동 슬라이드(4초마다 진행)
   timeonoff = setInterval(moveg, 4000);
   
@@ -62,8 +66,6 @@
   $(".mbutton").click(function (event) {
     var $target = $(event.target); //클릭한 버튼 $target == $(this)
     clearInterval(timeonoff); //타이머 off - 자동 호출 해제
-
-    $(".gallery li").hide(); 
 
     //버튼마다 cnt 정보 담아둠
     if ($target.is(".btn1")) {
@@ -74,31 +76,7 @@
       cnt = 3;
     }
 
-    //클릭한 버튼에 해당하는 이미지 on
-    $(".gallery .link" + cnt).fadeIn("slow"); 
-
-    //클릭한 버튼만 on되는 상태 만들기
-    $(".mbutton").css("background", "rgba(0,0,0,.1)");-
-    $(".mbutton").css("width", "25");
-    $(".mbutton").css("text-indent", "0");
-
-    $(".btn" + cnt).css("background", "rgba(31, 65, 92, .8)");
-    $(".btn" + cnt).css("width", "90");
-    $(".btn" + cnt).css("text-indent", "50px");
-
-    $(".gallery li .text").css("top", 380).css("opacity", 0);
-    $(".gallery .link" + cnt)
-      .find(".text")
-      .delay(1000)
-      .animate({
-          top: 340,
-          opacity: 1,
-        },
-        "slow"
-      );
-
-    if (cnt == imageCount) cnt = 0; //카운트 초기화
-
+    csschange()
     timeonoff = setInterval(moveg, 4000); //타이머 on
 
     //타이머 중지상태일때 - on으로 
@@ -134,28 +112,7 @@
       cnt--;
     }
 
-    $(".gallery li").hide(); 
-    $(".gallery .link" + cnt).fadeIn("slow"); 
-
-    $(".mbutton").css("background", "rgba(0,0,0,.1)"); 
-    $(".mbutton").css("width", "25");
-    $(".mbutton").css("text-indent", "0");
-
-    $(".btn" + cnt).css("background", "rgba(31, 65, 92, .8)"); 
-    $(".btn" + cnt).css("width", "90");
-    $(".btn" + cnt).css("text-indent", "50px");
-
-    $(".gallery li .text").css("top", 380).css("opacity", 0);
-    $(".gallery .link" + cnt)
-      .find(".text")
-      .delay(1000)
-      .animate({
-          top: 340,
-          opacity: 1,
-        },
-        "slow"
-      );
-
+    csschange()
     timeonoff = setInterval(moveg, 4000); 
 
     if (onoff == false) {
@@ -164,17 +121,14 @@
     }
   });
 
-
-  //제품검색 클릭 이벤트
-
+  /* 제품검색 클릭 이벤트 */
   var search = document.querySelector('#search_box');
   var input = search.querySelector('.searchInner input')
 
   $('#search_box dl dd').click(function (e) {
     e.preventDefault();
 
-    input.value = this.innerText
-    //input.value = $(this).attr('value',);
+    input.value = this.innerText;
   })
 
 

@@ -67,7 +67,6 @@
 
 #content .contentArea .sec01 {
   background: #f8f8f8;
-  /* padding-top: 50px; */
   padding: 90px 30px;
 }
 
@@ -136,8 +135,6 @@
   left: 91px;
   top: 110px;
 }
-
-/*  */
 
 .sec01 .mark ul li {
   float: left;
@@ -214,14 +211,6 @@
   top: -50px;
   left: 95px;
 }
-
-#content .contentArea .sec02 {
-}
-
-/* #content .contentArea .sec02 h4 {
-  text-align: center;
-  margin: 70px 0 60px 0;
-} */
 
 #content .contentArea .sec02 div {
   margin-top: 60px;

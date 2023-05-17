@@ -43,7 +43,6 @@
             </div>
 
             <ul class="find">
-                <!-- <li><i class="fas fa-lock"></i>보안접속</li> -->
                 <li>
                      <span><a href="id_find.php">아이디 찾기</a></span>
                     <span><a href="pw_find.php">비밀번호 찾기</a></span>
@@ -59,7 +58,6 @@
                 <li>
                     <div id="cancel_button">
                         <a href="#" onclick="login_cancel()" class="cancel">취소</a>                  
-                        <!-- <button type="button" onclick="login_cancel()" class="cancel">취소</button> -->
                     </div>
                 </li>
             </ul>

@@ -63,9 +63,6 @@ $('.tab_menu .tab').click(function (e) {
 
 });
 
-
-
-
 // 정도경영 영역 count *숫자 자동입력
 // 사회공헌 금액
 var countNumber1;

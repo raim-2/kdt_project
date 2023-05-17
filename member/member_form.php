@@ -231,12 +231,10 @@
      	<tr>
      		<td colspan="2">
      			<a href="#" onclick="check_input()" class="ok">
-                <!-- <img src="images/button_save.gif"  onclick="check_input()"> -->
                 회원가입
                 </a>&nbsp;&nbsp;
                 <a href="#" onclick="reset_form()" class="cancel">
                  취소하기
-                <!-- <img src="images/button_reset.gif" onclick="reset_form()"> -->
                 </a>
      		</td>
      	</tr>

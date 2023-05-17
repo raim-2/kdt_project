@@ -840,7 +840,6 @@
   color: #fff;
   position: absolute;
   left: 0;
-  /* top: 100px; */
   top: 0;
   opacity: 0;
   transition: all 0.7s;
@@ -927,13 +926,6 @@
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-
-/* .news .newsInner li:hover,
-.news .newsInner li:focus,
-.news .newsInner li:active {
-  overflow: visible;
-  height: 476px;
-} */
 
 .news .newsInner li:hover dl,
 .news .newsInner li:focus dl {

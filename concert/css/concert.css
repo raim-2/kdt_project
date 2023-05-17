@@ -18,10 +18,6 @@
     margin-bottom: 20px;
 }
 
-/* #col2 form:last-child {
-  width: max-content;
-} */
-
 button[type="submit"] {
     cursor: pointer;
 }
@@ -40,8 +36,6 @@ button[type="submit"] {
 }
 
 /* list css */
-
-
 #list_search {
     height: 30px;
     float: left;
@@ -196,15 +190,6 @@ button[type="submit"] {
     box-sizing: border-box;
 }
 
-/* .searchBox {
-    margin: 0 auto;
-    width: 1200px;
-    left: 50%;
-    margin-left: -600px;
-    overflow: hidden;
-    position: relative;
-} */
-
 .searchBox {
     overflow: hidden;
     position: absolute;
@@ -245,7 +230,6 @@ button[type="submit"] {
 }
 
 /* write_form css */
-
 #write_form {
     border-top: 1px solid #666;
 }
@@ -329,7 +313,6 @@ button[type="submit"] {
 }
 
 /* view.php css */
-
 #view_title {
     text-align: center;
     border-top: solid 2px #aaaaaa;
