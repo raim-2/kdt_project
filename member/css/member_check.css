@@ -201,27 +201,12 @@ input[type="checkbox"]:checked+label::before {
   color: red;
 }
 
-.inform th {
-  text-align: left;
-  font-weight: 500;
-  width: 150px;
-}
-
-.inform tr {
-  display: block;
-  margin-bottom: 30px;
-}
-
-.inform td {
-  display: block;
+.inform dd {
   margin-top: 20px;
-  width: 100%;
   position: relative;
 }
 
-.inform label::after,
-.inform tr:nth-child(6) th::after,
-.inform tr:nth-child(7) th::after {
+.inform label::after {
   content: "*";
   color: red;
 }
@@ -241,7 +226,7 @@ input[type="checkbox"]:checked+label::before {
   width: 32.2%;
 }
 
-.inform tr:nth-child(7) input {
+.inform li:nth-child(7) input {
   width: 48.5%;
 }
 
@@ -253,14 +238,6 @@ span#loadtext3 {
   right: 20px;
   top: 20px;
 }
-
-.inform tr:last-child td {
-  padding: 50px 0 0;
-  width: max-content;
-  margin: 0 auto;
-  display: block;
-}
-
 
 .inform input:focus,
 .inform .hp:focus {
@@ -277,7 +254,7 @@ span#loadtext3 {
 
 /* modify css */
 
-.modify dl {
+.inform dl, .modify dl {
   margin-bottom: 30px;
 }
 
@@ -332,6 +309,7 @@ dd.nick_box {
   border-radius: 10px;
 }
 
+.inform div#button,
 .modify div#button {
   padding: 50px 0 0;
   width: max-content;
