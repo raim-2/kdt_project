@@ -27,8 +27,9 @@ h2 {
 }
 
 #content {
+  box-sizing: border-box;
   background: #fff;
-  width: 750px;
+  width: 800px;
   margin: 0 auto 50px;
   padding: 70px;
   border-radius: 10px;
@@ -201,7 +202,7 @@ input[type="checkbox"]:checked+label::before {
   color: red;
 }
 
-.inform dd {
+.inform .input_box {
   margin-top: 20px;
   position: relative;
 }
@@ -223,11 +224,11 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .inform .hp {
-  width: 32.2%;
+  width: calc((100% - 32px)/3);
 }
 
 .inform li:nth-child(7) input {
-  width: 48.5%;
+  width: calc((100% - 24px)/2);
 }
 
 span#loadtext,
@@ -254,7 +255,7 @@ span#loadtext3 {
 
 /* modify css */
 
-.inform dl, .modify dl {
+.inform li, .modify dl {
   margin-bottom: 30px;
 }
 
@@ -280,9 +281,9 @@ dd.nick_box {
   position: relative;
 }
 
-.modify li.email input {
+/* .modify li.email input {
   width: 48.1%;
-}
+} */
 
 .modify li.nick::after {
   clear: both;
@@ -316,9 +317,9 @@ dd.nick_box {
   margin: 0 auto;
 }
 
-.modify .hp {
+/* .modify .hp {
   width: 31.9%;
-}
+} */
 
 .modify .pass_box {
   position: relative;

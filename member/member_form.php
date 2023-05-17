@@ -170,71 +170,61 @@
         </div>
         <ul>
             <li>
-                <dl>
-                    <dt><label for="id">아이디</label></dt>
-                    <dd>
-                        <input type="text" name="id" id="id" placeholder="아이디를 입력하세요." required>
-                        <span id="loadtext"></span>
-                    </dd>
-                </dl>
+                <label for="id">아이디</label>
+                <div class="input_box"> 
+                    <input type="text" name="id" id="id" placeholder="아이디를 입력하세요." required>
+                    <span id="loadtext"></span>
+                </div> 
             </li>
             <li>
-                <dl>
-                    <dt><label for="pass">비밀번호</label></dt>
-                    <dd><input type="password" name="pass" id="pass" placeholder="비밀번호를 입력하세요." required></dd>
-                </dl>
+                <label for="pass">비밀번호</label>
+                <div class="input_box">
+                    <input type="password" name="pass" id="pass" placeholder="비밀번호를 입력하세요." required>
+                </div>
             </li>
             <li>
-                <dl>
-                    <dt><label for="pass_confirm">비밀번호 확인</label></dt>
-                    <dd class="pass_box">
-                        <input type="password" name="pass_confirm" id="pass_confirm" placeholder="비밀번호를 입력하세요." required>
-                        <span id="loadtext3"></span>
-                    </dd>
-                </dl>
+                <label for="pass_confirm">비밀번호 확인</label>
+                <div class="pass_box input_box">
+                    <input type="password" name="pass_confirm" id="pass_confirm" placeholder="비밀번호를 입력하세요." required>
+                    <span id="loadtext3"></span>
+                </div>
             </li>
             <li>
-                <dl>
-                    <dt><label for="name">이름</label></dt>
-                    <dd><input type="text" name="name" id="name" placeholder="이름을 입력하세요." required></dd>
-                </dl>
+                <label for="name">이름</label>
+                <div class="input_box">
+                    <input type="text" name="name" id="name" placeholder="이름을 입력하세요." required>
+                </div>
             </li>
             <li class="nick">
-                <dl>
-                    <dt><label for="nick">닉네임</label></dt>
-                    <dd class="nick_box">
-                        <input type="text" name="nick" id="nick" placeholder="닉네임을 입력하세요." required>
-                        <span id="loadtext2"></span>
-                    </dd>
-                </dl>
+                <label for="nick">닉네임</label>
+                <div class="nick_box input_box">
+                    <input type="text" name="nick" id="nick" placeholder="닉네임을 입력하세요." required>
+                    <span id="loadtext2"></span>
+                </div>
             </li>
             <li>
-                <dl>
-                    <dt>휴대폰</dt>
-                    <dd>
-                        <label class="hidden" for="hp1">전화번호앞3자리</label>
-                        <select class="hp" name="hp1" id="hp1"> 
-                            <option value='010'>010</option>
-                            <option value='011'>011</option>
-                            <option value='016'>016</option>
-                            <option value='017'>017</option>
-                            <option value='018'>018</option>
-                            <option value='019'>019</option>
-                        </select>  - 
-                        <label class="hidden" for="hp2">전화번호중간4자리</label><input type="text" class="hp" name="hp2" id="hp2" placeholder="0000" required> - <label class="hidden" for="hp3">전화번호끝4자리</label><input type="text" class="hp" name="hp3" id="hp3" placeholder="0000" required>
-                    </dd>
-                </dl>
+                <span>휴대폰</span>
+                <div class="input_box">
+                    <label class="hidden" for="hp1">전화번호앞3자리</label>
+                    <select class="hp" name="hp1" id="hp1"> 
+                        <option value='010'>010</option>
+                        <option value='011'>011</option>
+                        <option value='016'>016</option>
+                        <option value='017'>017</option>
+                        <option value='018'>018</option>
+                        <option value='019'>019</option>
+                    </select>  - 
+                    <label class="hidden" for="hp2">전화번호중간4자리</label><input type="text" class="hp" name="hp2" id="hp2" placeholder="0000" required> - <label class="hidden" for="hp3">전화번호끝4자리</label><input type="text" class="hp" name="hp3" id="hp3" placeholder="0000" required>
+                </div>
             </li>
             <li class="email">
-                <dl>
-                    <dt>이메일</dt>
-                    <dd>
-                        <label class="hidden" for="email1">이메일아이디</label>
-                        <input type="text" id="email1" name="email1" required> @ 
-                        <label class="hidden" for="email2">이메일주소</label>
-                        <input type="text" name="email2" id="email2" required>
-                    </dd>
-                </dl>
+                <span>이메일</span>
+                <div class="input_box">
+                    <label class="hidden" for="email1">이메일아이디</label>
+                    <input type="text" id="email1" name="email1" required> @ 
+                    <label class="hidden" for="email2">이메일주소</label>
+                    <input type="text" name="email2" id="email2" required>
+                </div>
             </li>
         </ul>
         <div id="button">
