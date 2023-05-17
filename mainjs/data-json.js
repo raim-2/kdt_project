@@ -15,7 +15,7 @@ function ok(i) {
   newContent += "<dd>" + responseObject.newProducts[i].info + "</dd>";
   newContent += "<dd>" + responseObject.newProducts[i].effect + "</dd>";
   newContent += "</dl>";
-  newContent += '<span class="more"><a href="' + responseObject.newProducts[i].address + '">View more</a></span>';
+  newContent += '<span class="more"><a href="' + responseObject.newProducts[i].address + '" title="' + responseObject.newProducts[i].korName + ' 더보기' + '" >View more</a></span>';
   newContent += "</div>";
 
   newContent += '<div class="newRightSide">';

@@ -76,7 +76,6 @@
   border-radius: 8px;
   transition: all 0.5s;
   color: #fff;
-  /* background: url(../images/load.png) 0 0 no-repeat; */
 }
 
 .dock .ps {
@@ -93,20 +92,18 @@
 }
 
 .visual .btn {
-  display: block;
   width: 60px;
   height: 60px;
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
   position: absolute;
-  /* top: 150px; */
+  border: 0;
   cursor: pointer;
   text-align: center;
 }
 
 .visual .btn img {
   width: 35px;
-  margin-top: 13px;
 }
 
 .visual .btnLeft {
@@ -128,9 +125,7 @@
   position: relative;
 }
 
-
 /* 제품검색 영역 */
-
 #search_box {
   width: 1150px;
   background: linear-gradient(153deg, rgba(31, 65, 92, 0.7), rgb(21 65 99));
@@ -256,7 +251,6 @@
   cursor: pointer;
 }
 
-
 /* 신제품 영역 */
 /* 스크롤시, 신제품 콘텐츠 애니메이션 */
 .new.newMove {
@@ -291,7 +285,6 @@
   float: left;
   width: 1000px;
   margin: 0 100px;
-  /* transition: all 0.5s; */
 }
 
 .new li::after {
@@ -454,7 +447,7 @@
   left: -220%;
 }
 
-.new .button a {
+.new .button .btn {
   font-size: 2.5em;
   color: #ccc;
   width: 60px;
@@ -462,22 +455,24 @@
   position: absolute;
   top: 58%;
   left: 0;
+  border:0;
+  background: transparent;
   transition: all 0.5s ease-in-out;
 }
 
-.new .button a i {
+.new .button .btn i {
   font-size: 1.25em;
 }
 
-.new .button a:hover {
+.new .button .btn:hover {
   color: #01cbf4;
 }
 
-.new .button a:first-of-type {
+.new .button .btn:first-of-type {
   left: 3%;
 }
 
-.new .button a:last-of-type {
+.new .button .btn:last-of-type {
   left: 92%;
 }
 
@@ -607,8 +602,6 @@
 
 .business ul li:hover {
   transform: translateZ(50px);
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
 
 .business li a::after {
@@ -713,32 +706,6 @@
 }
 
 /* 정도경영 영역 */
-
-/* 스크롤시, 정도경영 콘텐츠 애니메이션 */
-/* @keyframes manageList {
-  from {
-    right: 100px;
-    opacity: 0;
-  }
-
-  to {
-    right: 0;
-    opacity: 1;
-  }
-}
-
-.management.manageMove ul li {
-  animation: manageList 0.7s ease-in-out forwards;
-}
-
-.management.manageMove ul li:nth-of-type(2) {
-  animation-delay: 0.2s;
-}
-
-.management.manageMove ul li:nth-of-type(3) {
-  animation-delay: 0.4s;
-} */
-
 /* 스크롤시, 정도경영 콘텐츠 애니메이션 */
 .management ul li.manageMove {
   right: 0;
@@ -759,8 +726,6 @@
 }
 
 .management {
-  /* 임시 */
-  /* margin: 400px 0 100px; */
   margin: 150px 0;
   position: relative;
 }
@@ -979,7 +944,9 @@
   color: #01abce;
 }
 
+.news .button .btn,
 .news .button a {
+  border:0;
   color: #999;
   font-size: 22px;
   background: #fff;
@@ -994,14 +961,15 @@
   transition: all 0.2s ease-in-out;
 }
 
-.news .button a:first-child {
+.news .button .btn:first-child {
   right: 560px;
 }
 
-.news .button a:nth-child(2) {
+.news .button .btn:nth-child(2) {
   right: 500px;
 }
 
+.news .button .btn:hover,
 .news .button a:hover {
   box-shadow: 2px 3px 5px 0px rgb(0 0 0 / 10%);
   color: #1f415c;

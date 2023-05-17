@@ -28,7 +28,7 @@
     <div class="gallery">
       <ul>
         <li class="link1">
-            <img src="./images/main01.jpg" alt="비주얼이미지1">
+            <img src="./images/main01.jpg" alt="">
             <div class="text">
               <p>글로벌 혁신 제약기업 동아ST</p>
               <p>
@@ -38,7 +38,7 @@
             </div>
         </li>
         <li class="link2">
-            <img src="./images/main02.jpg" alt="비주얼이미지2">
+            <img src="./images/main02.jpg" alt="">
             <div class="text">
               <p>고객을 먼저 생각하는 동아ST</p>
               <p>
@@ -48,7 +48,7 @@
             </div>
         </li>
         <li class="link3">
-            <img src="./images/main03.jpg" alt="비주얼이미지3">
+            <img src="./images/main03.jpg" alt="">
             <div class="text">
               <p>건강과 행복을 위한 동아ST</p>
               <p>
@@ -68,12 +68,12 @@
       <span class="ps"></span>
     </div>
 
-    <span class="btn btnLeft">
-      <img src="./images/arrow01.png" alt="왼쪽 화살표">
-    </span>
-    <span class="btn btnRight">
-      <img src="./images/arrow02.png" alt="오른쪽 화살표">
-    </span>
+    <button type="button" class="btn btnLeft" aria-label="이전 방향 버튼">
+      <img src="./images/arrow01.png" alt="왼쪽 버튼">
+    </button>
+    <button type="button" class="btn btnRight" aria-label="다음 방향 버튼">
+      <img src="./images/arrow02.png" alt="오른쪽 버튼">
+    </button>
   </div>
 
   <article id="content">
@@ -89,7 +89,7 @@
         <label for="search" class="hidden">제품검색</label>
         <div class="searchInner">
           <input type="text" id="search" name="search" placeholder="제품명 검색 가능">
-          <button type="submit">
+          <button type="submit" aria-label="제품 검색 버튼">
             <span class="hidden">검색</span>
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -118,14 +118,14 @@
       <div id="ajaxContent"></div>
 
       <div class="button">
-        <a href="#" class="leftBtn" id="back">
+        <button type="button" class="leftBtn btn" id="back" aria-label="이전 방향 버튼">
           <span class="hidden">왼쪽</span>
           <i class="fa-solid fa-chevron-left"></i>
-        </a>
-        <a href="#" class="rightBtn" id="next">
+        </button>
+        <button type="button" class="rightBtn btn" id="next" aria-label="다음 방향 버튼">
           <span class="hidden">오른쪽</span>
           <i class="fa-solid fa-chevron-right"></i>
-        </a>
+        </button>
       </div>
     </section>
 
@@ -135,7 +135,7 @@
         <div class="businessText">
           <h3>사업분야</h3>
           <p>인류 건강 증진을 위한 동아ST의 사업분야</p>
-          <a href="#" class="more">View more</a>
+          <a href="./concert/list.php" class="more" title="사업분야 페이지 더보기">View more</a>
         </div>
         <ul class="blist" id="native">
           <li class="blist1">
@@ -197,7 +197,7 @@
         </ul>
       </div>
       <div class="scroll">
-        <img src="./images/scroll.png" alt="스크롤아이콘">
+        <img src="./images/scroll.png" alt="스크롤 아이콘">
         <span>scroll</span>
       </div>
     </section>
@@ -210,7 +210,7 @@
         <li>
           <a href="./sub4/sub4_2.html">
             <div class="manageImg">
-              <img src="./images/manage01.jpg" alt="사회가치경영">
+              <img src="./images/manage01.jpg" alt="">
             </div>
             <div class="manageTitle">
               <span>Social Value</span>
@@ -228,7 +228,7 @@
         <li>
           <a href="./sub4/sub4_3.html">
             <div class="manageImg">
-              <img src="./images/manage02.jpg" alt="환경경영">
+              <img src="./images/manage02.jpg" alt="">
             </div>
             <div class="manageTitle">
               <span>Environment</span>
@@ -246,7 +246,7 @@
         <li class="center">
           <a href="./sub4/sub4_4.html">
             <div class="manageImg">
-              <img src="./images/manage03.jpg" alt="소비자경영">
+              <img src="./images/manage03.jpg" alt="">
             </div>
             <div class="manageTitle">
               <span>Customer</span>
@@ -279,15 +279,15 @@
         </div>
       </div>
       <div class="button">
-        <a href="#" class="newsLeftBtn btn">
+        <button type="button" class="newsLeftBtn btn" aria-label="이전 방향 버튼">
           <span class="hidden">이전</span>
           <i class="fa-solid fa-chevron-left"></i>
-        </a>
-        <a href="#" class="newsRightBtn btn">
+        </button>
+        <button type="button" class="newsRightBtn btn" aria-label="다음 방향 버튼">
           <span class="hidden">다음</span>
           <i class="fa-solid fa-chevron-right"></i>
-        </a>
-        <a href="./free/list.php" class="newsMore">
+        </button>
+        <a href="./free/list.php" class="newsMore" title="동아위드 게시판 더보기">
           <span class="hidden">더보기</span>
           <i class="fa-solid fa-plus"></i>
         </a>
@@ -300,8 +300,8 @@
         <h3>인재채용</h3>
         <p>비전을 함께 할 역량있는 인재를 찾습니다.</p>
       </div>
-      <a href="./sub5/sub5_3.html">
-        <span> 바로가기 </span>
+      <a href="./sub5/sub5_3.html" title="인재채용 페이지로 바로가기">
+        <span>바로가기</span>
         <i class="fa-solid fa-arrow-right-long"></i>
       </a>
     </section>
