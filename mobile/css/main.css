@@ -155,6 +155,7 @@ ul.tab_menu a.tab4 {
 
 #new ul li div img {
   width: 100%;
+  max-width: 512px;
 }
 
 #content #new ul li span {
@@ -368,13 +369,19 @@ ul.box2.environment {
 }
 
 #management .manageList .text a {
-  display: block;
-  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
   background: rgba(31, 65, 92, .9);
   height: 100%;
   color: #fff;
   box-sizing: border-box;
-  line-height: 2;
+}
+
+#management .manageList .text h4 {
+  width: 100%;
 }
 
 #management .manageList .text span {
@@ -387,6 +394,7 @@ ul.box2.environment {
 #management .manageList .text p {
   line-height: 1.3rem;
   font-size: 0.875em;
+  width: 100%;
 }
 
 #management .manageList li {
