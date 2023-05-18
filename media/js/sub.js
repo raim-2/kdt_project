@@ -73,14 +73,12 @@ var ind = 0;
 $('.click_box .playBtn').click(function (e) {
     e.preventDefault();
     ind = $(this).parents('li').index();
-    console.log(ind);
     $('.tab_menu li').find('img').removeClass();
-    // $('.tab_menu li').removeClass('on');
     $('.tab_menu li:eq(' + ind + ')').find('img').addClass('rotationImg' + (ind + 1));
+    
     $('.click_box .stopBtn').css('opacity', '.7')
     $('.click_box .playBtn').css('opacity', '.7')
     $('.tab_menu li:eq(' + ind + ')').find('.playBtn').css('opacity', '1')
-    // $('.tab_menu li:eq(' + ind + ')').addClass('on');
     $('.music ul.tab_menu li:eq(0)').removeClass('on')
     $('.music ul.tab_menu li:eq(0)').addClass('on')
 
@@ -90,9 +88,8 @@ $('.click_box .stopBtn').click(function (e) {
     e.preventDefault();
     ind = $(this).parents('li').index();
     $('.tab_menu li').find('img').removeClass();
-    // $('.tab_menu li').removeClass('on');
     $('.tab_menu li:eq(' + ind + ')').find('img').removeClass();
-    // $('.tab_menu li:eq(' + ind + ')').removeClass('on')
+
     $('.click_box .stopBtn').css('opacity', '.7')
     $('.click_box .playBtn').css('opacity', '.7')
     $('.tab_menu li:eq(' + ind + ')').find('.stopBtn').css('opacity', '1')
@@ -102,42 +99,31 @@ $('.click_box .stopBtn').click(function (e) {
 
 
 /* music*/
-var audio; //전역변수 선언
-var audioAll = document.querySelectorAll('.testAudio');
-var num;
+let audio; 
+let audioAll = document.querySelectorAll('.testAudio'); 
+let cnt;
 
-function play1() {
-    audio = document.getElementById('testAudio1');
-    audio.play(); //비디오를 재생한다.
-    num = 1;
-}
+$('.tab_menu .playBtn').click(function(e){
+    cnt = $('.tab_menu').find('.playBtn').index(this);
+    //0, 1, 2
 
-function stop1() {
-    audio.pause(); //비디오를 재생한다.
-    audio.currentTime = 0;
-}
+    audioAll.forEach(function(audio, index) {
+        if (index !== cnt) {
+            audio.pause(); // 클릭한 인덱스가 아닌 경우 일시 중지
+        }
+    });
 
-function play2() {
-    audio = document.getElementById('testAudio2');
-    audio.play(); //비디오를 재생한다.
-    num = 2;
-}
+    audio = document.getElementById('testAudio'+(cnt+1));
+    audio.play();
+})
 
-function stop2() {
-    audio.pause(); //비디오를 재생한다.
-    audio.currentTime = 0;
-}
+$('.tab_menu .stopBtn').click(function(e){
+    cnt = $('.tab_menu').find('.stopBtn').index(this);
 
-function play3() {
-    audio = document.getElementById('testAudio3');
-    audio.play(); //비디오를 재생한다.
-    num = 3;
-}
+    audio = document.getElementById('testAudio'+(cnt+1)) 
+    audio.pause();
+})
 
-function stop3() {
-    audio.pause(); //비디오를 재생한다.
-    audio.currentTime = 0;
-}
 
 $(window).resize(function () {
     screenSize = $(window).width();

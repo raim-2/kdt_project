@@ -468,4 +468,10 @@ a.popup-youtube {
             opacity: 1;
         }
     }
+
+    a.playBtn, a.stopBtn {
+        font-size: 9vw;
+        display: inline-block;
+        text-align: center; 
+    }
 }
