@@ -118,7 +118,6 @@ window.addEventListener("scroll", scrollEvent)
 
  function scrollEvent() {
   var scroll = $(window).scrollTop();
-  console.log(manageOfftop, scroll) //1684, 
   let onoff = false;
 
   if (scroll >= manageOfftop) {
