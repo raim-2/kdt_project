@@ -23,7 +23,7 @@
   line-height: 2em;
 }
 
-span {
+.chart_legend {
   text-align: right;
   display: block;
   font-size: 0.875em;
