@@ -189,7 +189,7 @@ a.stopBtn {
 
 @keyframes animationBig4 {
     from {
-        transform: none;
+        transform: scale(1.1);
     }
 
     to {
@@ -426,6 +426,10 @@ a.popup-youtube {
         margin: 0 10% 2rem;
     }
 
+    .tab img {
+        transform: scale(1.1);
+    }
+
     ul.tab_menu li:nth-child(2),
     ul.tab_menu li:last-child {
         display: none
@@ -470,7 +474,7 @@ a.popup-youtube {
     }
 
     a.playBtn, a.stopBtn {
-        font-size: 9vw;
+        font-size: 10vw;
         display: inline-block;
         text-align: center; 
     }
