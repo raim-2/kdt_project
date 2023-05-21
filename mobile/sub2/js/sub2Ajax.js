@@ -1,56 +1,49 @@
-$(function () {
+//제이쿼리에서 json파일을 불러오는 코드
+$.ajax({
+    method: 'GET',
+    url: '../sub2/sub2Ajax.json',
+    dataType: 'json',
+    success: function (data) {
+        var product = data.main;
 
+        function dataPrint() {
+            var txt = '<ul class="pop_menu">';
 
-    /*
-        $.ajax({
-            method: 'get/post', //전송방식
-            url : 'sam.json', //연결파일
-            dataType: '파일타입' //파일타입
+            for (var i in product) {
+                var $Name = product[i].Name;
+                var $Image = product[i].Image;
 
-            sucess: funcion() {
-                //http 요청 성공 시 
-            },
-            complete: fucntion() {
-                //http 요청 완료 시
-            },
-            error: fucntion() {
-                //http 요청 실패 시
+                txt += '<li>';
+                txt += '<a href="#">';
+                txt += '<img src="' + $Image + '" alt="' + $Name + '">';
+                txt += '</a>';
             }
-        });
 
-    */
+            txt += '</ul>';
+            $('.product_list').html(txt);
+        };
 
-    //제이쿼리에서 json파일을 불러오는 코드
+        //초기실행, 함수호출
+        dataPrint();
+    }
+});
+    
+
+$(".pop .pop_menu a").click(function (e) {
+    e.preventDefault();
+    ind = $(this).index(".pop .pop_menu a"); // 0 1 2 3
+
+    $(".pop .modal_box").fadeIn("fast");
+    $(".pop .popup").fadeIn("slow");
 
     $.ajax({
-        url: 'sub2Ajax.json',
+        method: 'GET',
+        url: '../sub2/sub2Ajax.json',
         dataType: 'json',
         success: function (data) {
-            var product = data.main;
-
-            function dataPrint() {
-
-                var txt = '<ul class="pop_menu">';
-
-                for (var i in product) {
-
-                    var $Name = product[i].Name;
-                    var $Image = product[i].Image;
-
-                    txt += '<li>';
-                    txt += '<a href="#">';
-                    txt += '<img src="' + $Image + '" alt="' + $Name + '">';
-                    txt += '</a>';
-                }
-
-                txt += '</ul>';
-
-                $('.product_list').html(txt);
-            };
-
+            var memo = data.memo;
+            
             function popchange() {
-                var memo = data.memo;
-                var ind = 0;
                 var txt = "";
 
                 $(".pop .popup img").attr(
@@ -67,27 +60,14 @@ $(function () {
                 $(".pop .popup .txt").html(txt);
             }
 
-            //초기실행, 함수호출
-            dataPrint();
-            popchange()
+            //함수 호출
+            popchange();
         }
     });
+});
 
-    $(".pop .pop_menu a").click(function (e) {
-        e.preventDefault();
-
-        ind = $(this).index(".pop .pop_menu a"); // 0 1 2 3
-
-        $(".pop .modal_box").fadeIn("fast");
-        $(".pop .popup").fadeIn("slow");
-
-        popchange();
-    });
-
-    $(".close_btn,.pop .modal_box").click(function (e) {
-        e.preventDefault();
-        $(".pop .modal_box").fadeOut("fast");
-        $(".pop .popup").fadeOut("fast");
-    });
-
+$(".close_btn,.pop .modal_box").click(function (e) {
+    e.preventDefault();
+    $(".pop .modal_box").fadeOut("fast");
+    $(".pop .popup").fadeOut("fast");
 });
