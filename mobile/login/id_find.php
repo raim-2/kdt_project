@@ -67,6 +67,7 @@
 					<fieldset>
                         <div class="nameBox">
                             <span><i class="fa-solid fa-user"></i></span>
+                            <label for="name" class="hidden">이름</label>
                             <input type="text" name="name" class="find_input" id="name" placeholder="이름을 입력하세요." required>
                         </div>
                         <div class="telBox">

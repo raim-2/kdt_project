@@ -5,15 +5,15 @@ function login_cancel() {
 //login 창 icon_focus
 
 $(".login_input, .find_input").keydown(function () {
-  $(this).prev("span").css("color", "#01abce");
+  $(this).siblings("span").css("color", "#01abce");
 });
 
 $(".login_input, .find_input").focus(function () {
-  $(this).prev("span").css("color", "#01abce");
+  $(this).siblings("span").css("color", "#01abce");
 });
 
 $(".login_input, .find_input").blur(function () {
-  $(this).prev("span").css("color", "#333");
+  $(this).siblings("span").css("color", "#333");
 });
 
 
