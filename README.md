@@ -113,11 +113,12 @@
  + heading 태그를 사용한 목차/아웃라인 구성 
  + 시맨틱 태그를 사용한 마크업
  + pc, mobile, tablet 사이즈에 맞춰 크로스 체크
+     + 크롬 개발자도구 - 디바이스 툴바 사용
 
 #### HTML / CSS / JavaScript /jQuery
+ + grid와 미디어쿼리 사용으로 반응형 레이아웃 구성
  + CSS애니메이션 사용으로 동적 효과 구현
     + ***[인덱스 - Character] [메뉴 - Character]***
- + grid와 미디어쿼리 사용으로 반응형 레이아웃 구성
  + 플러그인 및 라이브러리 이용
     + Magnific Popup 플러그인 - 비디오 모달 팝업 ***[메뉴 - Trailer]***
     + Masonry플러그인 - 이미지 그리드 ***[메뉴 - Gallery]***
