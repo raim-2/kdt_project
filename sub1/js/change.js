@@ -5,7 +5,6 @@ var sec02 = document.querySelector(".section02");
 var dt2 = sec02.querySelector("dt");
 var dd2 = sec02.querySelector("dd");
 
-
 var cnt = 1;
 var cnt2 = 1;
 
@@ -70,64 +69,3 @@ $('.btn2').click(function(e) {
     $(this).find("span").text("달성공장 위치");
   }
 })
-
-/*
-function change(event) {
-  event.preventDefault();
-  cnt++;
-
-  if (cnt % 2 == 0) {
-    dt.innerText = mapinfo[1].name;
-    dd.innerText = mapinfo[1].address;
-    // mapid.id = mapinfo[1].id;
-    $("#mapHead").css("display", "none");
-    $("#mapLab").css("display", "block");
-    $(".summary dd span").text("본사 위치");
-  } else if (cnt % 2 == 1) {
-    dt.innerText = mapinfo[0].name;
-    dd.innerText = mapinfo[0].address;
-    // mapid.id = mapinfo[0].id;
-    $("#mapHead").css("display", "block");
-    $("#mapLab").css("display", "none");
-    $(".summary dd span").text("연구소 위치");
-  }
-
-  // $(".tabs .tab").click(function (e) {
-  //   if ($('#mapLab').css('display') == 'block') {
-  //     $(".contentArea .contlist .map2").css("display","block");
-  //   }
-  // })
-}*/
-
-/*
-function change2(event) {
-  event.preventDefault();
-  cnt2++;
-
-  if (cnt2 % 2 == 0) {
-    dt2.innerText = mapinfo[3].name;
-    dd2.innerText = mapinfo[3].address;
-    // mapid2.id = mapinfo[3].id;
-    $("#mapCheonan").css("display", "none");
-    $("#mapDalseong").css("display", "block");
-    $(".summary dd span").text("천안공장 위치");
-  } else if (cnt2 % 2 == 1) {
-    dt2.innerText = mapinfo[2].name;
-    dd2.innerText = mapinfo[2].address;
-    // mapid2.id = mapinfo[2].id;
-    $("#mapCheonan").css("display", "block");
-    $("#mapDalseong").css("display", "none");
-    $(".summary dd span").text("달성공장 위치");
-  }
-}
-
-//  $(".tabs .tab").click(function (e) {
-//   if ($('.map2').css('display') == 'block') {
-//     $(".contentArea .contlist .map2").css("display","block");
-//     // $(".contentArea .contlist").show();
-//   }
-//  })*/
-
-
-// btn.addEventListener("click", change);
-// btn2.addEventListener("click", change2);

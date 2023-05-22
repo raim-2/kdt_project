@@ -42,8 +42,8 @@
     $(".tabs .contlist:eq(" + ind + ") .summary").show();
     
     //탭 css 처리 
-    $(".tab").css("background", "#f8f8f8").css("color", "#333"); //모든 탭메뉴를 비활성화
-    $(this).css("background", "#fff").css("color", "#01abce"); // 클릭한 해당 탭메뉴만 활성화
+    $(".tab").css("background", "#f8f8f8").css("color", "#333"); 
+    $(this).css("background", "#fff").css("color", "#01abce"); 
   
     //탭 메뉴 css 비활성
     if (ind == 0) {
@@ -61,7 +61,7 @@
     }
 
     //탭 메뉴 css 활성
-    $(this).css("background", "#fff").css("color", "#01abce"); //첫번째 탭메뉴 활성화
+    $(this).css("background", "#fff").css("color", "#01abce");
     $(this).css("border-bottom", "none");
 
     //버튼1, 버튼 2로 데이터 변경 후 탭 클릭할 때
