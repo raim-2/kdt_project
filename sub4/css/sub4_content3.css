@@ -25,7 +25,6 @@ ul.tab_menu {
   overflow: hidden;
 }
 
-/* text */
 /* .text {
   position: fixed;
   right: 0;
@@ -100,7 +99,6 @@ ul.tab_menu {
 
 #content .contentArea section.contlist {
   margin: 100px 0;
-  /* display: none; */
 }
 
 #content .contentArea .sec01 p {
@@ -117,7 +115,6 @@ ul.tab_menu {
 
 #content .contentArea .sec01 {
   background: #f8f8f8;
-  /* padding-top: 50px; */
   padding: 90px 30px;
 }
 
@@ -164,7 +161,6 @@ ul.tab_menu {
 }
 
 .sec01 div ul li p {
-  /* font-family: "Nanum Myeongjo", serif; */
   position: relative;
 }
 
@@ -173,12 +169,10 @@ ul.tab_menu {
   width: 30px;
   height: 30px;
   background: #ccc;
-  /* border: 1px solid #01abc3; */
   border-radius: 50%;
   display: block;
   position: absolute;
   left: 19px;
-  /* 20, -4 */
   top: -3px;
   content: "";
 }

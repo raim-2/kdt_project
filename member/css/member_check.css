@@ -1,9 +1,3 @@
-/* body {
-  background: url(../images/member_bg.jpg) no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-} */
-
 body {
   background: #f6f6f6;
 }
@@ -18,7 +12,6 @@ h1 {
 }
 
 .logo {
-  /* margin: 50px auto 0; */
   color: #fff;
   text-indent: -9999%;
   display: inline-block;
@@ -34,8 +27,9 @@ h2 {
 }
 
 #content {
+  box-sizing: border-box;
   background: #fff;
-  width: 750px;
+  width: 800px;
   margin: 0 auto 50px;
   padding: 70px;
   border-radius: 10px;
@@ -208,27 +202,12 @@ input[type="checkbox"]:checked+label::before {
   color: red;
 }
 
-.inform th {
-  text-align: left;
-  font-weight: 500;
-  width: 150px;
-}
-
-.inform tr {
-  display: block;
-  margin-bottom: 30px;
-}
-
-.inform td {
-  display: block;
+.inform .input_box {
   margin-top: 20px;
-  width: 100%;
   position: relative;
 }
 
-.inform label::after,
-.inform tr:nth-child(6) th::after,
-.inform tr:nth-child(7) th::after {
+.inform label::after {
   content: "*";
   color: red;
 }
@@ -245,12 +224,11 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .inform .hp {
-  /* padding: 15px 20px 20px; */
-  width: 32.2%;
+  width: calc((100% - 32px)/3);
 }
 
-.inform tr:nth-child(7) input {
-  width: 48.5%;
+.inform li:nth-child(7) input {
+  width: calc((100% - 24px)/2);
 }
 
 span#loadtext,
@@ -261,14 +239,6 @@ span#loadtext3 {
   right: 20px;
   top: 20px;
 }
-
-.inform tr:last-child td {
-  padding: 50px 0 0;
-  width: max-content;
-  margin: 0 auto;
-  display: block;
-}
-
 
 .inform input:focus,
 .inform .hp:focus {
@@ -285,7 +255,7 @@ span#loadtext3 {
 
 /* modify css */
 
-.modify dl {
+.inform li, .modify dl {
   margin-bottom: 30px;
 }
 
@@ -311,9 +281,9 @@ dd.nick_box {
   position: relative;
 }
 
-.modify li.email input {
+/* .modify li.email input {
   width: 48.1%;
-}
+} */
 
 .modify li.nick::after {
   clear: both;
@@ -340,15 +310,16 @@ dd.nick_box {
   border-radius: 10px;
 }
 
+.inform div#button,
 .modify div#button {
   padding: 50px 0 0;
   width: max-content;
   margin: 0 auto;
 }
 
-.modify .hp {
+/* .modify .hp {
   width: 31.9%;
-}
+} */
 
 .modify .pass_box {
   position: relative;

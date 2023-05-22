@@ -91,7 +91,7 @@
 		<h2>동아위드</h2>
 		</div>
 		<div class="contentArea">
-			<!-- 본문 콘텐츠 영역 -->
+			<!-- content area -->
 			<p>동아ST의 최신 소식 및 뉴스를 알려드립니다.</p>
 
 	<div id="col2">        
@@ -116,21 +116,9 @@
 							<option value='8'>8개씩</option>
 							<option value='10'>10개씩</option>
 							<option value='12'>12개씩</option>
-							<!-- <option value='5'>5</option> -->
 						</select>
 					</div>
 		</form>
-		<!-- <div class="clear"></div>
-
-		<div id="list_top_title">
-					<ul>
-						<li id="list_title1">번호</li>
-						<li id="list_title2">제목</li>
-						<li id="list_title3">글쓴이</li>
-						<li id="list_title4">등록일</li>
-						<li id="list_title5">조회</li>
-					</ul>
-				</div> -->
 
 		<div id="list_content">
 <?		

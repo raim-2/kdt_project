@@ -19,7 +19,6 @@
 .conlist2 p {
   margin: 30px 5% 0;
   line-height: 1.8rem;
-  text-align: justify;
 }
 
 .conlist2 p {
@@ -102,7 +101,6 @@
 
 .conlist2 table th,
 .conlist2 table td {
-  /* width: 33%; */
   border-bottom: 1px solid #ccc;
 }
 
@@ -131,5 +129,5 @@ tbody tr.a td {
 }
 
 .conlist2 table th#product {
-  width: 40%;
+  width: 35%;
 }

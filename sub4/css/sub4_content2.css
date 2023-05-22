@@ -75,7 +75,6 @@ ul.tab_menu {
 
 #content .contentArea section.contlist {
   margin: 100px 0;
-  /* display: none; */
 }
 
 #content .contentArea section p,
@@ -225,31 +224,16 @@ ul.tab_menu {
   color: #1f415c;
 }
 
-/* .sec02 h3 + span {
-  margin-left: 110px;
-  font-size: 20px;
-}
-
-.sec02 h3 + span span,
-.sec02 p span {
-  color: #01abce;
-} */
-
 #content .contentArea .sec02 h4 {
   margin-top: 100px;
 }
 
 #content .contentArea .sec02 .left p {
-  /* margin-top: 30px;  */
   width: inherit;
   margin-top: 20px;
   text-align: justify;
   line-height: 2em;
 }
-
-/* .sec02 h3 + ul {
-  padding: 0 52px;
-} */
 
 .sec02 h3 + ul li {
   margin-bottom: 50px;
@@ -278,15 +262,12 @@ ul.tab_menu {
 
 .sec02 h3 + ul li img {
   float: right;
-  /* margin-left: 60px; */
 }
 
 .sec02 .result > span {
   display: block;
   margin-left: 68%;
   margin-bottom: 60px;
-  /* width: 92px; */
-  /* margin: 0 auto; */
 }
 
 .sec02 .result ul {
@@ -368,13 +349,7 @@ ul.tab_menu {
 
 .sec02 .partner ul li {
   float: left;
-  /* width: 240px;
-  margin: 0 30px 40px; */
 }
-
-/* .sec02 .partner ul li:hover {
-  box-shadow: 1px 1px 6px 3px rgb(0 0 0 / 10%);
-} */
 
 #content .contentArea section .partner h4 {
   margin: 0 0 60px;

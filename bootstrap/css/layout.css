@@ -35,7 +35,6 @@ p {
 }
 
 /* 와이드 pc */
-
 .container-fluid {
   padding: 0;
 }
@@ -169,7 +168,6 @@ img {
 }
 
 /* 여기까지 캐러셀페이드 */
-
 .control {
   position: absolute;
   top: 50%;
@@ -530,11 +528,6 @@ li.nav-item {
   text-align: center;
 }
 
-/* .fixedImg {
-  background: url(../images/imgbg2.jpg) 0 0 no-repeat;
-  background-attachment: fixed;
-} */
-
 /* 일반pc */
 @media screen and (max-width:1200px) {
   .modal-dialog {
@@ -694,15 +687,12 @@ li.nav-item {
   }
 
   p {
-    /* font-size: 3.4vw; */
     font-size: 0.97em;
   }
 
   section.about li p,
   p.text-center.summary,
   .store p {
-    /* font-size: 3.5vw; */
-    /* font-size: 0.9em; */
     font-size: 14px;
   }
 

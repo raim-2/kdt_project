@@ -22,7 +22,6 @@ $(window).on("scroll", function () {
     //마우스가 헤더에 hover되어 있지 않을 때
     if (on_off == false) {
       $("#headerArea")
-        // .css("background", "rgba(0,0,0,.3)")
         .css("background", "none")
         .css("box-shadow", "none");
       $(".dropdownmenu li a.depth1").css("color", "#fff");
@@ -95,13 +94,11 @@ $("#gnb .depth1>a").click(function () {
 $(".family .arrow").toggle(
   function (e) {
     e.preventDefault();
-    // $(".select .aList").show("slow");
     $(".select .aList").stop().slideDown("slow");
     $(this).find(".icon").stop().html('<i class="fa-solid fa-chevron-down"></i>');
   },
   function (e) {
     e.preventDefault();
-    // $(".select .aList").hide("fast");
     $(".select .aList").stop().slideUp("fast");
     $(this).find(".icon").stop().html('<i class="fa-solid fa-chevron-up"></i>');
   }
@@ -127,7 +124,6 @@ $(window).on("scroll", function () {
 $(".top").click(function (e) {
   e.preventDefault();
   $("html,body").stop().animate(
-    // 상단으로 스르륵 이동
     {
       scrollTop: 0,
     },

@@ -1,40 +1,37 @@
-$(document).ready(function () {
-  // visual move 비주얼이미지
+  //v2_ visual move 비주얼이미지
 
   var timeonoff; //타이머 처리
   var imageCount = $(".gallery ul li").size(); //이미지 총개수
-  var cnt = 1; //이미지 순서 1 2 3 1 2 3 ....(주인공!!=>현재 이미지 순서)
-  var onoff = true; // true=>타이머 동작중 , false=>동작하지 않을때
+  var cnt = 1; //현재 이미지 순서
+  var onoff = true; // 타이머 동작 여부
 
   /* 최초 상태 셋팅*/
-  $(".btn1").css("background", "rgba(31, 65, 92, .8)"); //첫번째 불켜
-  $(".btn1").css("width", "90"); // 버튼의 너비 증가
+  $(".btn1").css("background", "rgba(31, 65, 92, .8)"); 
+  $(".btn1").css("width", "90"); 
   $(".btn1").css("text-indent", "50px");
-  $(".ps").html('<i class="fa-solid fa-pause"></i>'); //정지
+  $(".ps").html('<i class="fa-solid fa-pause"></i>'); 
 
-  $(".gallery .link1").fadeIn("slow"); //첫번째 이미지 보여줌
+  //첫번째 이미지 등장
+  $(".gallery .link1").fadeIn("slow"); 
   $(".gallery .link1 .text").delay(1500).animate({
-      top: 340, //위로 올라옴
+      top: 340, 
       opacity: 1,
     },
     "slow"
   );
 
-  function moveg() {
-    //맨 처음에 cnt = 1로 시작하므로, 조건을 나눠둔것
-    if (cnt == imageCount + 1) cnt = 1; 
-    if (cnt == imageCount) cnt = 0; //카운트 초기화
-
-    cnt++; //카운트 1씩 증가 5되면 초기화, 0 1 2 3 1 2 3...
-
+  /* 변화줄 css를 담은 함수 */
+  function csschange() {
     $(".gallery li").hide(); //이미지 모두 off
-    $(".gallery .link" + cnt).fadeIn("slow"); // 자신만 보임
+    $(".gallery .link" + cnt).fadeIn("slow"); //해당 이미지 on
 
-    $(".mbutton").css("background", "rgba(0,0,0,.1)"); //버튼불다꺼!!
-    $(".mbutton").css("width", "25"); // 버튼 원래의 너비
-    $(".mbutton").css("text-indent", "0");
+    // btn off, css 원상태로
+    $(".mbutton").css("background", "rgba(0,0,0,.1)"); 
+    $(".mbutton").css("width", "25"); 
+    $(".mbutton").css("text-indent", "0"); 
 
-    $(".btn" + cnt).css("background", "rgba(31, 65, 92, .8)"); //자신만 불켜
+    //해당 btn on, css 변화
+    $(".btn" + cnt).css("background", "rgba(31, 65, 92, .8)"); 
     $(".btn" + cnt).css("width", "90");
     $(".btn" + cnt).css("text-indent", "50px");
 
@@ -52,119 +49,71 @@ $(document).ready(function () {
     if (cnt == imageCount) cnt = 0; //카운트의 초기화 0
   }
 
+  /* 이미지 자동슬라이드 처리 */
+  function moveg() {
+    //맨 처음에 cnt = 1로 시작하므로, 조건을 나눠둔것
+    if (cnt == imageCount + 1) cnt = 1; 
+    if (cnt == imageCount) cnt = 0; //카운트 초기화
+    cnt++; 
+
+    csschange()
+  }
+
+  // 타이머 동작 - 자동 슬라이드(4초마다 진행)
   timeonoff = setInterval(moveg, 4000);
-  // 타이머를 동작 1~5이미지를 순서대로 자동 처리
-  //var 변수 = setInterval( function(){처리코드} , 4000);  //정보를 담아놓는다
-
+  
+  /* 버튼 동작 처리 */
   $(".mbutton").click(function (event) {
-    //각각의 버튼 클릭시
     var $target = $(event.target); //클릭한 버튼 $target == $(this)
-    clearInterval(timeonoff); //타이머 중지
+    clearInterval(timeonoff); //타이머 off - 자동 호출 해제
 
-    $(".gallery li").hide(); //모든 이미지 안보인다.
-
+    //버튼마다 cnt 정보 담아둠
     if ($target.is(".btn1")) {
-      //첫번째 버튼 클릭??
-      cnt = 1; //클릭한 해당 카운트를 담아놓는다
+      cnt = 1; 
     } else if ($target.is(".btn2")) {
-      //두번째 버튼 클릭??
       cnt = 2;
     } else if ($target.is(".btn3")) {
       cnt = 3;
     }
 
-    $(".gallery .link" + cnt).fadeIn("slow"); //자기 자신만 이미지가 보인다
+    csschange()
+    timeonoff = setInterval(moveg, 4000); //타이머 on
 
-    $(".mbutton").css("background", "rgba(0,0,0,.1)"); //버튼 모두불꺼
-    $(".mbutton").css("width", "25");
-    $(".mbutton").css("text-indent", "0");
-
-    $(".btn" + cnt).css("background", "rgba(31, 65, 92, .8)"); //자신 버튼만 불켜
-    $(".btn" + cnt).css("width", "90");
-    $(".btn" + cnt).css("text-indent", "50px");
-
-    $(".gallery li .text").css("top", 380).css("opacity", 0);
-    $(".gallery .link" + cnt)
-      .find(".text")
-      .delay(1000)
-      .animate({
-          top: 340,
-          opacity: 1,
-        },
-        "slow"
-      );
-
-    if (cnt == imageCount) cnt = 0; //카운트 초기화
-
-    timeonoff = setInterval(moveg, 4000); //타이머의 부활!!!
-
+    //타이머 중지상태일때 - on으로 
     if (onoff == false) {
-      //중지상태?
-      onoff = true; //동작~~
+      onoff = true; 
       $(".ps").html('<i class="fa-solid fa-pause"></i>');
     }
   });
 
-  //stop + play 버튼 클릭시 타이머 동작/중지
+  /* stop + play 버튼에 따른 타이머동작 처리 */
   $(".ps").click(function () {
-    if (onoff == true) {
-      // 타이머가 동작 중이면,
-      clearInterval(timeonoff); //stop버튼 클릭시
+    if (onoff == true) { 
+      clearInterval(timeonoff); //자동 off
       $(this).html('<i class="fa-solid fa-play"></i>');
       onoff = false;
     } else {
-      // false 타이머가 중지 상태면,
-      timeonoff = setInterval(moveg, 4000); //play버튼 클릭시  부활
+      timeonoff = setInterval(moveg, 4000); //자동 on
       $(this).html('<i class="fa-solid fa-pause"></i>');
       onoff = true;
     }
   });
 
-  //왼쪽 + 오른쪽 버튼 처리
+  /* 왼쪽 + 오른쪽 버튼 처리 */
   $(".visual .btn").click(function () {
-    clearInterval(timeonoff); //살인마
+    clearInterval(timeonoff); //우선 자동 off
 
     if ($(this).is(".btnRight")) {
-      // 오른쪽 버튼 클릭
-      if (cnt == imageCount) cnt = 0; //카운트가 마지막 번호(5)라면 초기화 0
-      //if(cnt==imageCount+1)cnt=1;
-      cnt++; //카운트 1씩증가
+      if (cnt == imageCount) cnt = 0; 
+      cnt++; 
     } else if ($(this).is(".btnLeft")) {
-      //왼쪽 버튼 클릭
-      if (cnt == 1) cnt = imageCount + 1; // 1->6  최초..
-      if (cnt == 0) cnt = imageCount;
-      cnt--; //카운트 감소
+      if (cnt == 1) cnt = imageCount + 1; // 최초 설정
+      if (cnt == 0) cnt = imageCount; //초기화 상태일때
+      cnt--;
     }
 
-    $(".gallery li").hide(); //모든 이미지를 보이지 않게.
-    $(".gallery .link" + cnt).fadeIn("slow"); //자신만 이미지가 보인다..
-
-    $(".mbutton").css("background", "rgba(0,0,0,.1)"); //버튼 모두불꺼
-    $(".mbutton").css("width", "25");
-    $(".mbutton").css("text-indent", "0");
-
-    $(".btn" + cnt).css("background", "rgba(31, 65, 92, .8)"); //자신 버튼만 불켜
-    $(".btn" + cnt).css("width", "90");
-    $(".btn" + cnt).css("text-indent", "50px");
-
-    $(".gallery li .text").css("top", 380).css("opacity", 0);
-    $(".gallery .link" + cnt)
-      .find(".text")
-      .delay(1000)
-      .animate({
-          top: 340,
-          opacity: 1,
-        },
-        "slow"
-      );
-
-    // if($(this).is('.btnRight')){
-    //   if(cnt==imageCount)cnt=0;
-    // }else if($(this).is('.btnLeft')){
-    //   if(cnt==1)cnt=imageCount+1;
-    // }
-
-    timeonoff = setInterval(moveg, 4000); //부활
+    csschange()
+    timeonoff = setInterval(moveg, 4000); 
 
     if (onoff == false) {
       onoff = true;
@@ -172,17 +121,14 @@ $(document).ready(function () {
     }
   });
 
-
-  //제품검색 클릭 이벤트
-
+  /* 제품검색 클릭 이벤트 */
   var search = document.querySelector('#search_box');
   var input = search.querySelector('.searchInner input')
 
   $('#search_box dl dd').click(function (e) {
     e.preventDefault();
 
-    input.value = this.innerText
-    //input.value = $(this).attr('value',);
+    input.value = this.innerText;
   })
 
 
@@ -352,4 +298,3 @@ $(document).ready(function () {
       $(".recruit").removeClass("recruitMove");
     }
   });
-});

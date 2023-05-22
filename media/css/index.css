@@ -116,7 +116,6 @@
 }
 
 /* content 영역 */
-/* #content{background:black;} */
 
 article#content section {
    padding: 6.25rem 0;
@@ -124,14 +123,8 @@ article#content section {
 
 section h3 {
    font-size: 4.125em;
-   /* font-size: 2.625em; */
    font-family: "Carter One", cursive;
    margin: 30px 0;
-   /* background-image: url(../images/textbg.jpg); */
-   /* background-clip: text;
-   -webkit-background-clip: text;
-   background-position: center;
-   color: transparent; */
    color: #fff;
    line-height: 1;
 }
@@ -139,7 +132,6 @@ section h3 {
 section.character h3,
 section.trailer h3 {
    text-align: center;
-   /* margin: 1.5rem 0 3.889rem; */
    margin: 3rem 0 3.889rem;
 }
 
@@ -150,7 +142,6 @@ section.story {
    background-size: cover;
    height: 1200px;
    position: relative;
-   /* background-size: 100% auto; */
 }
 
 .story a.more {
@@ -164,7 +155,6 @@ section.story {
    line-height: 1.5em;
    text-align: justify;
    margin-bottom: 1.8rem;
-   /* letter-spacing: 1px; */
 }
 
 .story p:last-child {
@@ -172,7 +162,6 @@ section.story {
 }
 
 .story ul {
-   /* padding: 0 3.75%; */
    width: 80%;
    padding: 0 10%;
    display: grid;
@@ -188,11 +177,6 @@ section.story {
    position: relative;
    border-radius: 10%;
 }
-
-/* .story ul li.storyImg.filter {
-   filter: saturate(.5)
-} */
-
 
 .story ul li.storyImg::after {
    opacity: 0;
@@ -226,7 +210,6 @@ section.story {
 
 .story ul li.storyImg:hover {
    filter: hue-rotate(340deg) brightness(1.1);
-   /* border: 1px solid #55ffe3; */
 }
 
 .story li:first-of-type {
@@ -293,10 +276,6 @@ article#content section.character {
    width: 100%;
    height: 100%;
    filter: brightness(1.2);
-   /* object-fit: cover;
-   object-position: center;
-   box-shadow: 0px 0px 0px 3px rgb(255 83 2);
-   border-radius: 20% 50% 40% 40% / 50% 15% 30% 20%; */
 }
 
 
@@ -314,7 +293,6 @@ article#content section.character {
 .character p::before {
    content: "MOANA";
    display: block;
-   /* background: linear-gradient(to right, #bd471b, #ffc916); */
    background: linear-gradient(to right, rgb(255 83 2), #00ffaa 100%);
    -webkit-background-clip: text;
    background-clip: text;
@@ -333,7 +311,6 @@ article#content section.character {
 
 .character p::before {
    font-size: 7rem;
-   /* top: -50px; */
    top: -80px;
 }
 
@@ -341,7 +318,6 @@ article#content section.character {
    margin: 0 7.5%;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   /* grid-auto-rows: 2fr 1fr; */
    grid-gap: 20px;
    grid-template-areas:
       "a a b c"
@@ -381,16 +357,6 @@ article#content section.character {
    background: url(../images/pattern1.png) center no-repeat;
    transition: all 0.5s cubic-bezier(0.5, 0.25, 0, 1);
 }
-
-/* .character ul.main li:first-of-type.on {
-   transform: translateZ(100px) translateY(50px) translateX(50px) scale(1.05);
-   background-position: 20% 80%;
-}
-
-.character ul.main li:last-of-type.on {
-   transform: translateZ(100px) translateY(-50px) translateX(-50px) scale(1.05);
-   background-position: 20% 20%;
-} */
 
 .character ul.main li:first-of-type:hover {
    transform: translateX(-30px);
@@ -497,10 +463,7 @@ article#content section.character {
    z-index: 1;
 }
 
-
-
 .sub {
-   /* margin-top: 50px; */
    padding: 60px 7.5% 0;
 }
 
@@ -511,8 +474,6 @@ article#content section.character {
 }
 
 .sub ul li {
-   /* width: 22%;
-   margin-right: 4%; */
    float: left;
    width: 23.5%;
    margin-right: 2%;
@@ -701,7 +662,6 @@ article#content section.trailer {
    position: relative;
 }
 
-
 .trailer a.more {
    top: 32px;
    right: 40px;
@@ -819,7 +779,6 @@ a.more:hover {
    width: 100%;
    height: 100%;
    transition: all 0.5s;
-   /* max-height: 420px; */
 }
 
 .gallery ul li img:hover {
@@ -905,7 +864,6 @@ a.more:hover {
    }
 
    article#content section.story {
-      /* background-size: contain; */
       height: auto;
       padding: 6.25rem 0 20rem;
    }
@@ -1280,7 +1238,6 @@ a.more:hover {
    .story li:nth-of-type(3),
    .story li:nth-of-type(5) {
       height: calc(100% - 30px);
-      /* height: 275px; */
    }
 
    .character p {
@@ -1294,10 +1251,6 @@ a.more:hover {
    .sub {
       padding: 50px 7.5% 0;
    }
-
-   /* .sub {
-      margin: 90px 7.5% 0;
-   } */
 
    .sub li::before {
       opacity: 1;

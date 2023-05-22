@@ -55,10 +55,6 @@
   position: relative;
 }
 
-/* #content .contentArea .contentNav li:hover a {
-  background: rgba(255, 255, 255, 0.068);
-} */
-
 #content .contentArea .contentNav li.on::after {
   width: 83%;
 }

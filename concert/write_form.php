@@ -98,7 +98,7 @@
 		<h2>제품검색</h2>
 		</div>
 		<div class="contentArea">
-		<!-- 본문 콘텐츠 영역 -->
+		<!-- content area -->
 		<p>인류 건강 증진을 위한 동아ST의 혁신적 제품</p>
 
 	<div id="col2">
@@ -162,7 +162,6 @@
 ?>
 				</dd> 
 				<!-- 배열로 처리, for문 돌리려고 -->
-
 			</dl>
 
 			<dl id="write_row5">

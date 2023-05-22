@@ -44,6 +44,6 @@
   border-top-left-radius: 50px;
   padding: 30px 25px 80px;
   line-height: 2rem;
-  background: url(../images/boxx2.png) left center no-repeat;
-  background-size: cover;
+  background: url(../images/boxx2.png) left bottom no-repeat;
+  background-size: 100%;
 }

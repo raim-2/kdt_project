@@ -48,7 +48,7 @@
  + float와 position 을 이용한 레이아웃 
  + 스티키 메뉴, 스크롤 스파이, 탭, 자동 롤링, 카운트 등 이벤트 구현 
     + ***[회사소개 - 주요연혁] [연구분야 - 연구활동] [정도경영 - 사회공헌, 환경경영]***
- + json과 ajax를 사용한 슬라이드 구현 ***[인덱스 - 신제품] ***
+ + json과 ajax를 사용한 모달창 구현 ***[사업분야 - 해외사업] ***
 
 
 #### PHP / MySQL
@@ -83,7 +83,6 @@
 
 #### HTML / CSS / JavaScript /jQuery
  + flex와 grid를 사용해 레이아웃 구성
- + 미디어쿼리 이용한 해상도 서비스 처리(로고 및 이미지)
  + 자동 롤링, 탭,  카운트, 아코디언, 토글 등 이벤트 구현
     + ***[인덱스 - 메인비주얼, 신제품, 자주 묻는 질문, 패밀리 사이트]***
  + 플러그인 및 라이브러리 이용
@@ -114,8 +113,6 @@
  + heading 태그를 사용한 목차/아웃라인 구성 
  + 시맨틱 태그를 사용한 마크업
  + pc, mobile, tablet 사이즈에 맞춰 크로스 체크
-     + 크롬 개발자도구 - 디바이스 툴바 사용
-
 
 #### HTML / CSS / JavaScript /jQuery
  + CSS애니메이션 사용으로 동적 효과 구현
@@ -124,7 +121,7 @@
  + 플러그인 및 라이브러리 이용
     + Magnific Popup 플러그인 - 비디오 모달 팝업 ***[메뉴 - Trailer]***
     + Masonry플러그인 - 이미지 그리드 ***[메뉴 - Gallery]***
- + JavaScript와 jQuery를 사용해 audio 구현
+ + JavaScript와 jQuery를 사용해 audio 구현 / play(), pause() 사용
     + ***[메뉴 - Trailer - Sound Track]***
 
 
@@ -148,8 +145,8 @@
      + 크롬 개발자도구 - 디바이스 툴바 사용
 
 #### HTML / CSS / JavaScript /jQuery
- + 부트스트랩 그리드 시스템을 사용해 반응형 레이아웃 구현
- + 부트스트랩 컴포넌트를 이용한 모달, 아코디언, 탭 메뉴 구현
+ + 부트스트랩의 그리드 시스템을 사용해 반응형 레이아웃 구현
+ + 부트스트랩을 이용한 모달, 아코디언, 탭 메뉴 구현
  + 플러그인 및 라이브러리 이용
     + Swiper 플러그인 - 자동 및 터치 슬라이드 ***[Aesop's best]***
  + JavaScript와 jQuery를 사용해 이미지 변경 및 높이 조절
@@ -188,10 +185,10 @@
  + Vuetify를 사용해 레이아웃 구성
 
 #### 컴포넌트 구성
- + header, footer, main content, sub content를 컴포넌트로 구성해 재활용 및 유지보수를 고려
+ + header, footer, visual, sub content를 컴포넌트로 구성해 재활용 및 유지보수를 고려
 
 #### 뷰 라우터 활용
- + main content와 sub content를 router를 이용해 페이지 연결
+ + sub content(sub1, 2, 3)를 router를 이용해 페이지 연결
     + 라우터를 사용해 SPA(싱글 페이지 어플리케이션) 제작
     + 화면 전환을 매끄럽게 하여 사용자 경험 향상
 

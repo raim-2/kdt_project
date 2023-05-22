@@ -19,10 +19,6 @@
   margin-left: -70px;
 }
 
-/* .main > img {
-  height: 500px;
-} */
-
 .subNav {
   border-bottom: 1px solid #ccc;
 }
@@ -42,7 +38,6 @@
 .subNav ul li a {
   display: block;
   padding: 20px 0;
-  /* background: green; */
   font-size: 1.2em;
   font-weight: bold;
   color: #333;
@@ -61,7 +56,6 @@
 
 #content {
   width: 1200px;
-  /* height: 2000px; */
   margin: 0 auto;
 }
 

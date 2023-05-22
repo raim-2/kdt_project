@@ -96,7 +96,7 @@
 		<h2>공지사항</h2>
 		</div>
 		<div class="contentArea">
-			<!-- 본문 콘텐츠 영역 -->
+			<!-- content area -->
 			<p>동아ST의 공지사항을 알려드립니다.</p>
 			<div id="col2">
 				<!-- mode=search는 get방식으로 -->
@@ -121,7 +121,6 @@
 							<option value='8'>8개씩</option>
 							<option value='10'>10개씩</option>
 							<option value='12'>12개씩</option>
-							<!-- <option value='5'>5</option> -->
 						</select>
 					</div>
 				</form>

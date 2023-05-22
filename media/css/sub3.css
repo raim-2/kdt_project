@@ -66,8 +66,6 @@ ul.tab_menu li {
 
 div.tab {
     display: inline-block;
-    /* box-shadow: 0px 1px 9px 1px rgb(245 245 245); */
-    /* border-radius: 50%; */
     width: 40%;
     margin: 4% 10%;
     box-sizing: border-box;
@@ -77,19 +75,12 @@ div.tab {
     width: 38%;
     margin: 5%;
     float: left;
-    /* position: relative; */
 }
 
 .player img {
     width: 100%;
 }
 
-/* .click_box {
-    font-size: 4vw;
-    position: absolute;
-    bottom: 2vw;
-    right: 4vw;
-} */
 .click_box {
     font-size: 4vw;
     position: absolute;
@@ -116,8 +107,6 @@ a.stopBtn {
     font-style: italic;
     color: #fff;
 }
-
-
 
 .music .tab img.rotationImg1 {
     animation: animationBig1 .6s ease-in-out,
@@ -200,21 +189,21 @@ a.stopBtn {
 
 @keyframes animationBig4 {
     from {
-        transform: none;
+        transform: scale(1.1);
     }
 
     to {
-        transform: translate(50%, 190%) scale(1.5);
+        transform: translate(50%, 193%) scale(1.5);
     }
 }
 
 @keyframes animationRotation4 {
     from {
-        transform: translate(50%, 190%) scale(1.5);
+        transform: translate(50%, 193%) scale(1.5);
     }
 
     to {
-        transform: translate(50%, 190%) scale(1.5) rotate(360deg);
+        transform: translate(50%, 193%) scale(1.5) rotate(360deg);
         ;
     }
 }
@@ -437,6 +426,10 @@ a.popup-youtube {
         margin: 0 10% 2rem;
     }
 
+    .tab img {
+        transform: scale(1.1);
+    }
+
     ul.tab_menu li:nth-child(2),
     ul.tab_menu li:last-child {
         display: none
@@ -445,7 +438,7 @@ a.popup-youtube {
     .player {
         float: none;
         width: 70%;
-        margin: 0 auto;
+        margin: 8% auto;
     }
 
     .music .tab img.rotationImg1 {
@@ -458,17 +451,16 @@ a.popup-youtube {
         content: "How far I'll go♪";
         font-size: 2.4rem;
         font-family: 'Cormorant Infant', serif;
-        /* transform: scale(1.3); */
         position: absolute;
         left: 40%;
-        top: 10%;
+        top: 0;
         margin-left: -110px;
         font-weight: 800;
         line-height: 1.3;
         color: transparent;
         background: linear-gradient(45deg, #fffa00, transparent), linear-gradient(273deg, #ff9b00, transparent);
         -webkit-background-clip: text;
-        animation: blink .8s infinite;
+        animation: blink 2s infinite;
     }
 
     @keyframes blink {
@@ -479,5 +471,11 @@ a.popup-youtube {
         100% {
             opacity: 1;
         }
+    }
+
+    a.playBtn, a.stopBtn {
+        font-size: 10vw;
+        display: inline-block;
+        text-align: center; 
     }
 }

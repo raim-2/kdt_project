@@ -23,13 +23,6 @@ h3.twinkle {
     transition: color .3s ease-in;
 }
 
-
-/* @property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-} */
-
 .twinkle::before {
     left: 0;
     top: 0;
@@ -80,7 +73,6 @@ h3.twinkle {
     display: block;
     width: 96%;
     margin: 10px auto;
-    /* filter: saturate(0.7); */
     transition: all .5s;
     border-radius: 93% 7% 95% 5% / 11% 90% 10% 89%;
     transform: rotate(3deg);

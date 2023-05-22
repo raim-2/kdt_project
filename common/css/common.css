@@ -109,7 +109,6 @@ section {
 body {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
-  /* color: #333; */
   overflow-x: hidden;
 }
 
@@ -192,7 +191,6 @@ img {
   z-index: 100;
   font-family: "Noto Sans KR", sans-serif;
   background: rgba(0, 0, 0, 0.3);
-  /* background: rgba(255, 255, 255, 0); */
   transition: background 0.5s;
 }
 
@@ -201,7 +199,6 @@ img {
   height: 218px;
   margin: 0 auto;
   position: relative;
-  /* overflow: hidden; */
 }
 
 #headerArea .headerInner .innerSection {
@@ -231,7 +228,6 @@ img {
   position: relative;
   left: 0;
   top: 0;
-  /* transition: background 0.5s; */
 }
 
 #headerArea h1 a.on {
@@ -263,8 +259,6 @@ img {
 #gnb ul.dropdownmenu {
   width: 100%;
   padding-top: 50px;
-  /* 임시 */
-  /* background: blue; */
 }
 
 #gnb ul::after {
@@ -277,9 +271,6 @@ img {
   float: left;
   width: 16.66%;
   position: relative;
-
-  /* 임시 */
-  /* background: red; */
 }
 
 #headerArea #gnb li.menu::before {
@@ -296,18 +287,15 @@ img {
 }
 
 #headerArea #gnb li.menu:hover::before {
-  /* width: 55%; */
   transform: scaleX(1);
 }
 
 #gnb ul.dropdownmenu li a.depth1 {
   display: block;
-  /* padding: 15px 60px; */
   padding: 15px 0;
   color: #fff;
   text-align: center;
   font-size: 1.25em;
-  /* transition: all 0.5s; */
 }
 
 /* 2depth */
@@ -320,22 +308,16 @@ img {
   padding: 20px 0;
   line-height: 2em;
   display: none;
-  /* 임시 */
-  /* background: pink; */
 }
 
 #gnb ul.dropdownmenu li ul li {
   text-align: center;
-  /* font-weight: bold; */
 }
 
 #gnb ul.dropdownmenu li ul li a {
   display: block;
-  /* color: #333; */
   line-height: 2.5;
   transition: all 0.5s;
-  /* 임시 */
-  /* background: palegreen; */
 }
 
 .ahover {
@@ -397,13 +379,12 @@ img {
 }
 
 #footerArea .family .arrow i {
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 #footerArea .copy .family ul.aList {
   width: 250px;
   position: absolute;
-  /* top: -310px; */
   bottom: 59px;
   left: 0;
   display: none;
@@ -507,7 +488,6 @@ img {
   background: #17476c;
   position: fixed;
   left: 50%;
-  /* bottom: 100px; */
   bottom: 200px;
   margin-left: 650px;
   border-radius: 50%;

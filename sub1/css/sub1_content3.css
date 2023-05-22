@@ -69,7 +69,6 @@ ul.contentNav::after,
 }
 
 .contentArea .y2020Content {
-  /* position: relative; */
   height: 2995px; /* 2996 */
 }
 .contentArea .y2010Content {
@@ -83,13 +82,11 @@ ul.contentNav::after,
 #sectionBox section .historyMain + div.boxLMove {
   right: 0;
   opacity: 1;
-  /* transform: scale(1); */
 }
 
 #sectionBox section .yleft + div.boxRMove {
   left: 0;
   opacity: 1;
-  /* transform: scale(1); */
 }
 
 .text {
@@ -99,8 +96,6 @@ ul.contentNav::after,
   font-size: 50px;
   z-index: 100;
 }
-
-/* */
 
 #content .contentArea .historyMain {
   width: 2000px;
@@ -174,17 +169,6 @@ div#sectionBox::before {
   opacity: 0;
   transition: all 0.5s;
 }
-
-/* .contentArea .yright ul::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 100%;
-  background: #ccc;
-  position: absolute;
-  left: -100px;
-  margin-top: 10px;
-} */
 
 .contentArea .yleft li {
   font-size: 100px;

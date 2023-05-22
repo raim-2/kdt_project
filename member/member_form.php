@@ -168,80 +168,73 @@
             <h3 class="insertDetail">회원가입 정보</h3>
             <p><span>*</span> 는 필수 입력항목입니다.</p>
         </div>
-     <table>
-      <caption class="hidden">회원가입</caption>
-     	<tr>
-     		<th scope="col"><label for="id">아이디</label></th>
-     		<td>
-     			 <input type="text" name="id" id="id" placeholder="아이디를 입력하세요." required>
-			     <span id="loadtext"></span>
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col"><label for="pass">비밀번호</label></th>
-     		<td>
-     			 <input type="password" name="pass" id="pass" placeholder="비밀번호를 입력하세요." required>
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col"><label for="pass_confirm">비밀번호 확인</label></th>
-     		<td>
-     			<input type="password" name="pass_confirm" id="pass_confirm" placeholder="비밀번호를 입력하세요." required>
-                <span id="loadtext3"></span>
-            </td>
-     	</tr>
-     	<tr>
-     		<th scope="col"><label for="name">이름</label></th>
-     		<td>
-     			<input type="text" name="name" id="name" placeholder="이름을 입력하세요." required> 
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col"><label for="nick">닉네임</label></th>
-     		<td>
-     			 <input type="text" name="nick" id="nick" placeholder="닉네임을 입력하세요." required>
-			     <span id="loadtext2"></span>
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col">휴대폰</th>
-     		<td>
-     			<label class="hidden" for="hp1">전화번호앞3자리</label>
-     			<select class="hp" name="hp1" id="hp1"> 
-              <option value='010'>010</option>
-              <option value='011'>011</option>
-              <option value='016'>016</option>
-              <option value='017'>017</option>
-              <option value='018'>018</option>
-              <option value='019'>019</option>
-          </select>  - 
-          <label class="hidden" for="hp2">전화번호중간4자리</label><input type="text" class="hp" name="hp2" id="hp2" placeholder="0000" required> - <label class="hidden" for="hp3">전화번호끝4자리</label><input type="text" class="hp" name="hp3" id="hp3" placeholder="0000" required>
-     			
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col">이메일</th>
-     		<td>
-     		  <label class="hidden" for="email1">이메일아이디</label>
-     			<input type="text" id="email1" name="email1" required> @ 
-     			<label class="hidden" for="email2">이메일주소</label>
-     			<input type="text" name="email2" id="email2" required>
-     		</td>
-     	</tr>
-     	<tr>
-     		<td colspan="2">
-     			<a href="#" onclick="check_input()" class="ok">
-                <!-- <img src="images/button_save.gif"  onclick="check_input()"> -->
-                회원가입
-                </a>&nbsp;&nbsp;
-                <a href="#" onclick="reset_form()" class="cancel">
-                 취소하기
-                <!-- <img src="images/button_reset.gif" onclick="reset_form()"> -->
-                </a>
-     		</td>
-     	</tr>
-     </table>
-
+        <ul>
+            <li>
+                <label for="id">아이디</label>
+                <div class="input_box"> 
+                    <input type="text" name="id" id="id" placeholder="아이디를 입력하세요." required>
+                    <span id="loadtext"></span>
+                </div> 
+            </li>
+            <li>
+                <label for="pass">비밀번호</label>
+                <div class="input_box">
+                    <input type="password" name="pass" id="pass" placeholder="비밀번호를 입력하세요." required>
+                </div>
+            </li>
+            <li>
+                <label for="pass_confirm">비밀번호 확인</label>
+                <div class="pass_box input_box">
+                    <input type="password" name="pass_confirm" id="pass_confirm" placeholder="비밀번호를 입력하세요." required>
+                    <span id="loadtext3"></span>
+                </div>
+            </li>
+            <li>
+                <label for="name">이름</label>
+                <div class="input_box">
+                    <input type="text" name="name" id="name" placeholder="이름을 입력하세요." required>
+                </div>
+            </li>
+            <li class="nick">
+                <label for="nick">닉네임</label>
+                <div class="nick_box input_box">
+                    <input type="text" name="nick" id="nick" placeholder="닉네임을 입력하세요." required>
+                    <span id="loadtext2"></span>
+                </div>
+            </li>
+            <li>
+                <span>휴대폰</span>
+                <div class="input_box">
+                    <label class="hidden" for="hp1">전화번호앞3자리</label>
+                    <select class="hp" name="hp1" id="hp1"> 
+                        <option value='010'>010</option>
+                        <option value='011'>011</option>
+                        <option value='016'>016</option>
+                        <option value='017'>017</option>
+                        <option value='018'>018</option>
+                        <option value='019'>019</option>
+                    </select>  - 
+                    <label class="hidden" for="hp2">전화번호중간4자리</label><input type="text" class="hp" name="hp2" id="hp2" placeholder="0000" required> - <label class="hidden" for="hp3">전화번호끝4자리</label><input type="text" class="hp" name="hp3" id="hp3" placeholder="0000" required>
+                </div>
+            </li>
+            <li class="email">
+                <span>이메일</span>
+                <div class="input_box">
+                    <label class="hidden" for="email1">이메일아이디</label>
+                    <input type="text" id="email1" name="email1" required> @ 
+                    <label class="hidden" for="email2">이메일주소</label>
+                    <input type="text" name="email2" id="email2" required>
+                </div>
+            </li>
+        </ul>
+        <div id="button">
+            <a href="#" onclick="check_input()" class="ok">
+            회원가입
+            </a>&nbsp;&nbsp;
+            <a href="#" onclick="reset_form()" class="cancel">
+                취소하기
+            </a>
+        </div>
 	 </form>
 	  
 	</article>

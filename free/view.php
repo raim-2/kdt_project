@@ -131,7 +131,7 @@
 		<h2>동아위드</h2>
 		</div>
 		<div class="contentArea">
-			<!-- 본문 콘텐츠 영역 -->
+			<!-- content area -->
 			<p>동아ST의 최신 소식 및 뉴스를 알려드립니다.</p>
 	
 	<div id="col2">        

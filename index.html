@@ -20,16 +20,15 @@
 </head>
 
 <body>
-  <!-- 헤더 영역 -->
+  <!-- header -->
   <? include "./common/main_header.html" ?>
 
-  <!-- 비주얼 영역 -->
+  <!-- visual -->
   <div class="visual">
     <div class="gallery">
       <ul>
         <li class="link1">
-          <a href="#">
-            <img src="./images/main01.jpg" alt="비주얼이미지1">
+            <img src="./images/main01.jpg" alt="">
             <div class="text">
               <p>글로벌 혁신 제약기업 동아ST</p>
               <p>
@@ -37,11 +36,9 @@
                 글로벌 제약기업을 향해 도약합니다.
               </p>
             </div>
-          </a>
         </li>
         <li class="link2">
-          <a href="#">
-            <img src="./images/main02.jpg" alt="비주얼이미지2">
+            <img src="./images/main02.jpg" alt="">
             <div class="text">
               <p>고객을 먼저 생각하는 동아ST</p>
               <p>
@@ -49,11 +46,9 @@
                 기업의 사회적 책임을 선도합니다.
               </p>
             </div>
-          </a>
         </li>
         <li class="link3">
-          <a href="#">
-            <img src="./images/main03.jpg" alt="비주얼이미지3">
+            <img src="./images/main03.jpg" alt="">
             <div class="text">
               <p>건강과 행복을 위한 동아ST</p>
               <p>
@@ -61,7 +56,6 @@
                 국민 건강 향상을 위해 노력합니다.
               </p>
             </div>
-          </a>
         </li>
       </ul>
     </div>
@@ -74,28 +68,28 @@
       <span class="ps"></span>
     </div>
 
-    <span class="btn btnLeft">
-      <img src="./images/arrow01.png" alt="왼쪽 화살표">
-    </span>
-    <span class="btn btnRight">
-      <img src="./images/arrow02.png" alt="오른쪽 화살표">
-    </span>
+    <button type="button" class="btn btnLeft" aria-label="이전 방향 버튼">
+      <img src="./images/arrow01.png" alt="왼쪽 버튼">
+    </button>
+    <button type="button" class="btn btnRight" aria-label="다음 방향 버튼">
+      <img src="./images/arrow02.png" alt="오른쪽 버튼">
+    </button>
   </div>
 
   <article id="content">
     <h2 class="hidden">본문콘텐츠영역</h2>
 
-    <!-- 제품검색 영역 -->
+    <!-- search_product -->
     <section id="search_box">
       <h3 class="hidden">제품검색</h3>
       <p>찾으시는 제품을 입력하세요.</p>
       <form action="./concert/list.php?mode=search&table=concert" method="post" autocomplete="off">
         <input type="hidden" name="find" id="find" value="subject">
-        <!--필드+ 제목 담고 넘겨야 하므로-->
+        <!-- 필드에 제목 담아서 넘긴다. -->
         <label for="search" class="hidden">제품검색</label>
         <div class="searchInner">
           <input type="text" id="search" name="search" placeholder="제품명 검색 가능">
-          <button type="submit">
+          <button type="submit" aria-label="제품 검색 버튼">
             <span class="hidden">검색</span>
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -118,100 +112,30 @@
       </dl>
     </section>
 
-    <!-- 신제품 영역 -->
+    <!-- new_product -->
     <section class="new">
       <h3>신제품</h3>
-
-      <!-- 
-        <ul>
-          <li class="newList">
-            <div class="newLeftSide">
-              <span class="eName">Suganon Tab</span>
-              <dl>
-                <dt>슈가논정</dt>
-                <dd>1일 1회 1정 복용</dd>
-                <dd>#당뇨병 #인슐린분비촉진</dd>
-              </dl>
-              <span class="more"><a href="#">View more</a></span>
-            </div>
-            <div class="newRightSide">
-              <img src="./images/product01.png" alt="슈가논정"/>
-              <img src="./images/circle.png" alt=""/>
-              <span>01</span>
-            </div>
-          </li>
-
-          <li class="newList">
-            <div class="newLeftSide">
-              <span class="eName">Jublia Topical</span>
-              <dl>
-                <dt>주블리아 외용액</dt>
-                <dd>1일 1회 사용</dd>
-                <dd>#피부질환 #진균증</dd>
-              </dl>
-              <span class="more"><a href="#">View more</a></span>
-            </div>
-            <div class="newRightSide">
-              <img src="./images/product02.png" alt="주블리아 외용액"/>
-              <img src="./images/circle.png" alt=""/>
-              <span>02</span>
-            </div>
-          </li>
-          <li class="newList">
-            <div class="newLeftSide">
-              <span class="eName">Sugamet XR Tab.</span>
-              <dl>
-                <dt>슈가메트</dt>
-                <dd>1일 1회 1정 복용</dd>
-                <dd>#당뇨병 #혈당조절</dd>
-              </dl>
-              <span class="more"><a href="#">View more</a></span>
-            </div>
-            <div class="newRightSide">
-              <img src="./images/product03.png" alt="슈가메트"/>
-              <img src="./images/circle.png" alt=""/>
-              <span>03</span>
-            </div>
-          </li>
-          <li class="newList">
-            <div class="newLeftSide">
-              <span class="eName">Edarbyclor Tab.</span>
-              <dl>
-                <dt>이달비클로정</dt>
-                <dd>1일 1회 1정 복용</dd>
-                <dd>#고혈압 #혈압조절</dd>
-              </dl>
-              <span class="more"><a href="#">View more</a></span>
-            </div>
-            <div class="newRightSide">
-              <img src="./images/product04.png" alt="이달비클로정"/>
-              <img src="./images/circle.png" alt=""/>
-              <span>04</span>
-            </div>
-          </li>
-        </ul> -->
-
       <div id="ajaxContent"></div>
 
       <div class="button">
-        <a href="#" class="leftBtn" id="back">
+        <button type="button" class="leftBtn btn" id="back" aria-label="이전 방향 버튼">
           <span class="hidden">왼쪽</span>
           <i class="fa-solid fa-chevron-left"></i>
-        </a>
-        <a href="#" class="rightBtn" id="next">
+        </button>
+        <button type="button" class="rightBtn btn" id="next" aria-label="다음 방향 버튼">
           <span class="hidden">오른쪽</span>
           <i class="fa-solid fa-chevron-right"></i>
-        </a>
+        </button>
       </div>
     </section>
 
-    <!-- 사업분야 영역 -->
+    <!-- business -->
     <section class="business">
       <div class="bizInner">
         <div class="businessText">
           <h3>사업분야</h3>
           <p>인류 건강 증진을 위한 동아ST의 사업분야</p>
-          <a href="#" class="more">View more</a>
+          <a href="./concert/list.php" class="more" title="사업분야 페이지 더보기">View more</a>
         </div>
         <ul class="blist" id="native">
           <li class="blist1">
@@ -257,7 +181,7 @@
             </a>
           </li>
           <li class="blist4">
-            <a href="#">
+            <a href="./sub2/sub2_4.html">
               <div class="black bizLeftSide">
                 <span>04 해외사업</span>
                 <dl>
@@ -273,12 +197,12 @@
         </ul>
       </div>
       <div class="scroll">
-        <img src="./images/scroll.png" alt="스크롤아이콘">
+        <img src="./images/scroll.png" alt="스크롤 아이콘">
         <span>scroll</span>
       </div>
     </section>
 
-    <!-- 정도경영 영역 -->
+    <!-- social_value -->
     <section class="management">
       <h3>정도경영</h3>
       <p>밝고 따뜻한 사회를 위한 동아ST의 사회적책임</p>
@@ -286,7 +210,7 @@
         <li>
           <a href="./sub4/sub4_2.html">
             <div class="manageImg">
-              <img src="./images/manage01.jpg" alt="사회가치경영">
+              <img src="./images/manage01.jpg" alt="">
             </div>
             <div class="manageTitle">
               <span>Social Value</span>
@@ -304,7 +228,7 @@
         <li>
           <a href="./sub4/sub4_3.html">
             <div class="manageImg">
-              <img src="./images/manage02.jpg" alt="환경경영">
+              <img src="./images/manage02.jpg" alt="">
             </div>
             <div class="manageTitle">
               <span>Environment</span>
@@ -322,7 +246,7 @@
         <li class="center">
           <a href="./sub4/sub4_4.html">
             <div class="manageImg">
-              <img src="./images/manage03.jpg" alt="소비자경영">
+              <img src="./images/manage03.jpg" alt="">
             </div>
             <div class="manageTitle">
               <span>Customer</span>
@@ -340,7 +264,7 @@
       </ul>
     </section>
 
-    <!-- 공지사항/뉴스 영역 -->
+    <!-- news -->
     <!-- 최근 글 불러오기 시작 -->
 
     <? include "./lib/func.php"; ?>
@@ -349,104 +273,45 @@
       <div class="newsInnerBox">
         <div class="newsInner">
           <ul>
-            <!-- <li>
-              <a href="#">
-                <img src="./images/news01.jpg" alt="동아ST 인공지능...바로가기">
-                <dl>
-                  <dt>동아ST 인공지능 활용 신약 발굴 나서</dt>
-                  <dd>
-                    제4회 동아ST MR Conference가 지난 4월 8일 동아쏘시오그룹
-                    신관 7층 강당에서 진행됐다...
-                  </dd>
-                </dl>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/news02.jpg" alt="동아ST, 제 4회...바로가기">
-                <dl>
-                  <dt>동아ST, 제4회 MR Conference 개최</dt>
-                  <dd>
-                    제4회 동아ST MR Conference가 지난 4월 8일 동아쏘시오그룹
-                    신관 7층 강당에서 진행됐다...
-                  </dd>
-                </dl>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/news03.jpg" alt="송도 제 4회...바로가기">
-                <dl>
-                  <dt>송도 바이오텍연구소 개소식 개최</dt>
-                  <dd>
-                    동아ST가 송도에 바이오텍연구소를 신축, 이전함에 따라 지난
-                    4월 8일 동아쏘시오그룹...
-                  </dd>
-                </dl>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/news04.jpg" alt="제1회 ':D-nnovation'...바로가기">
-                <dl>
-                  <dt>제1회 ':D-nnovation' 개최</dt>
-                  <dd>
-                    "우리는 변화에 끌려가고 있지는 않은가? 변화와 혁신은CEO,
-                    핵심 부서만의 몫인가?”...
-                  </dd>
-                </dl>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/news05.jpg" alt="피부 연구가...바로가기">
-                <dl>
-                  <dt>피부 연구가, ‘피부는 민동성’을 만나다</dt>
-                  <dd>
-                    제4회 동아ST MR Conference가 지난 4월 8일 동아쏘시오그룹
-                    신관 7층 강당에서 진행됐다...
-                  </dd>
-                </dl>
-              </a>
-            </li> -->
+            <!-- latest_news -->
             <? latest_article("free", 5, 20, 35); ?>
           </ul>
         </div>
       </div>
       <div class="button">
-        <a href="#" class="newsLeftBtn btn">
+        <button type="button" class="newsLeftBtn btn" aria-label="이전 방향 버튼">
           <span class="hidden">이전</span>
           <i class="fa-solid fa-chevron-left"></i>
-        </a>
-        <a href="#" class="newsRightBtn btn">
+        </button>
+        <button type="button" class="newsRightBtn btn" aria-label="다음 방향 버튼">
           <span class="hidden">다음</span>
           <i class="fa-solid fa-chevron-right"></i>
-        </a>
-        <a href="./sub6/sub6_2.html" class="newsMore">
+        </button>
+        <a href="./free/list.php" class="newsMore" title="동아위드 게시판 더보기">
           <span class="hidden">더보기</span>
           <i class="fa-solid fa-plus"></i>
         </a>
       </div>
     </section>
 
-    <!-- 인재채용 영역 -->
+    <!-- recruit -->
     <section class="recruit">
       <div class="recruitLeft">
         <h3>인재채용</h3>
         <p>비전을 함께 할 역량있는 인재를 찾습니다.</p>
       </div>
-      <a href="./sub5/sub5_3.html">
-        <span> 바로가기 </span>
+      <a href="./sub5/sub5_3.html" title="인재채용 페이지로 바로가기">
+        <span>바로가기</span>
         <i class="fa-solid fa-arrow-right-long"></i>
       </a>
     </section>
   </article>
 
-  <!-- 푸터 영역 -->
+  <!-- footer -->
   <? include "./common/main_footer.html" ?>
   <!-- <div class="topText">0</div> -->
 
-  <!-- 공지팝업 -->
+  <!-- pop_up -->
   <div id="showimage">
     <script>
       function closeWin() {

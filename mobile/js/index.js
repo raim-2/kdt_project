@@ -63,15 +63,11 @@ $('.tab_menu .tab').click(function (e) {
 
 });
 
-
-
-
 // 정도경영 영역 count *숫자 자동입력
 // 사회공헌 금액
-var countNumber1;
-var countNumber2;
 
-function count() {
+
+function countNum() {
   var memberCountConTxt = 32;
 
   $({
@@ -89,11 +85,8 @@ function count() {
       $("#management .count1").text(number);
     },
   });
-}
 
 // 온실가스 사용량
-
-function count2() {
   memberCountConTxt = 120;
 
   $({
@@ -117,22 +110,26 @@ function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "");
 }
 
-// window.addEventListener('scroll',)
+//카운트 이벤트
+let manage = document.querySelector('#management')
+let manageOfftop = manage.offsetTop - 250
 
-$(window).on("scroll", function () {
+window.addEventListener("scroll", scrollEvent)
+
+ function scrollEvent() {
   var scroll = $(window).scrollTop();
-  var h1 = $("#management").offset().top - 200;
-  // var h2 = $("#faq").offset().top;
-  //  console.log(h1);
+  let onoff = false;
 
-  if (scroll >= h1 && scroll < h1 + 200) {
-    countNumber1 = setTimeout(count, 100);
-    countNumber2 = setTimeout(count2, 100);
-    // clearTimeout()
-    // count();
-    // count2();
+  if (scroll >= manageOfftop) {
+    setTimeout(countNum, 0)
+    onoff = true;
   }
-});
+
+    if (onoff == true) {
+    window.removeEventListener("scroll",scrollEvent);
+  }
+
+};
 
 //faq 세로아코디언
 
