@@ -1,13 +1,10 @@
 var dt = document.querySelector("dt");
 var dd = document.querySelector("dd");
-var btn = document.querySelector(".btn");
-// var mapid = document.getElementById("mapHead");
 
 var sec02 = document.querySelector(".section02");
 var dt2 = sec02.querySelector("dt");
 var dd2 = sec02.querySelector("dd");
-var btn2 = sec02.querySelector(".btn2");
-// var mapid2 = sec02.querySelector("#mapCheonan");
+
 
 var cnt = 1;
 var cnt2 = 1;
@@ -35,6 +32,46 @@ var mapinfo = [
   },
 ];
 
+$('.btn1').click(function(e) {
+  e.preventDefault();
+  console.log(cnt)
+  cnt++;
+
+  if (cnt % 2 == 0) {
+    dt.innerText = mapinfo[1].name;
+    dd.innerText = mapinfo[1].address;
+    $("#mapHead").css("display", "none");
+    $("#mapLab").css("display", "block");
+    $(this).find("span").text("본사 위치");
+  } else if (cnt % 2 == 1) {
+    dt.innerText = mapinfo[0].name;
+    dd.innerText = mapinfo[0].address;
+    $("#mapHead").css("display", "block");
+    $("#mapLab").css("display", "none");
+    $(this).find("span").text("연구소 위치");
+  }
+})
+
+$('.btn2').click(function(e) {
+  e.preventDefault();
+  cnt2++;
+
+  if (cnt2 % 2 == 0) {
+    dt2.innerText = mapinfo[3].name;
+    dd2.innerText = mapinfo[3].address;
+    $("#mapCheonan").css("display", "none");
+    $("#mapDalseong").css("display", "block");
+    $(this).find("span").text("천안공장 위치");
+  } else if (cnt2 % 2 == 1) {
+    dt2.innerText = mapinfo[2].name;
+    dd2.innerText = mapinfo[2].address;
+    $("#mapCheonan").css("display", "block");
+    $("#mapDalseong").css("display", "none");
+    $(this).find("span").text("달성공장 위치");
+  }
+})
+
+/*
 function change(event) {
   event.preventDefault();
   cnt++;
@@ -54,8 +91,15 @@ function change(event) {
     $("#mapLab").css("display", "none");
     $(".summary dd span").text("연구소 위치");
   }
-}
 
+  // $(".tabs .tab").click(function (e) {
+  //   if ($('#mapLab').css('display') == 'block') {
+  //     $(".contentArea .contlist .map2").css("display","block");
+  //   }
+  // })
+}*/
+
+/*
 function change2(event) {
   event.preventDefault();
   cnt2++;
@@ -77,5 +121,13 @@ function change2(event) {
   }
 }
 
-btn.addEventListener("click", change);
-btn2.addEventListener("click", change2);
+//  $(".tabs .tab").click(function (e) {
+//   if ($('.map2').css('display') == 'block') {
+//     $(".contentArea .contlist .map2").css("display","block");
+//     // $(".contentArea .contlist").show();
+//   }
+//  })*/
+
+
+// btn.addEventListener("click", change);
+// btn2.addEventListener("click", change2);
