@@ -80,7 +80,7 @@ window.onload = function () {
     127.10723569999998
   );
   var marker3 = new daum.maps.Marker({
-    position: markerPosition2,
+    position: markerPosition3,
   });
 
   marker3.setMap(map3);
@@ -104,14 +104,14 @@ window.onload = function () {
   map4.addControl(mapTypeControl4, daum.maps.ControlPosition.TOPRIGHT);
 
   var zoomControl4 = new daum.maps.ZoomControl();
-  map4.addControl(zoomControl2, daum.maps.ControlPosition.RIGHT);
+  map4.addControl(zoomControl4, daum.maps.ControlPosition.RIGHT);
 
   var markerPosition4 = new daum.maps.LatLng(
     35.739694499999835,
     128.46433119999958
   );
   var marker4 = new daum.maps.Marker({
-    position: markerPosition2,
+    position: markerPosition4,
   });
 
   marker4.setMap(map4);
