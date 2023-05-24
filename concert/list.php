@@ -1,6 +1,8 @@
 <? 
 	session_start(); 
 	$table = "concert"; //이부분만 변경해주면 됨(테이블 만든 후 테이블명만 바꿔줌)
+	//$type_list = "list"; //board type
+	//$type_grid = "grid";
 ?>
 <!DOCTYPE HTML>
 <html lang="ko">
@@ -109,42 +111,31 @@
 							 개의 게시물이 있습니다.
 						</div>
 			</div>
-			<ul class="list_count"> 
+			<ul class="list_count list_style"> 
 				<li>
-					<a href="#">
+					<button type="button" class="radio_btn btn-list" onclick="location.href='list.php?num=<?=$item_num?>&list_style=list&page=<?=$page?>&scale=<?=$scale?>'">
 						<span class="hidden">리스트</span>
-						<img src="./images/list.png" alt="리스트">
-					</a>
+						<img src="./images/list.png" alt="리스트 게시판 버튼">
+					</button>
 				</li>
 				<li>
-					<a href="#">
+					<button type="button" class="radio_btn btn-grid" onclick="location.href='list.php?num=<?=$item_num?>&list_style=grid&page=<?=$page?>&scale=<?=$scale?>'">
 						<span class="hidden">그리드</span>
-						<img src="./images/grid.png" alt="그리드">
-					</a>
+						<img src="./images/grid.png" alt="그리드 게시판 버튼">
+					</button>
 				</li>
 				<li>
 					<label for="scale" class="hidden">리스트개수</label>
-					<select id="scale" name="scale" onchange="location.href='list.php?scale='+this.value">
+					<select id="scale" name="scale" onchange="location.href='list.php?list_style=<?=$list_style?>&scale='+this.value">
 						<option value=''>보기</option>
-						<option value='5'>5개씩</option>
+						<option value='6'>6개씩</option>
 						<option value='8'>8개씩</option>
 						<option value='10'>10개씩</option>
 						<option value='12'>12개씩</option>
-						<!-- <option value='5'>5</option> -->
 					</select>
 				</li>
 			</ul>
 		</form>
-
-		<!-- <div id="list_top_title">
-			<ul>
-				<li id="list_title1">번호</li>
-				<li id="list_title2">제목</li>
-				<li id="list_title3">글쓴이</li>
-				<li id="list_title4">등록일</li>
-				<li id="list_title5">조회</li>
-			</ul>
-		</div> -->
 
 		<div id="list_content">
 <?		
@@ -177,12 +168,15 @@
 	 }
 
 ?>
+			<!-- 리스트 게시판 -->
 			<div class="list_item">
 				<div class="list_img">
 					<img src="<?= $item_img ?>" alt="<?= $item_subject?>">
 				</div>
 				<div class="list_text">
-					<p class="list_sub"><a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>"><?= $item_subject ?></a></p>
+					<p class="list_sub">
+						<a href="view.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&page=<?=$page?>&scale=<?=$scale?>"><?= $item_subject ?></a>
+					</p>
 					<p class="list_con"><?= $item_content?></p>
 					<div class="list_info">
 						<p>
@@ -203,7 +197,7 @@
 			
 			<div id="page_button">
 				<div id="button">
-					<a href="list.php?table=<?=$table?>&page=<?=$page?>">목록</a>&nbsp;
+					<a href="list.php?table=<?=$table?>&list_style=<?=$list_style?>&scale=<?=$scale?>">목록</a>&nbsp;
 <? 
 	if($userid)
 	{
@@ -227,7 +221,7 @@
 		}
 		else
 		{ 
-			echo "<a href='list.php?page=$i&scale=$scale'> $i </a>";
+			echo "<a href='list.php?list_style=$list_style&page=$i&scale=$scale'> $i </a>";
 		}      
    }
 ?>
@@ -259,6 +253,27 @@
 </div> <!--contentarea-->
 </article> <!-- end of article -->
 
- <? include "../common/sub_footer.html" ?>
+<? include "../common/sub_footer.html" ?>
+<?
+	if (!$list_style){
+		$list_style = 'list';	// 리스트 스타일
+		echo "
+			<script>
+				$('.list_style li').removeClass('active');
+				$('.list_style li:eq(0)').addClass('active');
+			</script>
+		";
+	} else if($list_style == 'grid'){	// 그리드 스타일
+		echo "
+			<script>
+				$('.list_style li').removeClass('active');
+				$('.list_style li:eq(1)').addClass('active');
+				$('#list_content, #page_button, #page_num').addClass('grid');
+        		$('#list_content .list_item').addClass('grid_item');
+			</script>
+		";
+
+	}
+?>
 </body>
 </html>

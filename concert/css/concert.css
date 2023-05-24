@@ -22,17 +22,17 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-.list_count a {
+.list_count .radio_btn {
     display: inline-block;
     border: 1px solid #ccc;
+    background: #fff;
     padding: 9px;
     box-sizing: border-box;
 }
 
-.list_count a:nth-of-type(2) {
-    margin: 0 10px 0 0;
-    border-left: 0;
-    padding-top: 7px;
+.list_count li:nth-child(2) .radio_btn {
+    margin-right: 10px;
+    border-left: none;
 }
 
 /* list css */
@@ -54,6 +54,7 @@ button[type="submit"] {
     border-top: 2px solid #aaa;
 }
 
+/* list_board */
 .list_item {
     padding: 20px 10px;
     border-bottom: solid 1px #eeeeee;
@@ -146,6 +147,46 @@ button[type="submit"] {
 #page_num span.arrow {
     color: #999
 }
+
+/* grid_board */
+#list_content.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list_item.grid_item {
+    width: 346px;
+    border-bottom: none;
+}
+
+.list_item.grid_item .list_img {
+    float: none;
+    width: auto;
+    height: auto;
+}
+
+.list_item.grid_item .list_text {
+    float: none;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.grid_item .list_text p.list_con {
+    display: none;
+}
+
+#page_button.grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#page_num.grid {
+    width: auto;
+}
+
+/* grid_board-end */
 
 #button a,
 #write_button a,
