@@ -214,6 +214,11 @@ ul.ask li dl dd {
   float: left;
 }
 
+ul.ask li.uploadBox dl dd {
+    width: calc(100% - 100px);
+    position: relative;
+}
+
 label::after {
   content: "*";
   color: red;
@@ -232,7 +237,30 @@ textarea#message {
 
 ul.ask input#file {
   padding: 0;
+  width: 100%;
 }
+
+/* 이미지 미리보기 */
+.imgPreview {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.imgPreview img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.nofile {
+    position: absolute;
+    left: 95px;
+    top: 0;
+    background: #fff;
+}
+
 
 ul.ask li:nth-of-type(7) {
   margin: 70px 0 50px;

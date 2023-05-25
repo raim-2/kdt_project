@@ -124,7 +124,8 @@
 
       <section class="sec02">
         <h3>문의하기</h3>
-        <form action="mail.php" method="post">
+        <form action="mail.php" method="post" enctype="multipart/form-data">
+          <!-- multipart/form-data 파일/이미지 전송-post방식으로 -->
           <ul class="ask">
             <li>
               <dl>
@@ -172,10 +173,12 @@
                 </dd>
               </dl>
             </li>
-            <li>
+            <li class="uploadBox">
               <dl>
                 <dt><label for="file">첨부파일</label></dt>
-                <dd><input type="file" id="file" name="file"></dd>
+                <dd><input type="file" id="file" name="file" accept="image/*"></dd>
+                <!-- multiple - 여러개 선택 가능,  accept="image/png, image/jpeg" -->
+                <!-- <dd><img src="" alt="첨부파일 미리보기"></dd> -->
               </dl>
             </li>
             <li>
@@ -207,6 +210,7 @@
   </article>
 
   <? include "../common/sub_footer.html" ?>
+  <script src="./js/mail.js"></script>
 </body>
 
 </html>
