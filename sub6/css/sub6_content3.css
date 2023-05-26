@@ -241,25 +241,32 @@ ul.ask input#file {
 }
 
 /* 이미지 미리보기 */
-.imgPreview {
-    width: 200px;
-    height: auto;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid rgb(118, 118, 118);
+.imgPreview.on {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid rgb(118, 118, 118);
 }
 
 .imgPreview img {
-    object-fit: cover;
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .nofile {
-    position: absolute;
-    left: 95px;
-    top: 0;
-    background: #fff;
+  position: absolute;
+  left: 95px;
+  top: 0;
+  color: red;
+  background: #fff;
 }
+
+.invalidType {
+  display: inline-block;
+  margin: 10px 0;
+}
+
 
 
 ul.ask li:nth-of-type(7) {
