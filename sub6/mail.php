@@ -48,11 +48,11 @@ $attach = chunk_split(base64_encode($file));
 
 $attach_msg="<hr>첨부파일 이름:{$file_name}<br>".
         "첨부파일 크기:{$file_size}<br>".
-        "첨부파일 사이즈:{$file_type}";
+        "첨부파일 타입:{$file_type}";
 
 $boundary = md5(uniqid(microtime()));
 
-if ($file_tmp != "") {
+if (!empty($file_tmp)) {
    $headers = "MIME-Version: 1.0\r\n";
    $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
 
@@ -70,7 +70,7 @@ if ($file_tmp != "") {
 } else {
    $headers = "MIME-Version: 1.0\r\n";
    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-//    $headers .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
+   $headers .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
 
    $bodytext = $msg;
 }
