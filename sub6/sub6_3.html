@@ -176,9 +176,11 @@
             <li class="uploadBox">
               <dl>
                 <dt><label for="file">첨부파일</label></dt>
-                <dd><input type="file" id="file" name="file" accept="image/*"></dd>
-                <!-- multiple - 여러개 선택 가능,  accept="image/png, image/jpeg" -->
-                <!-- <dd><img src="" alt="첨부파일 미리보기"></dd> -->
+                <dd>
+                  <input type="file" id="file" name="file" accept="image/*">
+                  <!-- multiple - 여러개 선택 가능,  accept="image/png, image/jpeg" -->
+                  <div class="imgPreview off"></div>
+                </dd>
               </dl>
             </li>
             <li>
@@ -211,6 +213,7 @@
 
   <? include "../common/sub_footer.html" ?>
   <script src="./js/mail.js"></script>
+</script>
 </body>
 
 </html>
