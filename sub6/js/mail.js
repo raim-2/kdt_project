@@ -15,7 +15,7 @@ uploadInput.addEventListener('change', updateFile);
 function updateFile(e) {
     let uploadFile = e.target.files; // FileList 객체
      //console.log(uploadFile); // { 0: File, 1: File, length: 2 }
-     //console.log(uploadFile[0]); //업로드된 파일의 정보를 보여줌
+    //  console.log(uploadFile[0]); //업로드된 파일의 정보를 보여줌
     
     if(uploadFile.length !== 0) {
         let lastChildText = uploadData.lastChild.innerText;
