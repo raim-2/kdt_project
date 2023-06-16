@@ -1,5 +1,5 @@
 # Web Project
-<https://earnestga3.cafe24.com/portfolio/>
+<https://earnestga3.cafe24.com/project/>
 
 ## 프로젝트 설명
 해당 프로젝트는 프로젝트 기반 프론트엔드 웹, 앱 SW 개발자 과정(KDT)을 수강하며 제작한 프로젝트 입니다. <br/>
